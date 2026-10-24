@@ -139,6 +139,9 @@ CSS = """
 def body(slug, c):
     others = ''.join('<a href="/dog-grooming-%s" data-i18n="city_%s">%s</a>' % (s, s.replace('-', '_'), o['en'])
                      for s, o in CITIES.items() if s != slug)
+    return body_template(others)
+
+def body_template(others):
     return """<!-- ══════════════════════════════
      CITY LANDING
 ══════════════════════════════ -->
@@ -194,6 +197,57 @@ def body(slug, c):
 
 """ % {'dir': DIRECTIONS, 'others': others}
 
+# ── Service page: walk-in nail trimming ─────────────────────────────
+NAIL = {
+ 'meta_title': ("Dog Nail Trimming, Walk-ins Welcome | Kokoni Pet Salon, San Gabriel",
+                "狗狗剪指甲 歡迎 Walk-in | KOKONI 寵物沙龍（聖蓋博）"),
+ 'meta_description': ("Walk-in dog nail trimming for $15 at Kokoni Pet Salon in San Gabriel, near Arcadia, Temple City, Alhambra and Pasadena. No bath needed. Text or call (626) 621-4646.",
+                "聖蓋博 KOKONI 寵物沙龍提供狗狗剪指甲服務，$15，不用洗澡，歡迎 walk-in。鄰近阿凱迪亞、天普市、阿罕布拉、帕薩迪納。簡訊或來電 (626) 621-4646。"),
+ 'city_h1': ("Dog Nail Trimming — Walk-ins Welcome", "狗狗剪指甲，歡迎 Walk-in"),
+ 'city_sub': ("Quick, gentle nail trims for $15 at Kokoni Pet Salon in San Gabriel. No bath or appointment needed.",
+              "聖蓋博 KOKONI 寵物沙龍，快速又溫柔的剪指甲服務，$15，不用洗澡，也不用預約。"),
+ 'city_intro': ("Long nails can make walking uncomfortable and change the way your dog stands. Stop by during our opening hours for a quick trim — our groomers handle every paw calmly and carefully, even for dogs who are nervous about having their feet touched.",
+                "指甲太長會讓狗狗走路不舒服，甚至影響站姿。營業時間內直接過來就可以快速修剪。美容師會冷靜、細心地處理每一隻腳，就算是怕被摸腳的狗狗也一樣。"),
+ 'cta_book': ("Get directions", "開始導航"),
+ 'cta_call': ("Text or call (626) 621-4646", "簡訊或來電 (626) 621-4646"),
+ 'svc_h': ("Prices", "價格"),
+ 'svc1_t': ("Nail trimming — $15", "剪指甲 $15"),
+ 'svc1_p': ("Walk-ins welcome during opening hours. No bath needed.", "營業時間內歡迎 walk-in，不用洗澡。"),
+ 'svc2_t': ("Add-ons", "加購項目"),
+ 'svc2_p': ("Pads trim $10 · Ear cleaning $10 · Teeth brushing $10 · Gland expression (external) $15",
+            "腳掌修毛 $10 · 耳道清潔 $10 · 刷牙 $10 · 肛門腺清潔（外部）$15"),
+ 'svc3_t': ("Need a full groom?", "需要完整美容？"),
+ 'svc3_p': ("Every bath and haircut already includes a nail trim. Book online for a full groom.",
+            "每次洗澡和美容都已經包含剪指甲。完整美容請線上預約。"),
+ 'svc_link': ("See all services &amp; pricing →", "查看所有服務與價格 →"),
+ 'why_h': ("Before you come in", "來店前須知"),
+ 'why1': ("<strong>Opening hours:</strong> Monday, Wednesday–Friday and Sunday, 9:00am–5:00pm (closed Tuesdays &amp; Saturdays).",
+          "<strong>營業時間：</strong>週一、週三至週五、週日，上午 9:00 – 下午 5:00（週二、週六公休）。"),
+ 'why2': ("<strong>Text or call ahead</strong> if you'd like to check how busy we are.",
+          "想知道店裡忙不忙，可以先<strong>傳簡訊或打電話</strong>問我們。"),
+ 'why3': ("<strong>No vaccine records needed</strong> for a walk-in nail trim. (Full grooms require Rabies, Bordetella and Distemper vaccines.)",
+          "walk-in 剪指甲<strong>不需要疫苗記錄</strong>。（完整美容需要狂犬病、犬舍咳和犬瘟熱疫苗。）"),
+ 'why4': ("<strong>Address:</strong> 1381 E Las Tunas Dr #11, San Gabriel, CA 91776.",
+          "<strong>地址：</strong>1381 E Las Tunas Dr #11, San Gabriel, CA 91776。"),
+ 'faq_h': ("Common questions", "常見問題"),
+ 'faq1_q': ("Do I need an appointment for a nail trim?", "剪指甲需要預約嗎？"),
+ 'faq1_a': ("No — walk-ins are welcome during opening hours. You can text or call ahead to check how busy we are.",
+            "不需要，營業時間內歡迎直接過來。也可以先傳簡訊或打電話問我們忙不忙。"),
+ 'faq2_q': ("How do I know my dog's nails are too long?", "怎麼知道狗狗的指甲太長了？"),
+ 'faq2_a': ("If you can hear the nails clicking on the floor, it's usually time for a trim.",
+            "如果狗狗走路時聽得到指甲敲地板的聲音，通常就該剪了。"),
+ 'route_h': ("", ""), 'route_p': ("", ""), 'route_btn': ("", ""),
+ 'also_h': ("We welcome dogs from", "我們歡迎來自這些城市的狗狗"),
+}
+
+def nail_body():
+    others = ''.join('<a href="/dog-grooming-%s" data-i18n="city_%s">%s</a>' % (s, s.replace('-', '_'), o['en']) for s, o in CITIES.items())
+    html = body_template(others)
+    html = re.sub(r'<section class="city-section">\s*<h2 data-i18n="route_h"></h2>.*?</section>\n', '', html, count=1, flags=re.S)
+    html = html.replace('href="https://book.kokonipets.com/book" class="btn-book cta-book" target="_blank" rel="noopener" data-i18n="cta_book"',
+                        'href="%s" class="cta-book" target="_blank" rel="noopener" data-i18n="cta_book"' % DIRECTIONS)
+    return html
+
 def fill_english(html, i18n):
     # put the English text into each data-i18n element so the page works without JS
     def rep(m):
@@ -206,15 +260,17 @@ base_i18n = json.loads(re.search(r'const I18N = (\{.*?\n\});', base, re.S).group
 start = base.index('<!-- ══════════════════════════════\n     WELCOME STRIP')
 end = base.index('<!-- ══════════════════════════════\n     INFO STRIP')
 
-for slug, c in CITIES.items():
-    url = 'https://www.kokonipets.com/dog-grooming-' + slug
-    texts = common(c)
+PAGES_OUT = [('dog-grooming-' + s, common(c), lambda s=s, c=c: body(s, c)) for s, c in CITIES.items()] + \
+            [('dog-nail-trimming', NAIL, nail_body)]
+
+for name, texts, make_body in PAGES_OUT:
+    url = 'https://www.kokonipets.com/' + name
     i18n = {k: v for k, v in base_i18n.items() if k.startswith(('nav_', 'footer_', 'info_', 'sister_'))}
     for k, (en, tw) in texts.items():
         i18n[k] = {'en': en, 'zh-TW': tw, 'zh-CN': S2.convert(tw)}
     for s, o in CITIES.items():
         i18n['city_' + s.replace('-', '_')] = {'en': o['en'], 'zh-TW': o['zh'] + ' ' + o['en'], 'zh-CN': S2.convert(o['zh']) + ' ' + o['en']}
-    h = base[:start] + body(slug, c) + base[end:]
+    h = base[:start] + make_body() + base[end:]
     h = h.replace('<a href="/contact" class="active" data-i18n="nav_contact">', '<a href="/contact" data-i18n="nav_contact">')
     title, desc = texts['meta_title'][0], texts['meta_description'][0]
     h = re.sub(r'<meta name="description" content="[^"]*"', '<meta name="description" content="%s"' % desc, h)
@@ -228,5 +284,5 @@ for slug, c in CITIES.items():
     h = h.replace('    </style>', CSS + '    </style>', 1)
     h = re.sub(r'const I18N = \{.*?\n\};', lambda m: 'const I18N = ' + json.dumps(i18n, ensure_ascii=False, indent=2) + ';', h, count=1, flags=re.S)
     h = fill_english(h, i18n)
-    open('dog-grooming-%s.html' % slug, 'w', encoding='utf-8').write(h)
-    print('wrote dog-grooming-%s.html' % slug)
+    open(name + '.html', 'w', encoding='utf-8').write(h)
+    print('wrote', name + '.html')

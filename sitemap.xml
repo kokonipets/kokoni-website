@@ -231,4 +231,25 @@
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.kokonipets.com/zh-cn/dog-grooming-temple-city" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kokonipets.com/dog-grooming-temple-city" />
   </url>
+  <url>
+    <loc>https://www.kokonipets.com/dog-nail-trimming</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kokonipets.com/dog-nail-trimming" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.kokonipets.com/zh-tw/dog-nail-trimming" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.kokonipets.com/zh-cn/dog-nail-trimming" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kokonipets.com/dog-nail-trimming" />
+  </url>
+  <url>
+    <loc>https://www.kokonipets.com/zh-tw/dog-nail-trimming</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kokonipets.com/dog-nail-trimming" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.kokonipets.com/zh-tw/dog-nail-trimming" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.kokonipets.com/zh-cn/dog-nail-trimming" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kokonipets.com/dog-nail-trimming" />
+  </url>
+  <url>
+    <loc>https://www.kokonipets.com/zh-cn/dog-nail-trimming</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kokonipets.com/dog-nail-trimming" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.kokonipets.com/zh-tw/dog-nail-trimming" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.kokonipets.com/zh-cn/dog-nail-trimming" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kokonipets.com/dog-nail-trimming" />
+  </url>
 </urlset>

@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 
 SITE = 'https://www.kokonipets.com'
 PAGES = ['index', 'meet-us', 'services', 'faq', 'contact', 'compare-styles'] + \
-        sorted(f[:-5] for f in glob.glob('dog-grooming-*.html'))
+        sorted(f[:-5] for f in glob.glob('dog-*.html'))
 LANGS = {'zh-TW': 'zh-tw', 'zh-CN': 'zh-cn'}
 HREFLANG = {'en': 'en', 'zh-TW': 'zh-Hant', 'zh-CN': 'zh-Hans'}
 
@@ -24,9 +24,9 @@ META = {
               '认识圣盖博 KOKONI 宠物沙龙的美容师团队。以温柔专业的手法照顾每只毛孩，重视它们的舒适与安全。')},
   'services': {
     'zh-TW': ('狗狗美容服務與價格 | KOKONI 寵物沙龍 | 聖蓋博 San Gabriel',
-              '查看聖蓋博 KOKONI 寵物沙龍的狗狗美容服務與價格：全套美容、洗澡修剪、幼犬初次美容等，歡迎線上預約。'),
+              '聖蓋博 KOKONI 寵物沙龍的狗狗美容服務與價格：洗澡、剪毛、韓系／日系精緻造型，以及免預約剪指甲。歡迎線上預約。'),
     'zh-CN': ('狗狗美容服务与价格 | KOKONI 宠物沙龙 | 圣盖博 San Gabriel',
-              '查看圣盖博 KOKONI 宠物沙龙的狗狗美容服务与价格：全套美容、洗澡修剪、幼犬初次美容等，欢迎在线预约。')},
+              '圣盖博 KOKONI 宠物沙龙的狗狗美容服务与价格：洗澡、剪毛、韩系／日系精致造型，以及免预约剪指甲。欢迎在线预约。')},
   'faq': {
     'zh-TW': ('常見問題 | KOKONI 寵物美容沙龍 | 聖蓋博 San Gabriel',
               'KOKONI 寵物美容常見問題：疫苗與安全、價格、預約方式，以及第一次來店須知。'),
@@ -38,10 +38,10 @@ META = {
     'zh-CN': ('联系我们与营业时间 | KOKONI 宠物美容沙龙 | 圣盖博 San Gabriel',
               '联系圣盖博 KOKONI 宠物美容沙龙：在线预约、导航或来电 (626) 621-4646。周一、周三至周五、周日营业（预约制）。')},
   'compare-styles': {
-    'zh-TW': ('日常造型 — 簡單可愛 | KOKONI 寵物美容 | 聖蓋博',
-              '聖蓋博 KOKONI 寵物美容的「簡單可愛」日常造型介紹，以及與亞洲風格造型的差別，幫您選出最適合愛犬的造型。'),
-    'zh-CN': ('日常造型 — 简单可爱 | KOKONI 宠物美容 | 圣盖博',
-              '圣盖博 KOKONI 宠物美容的“简单可爱”日常造型介绍，以及与亚洲风格造型的区别，帮您选出最适合爱犬的造型。')},
+    'zh-TW': ('日常造型 vs 精緻造型：韓系、日系狗狗美容 | KOKONI 寵物美容 | 聖蓋博',
+              '聖蓋博 KOKONI 寵物美容：簡單可愛的日常造型 vs 韓系、日系精緻造型（泰迪熊圓臉），幫您選出最適合愛犬毛質與個性的造型。'),
+    'zh-CN': ('日常造型 vs 精致造型：韩系、日系狗狗美容 | KOKONI 宠物美容 | 圣盖博',
+              '圣盖博 KOKONI 宠物美容：简单可爱的日常造型 vs 韩系、日系精致造型（泰迪熊圆脸），帮您选出最适合爱犬毛质与个性的造型。')},
 }
 
 def url(page, lang):
