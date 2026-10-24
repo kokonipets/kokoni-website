@@ -318,15 +318,15 @@ def nail_body():
 
 # ── Service page: Asian Fusion grooming ─────────────────────────────
 ASIAN = {
- 'meta_title': ("Asian Fusion Dog Grooming (Korean & Japanese-Style) | Kokoni, San Gabriel",
+ 'meta_title': ("Asian Fusion Dog Grooming & Teddy Bear Cuts (Korean & Japanese-Style) | Kokoni",
                 "韓系、日系精緻造型狗狗美容 | KOKONI 寵物沙龍（聖蓋博）"),
  'meta_description': ("Asian Fusion dog grooming in San Gabriel, also known as Japanese dog grooming or Korean-style grooming: round faces and teddy bear cuts, hand-scissored at Kokoni Pet Salon. From $110.",
                 "聖蓋博 KOKONI 寵物沙龍的精緻造型（Asian Fusion），也就是日系美容、韓系美容：圓臉與泰迪熊造型，手工剪裁。價格 $110 起。"),
  'city_h1': ("Asian Fusion Dog Grooming in San Gabriel", "聖蓋博 韓系、日系精緻造型狗狗美容"),
  'city_sub': ("Korean and Japanese-style round faces, fluffy coats and teddy bear cuts, shaped by hand at Kokoni Pet Salon.",
               "韓系、日系的圓臉、蓬鬆毛量和泰迪熊造型，在 KOKONI 寵物沙龍以手工剪裁完成。"),
- 'city_intro': ("Asian Fusion, also known as Japanese dog grooming or Korean-style dog grooming, is our most detailed style. Instead of clipping the body short, we leave the coat longer and shape it with scissors, so your dog ends up with a soft, round face, rounded ears and an even, fluffy body. It's the look many people know from Japanese grooming salons and Korean dog groomers.",
-                "精緻造型（Asian Fusion），也常被稱為日系狗狗美容或韓系美容，是我們最講究細節的造型。我們不把身體的毛剃短，而是保留較長的毛，用剪刀一點一點修出形狀，讓狗狗有柔和的圓臉、圓耳朵，以及均勻蓬鬆的身形。這就是很多人在韓國、日本寵物美容店看到的樣子。"),
+ 'city_intro': ("Asian Fusion, also known as Japanese dog grooming or Korean-style dog grooming, is our most detailed style. Instead of clipping the body short, we leave the coat longer and shape it with scissors, so your dog ends up with a soft, round face, rounded ears and an even, fluffy body. Many owners call it a teddy bear cut. It's the look many people know from Japanese grooming salons and Korean dog groomers.",
+                "精緻造型（Asian Fusion），也常被稱為日系狗狗美容或韓系美容，是我們最講究細節的造型。我們不把身體的毛剃短，而是保留較長的毛，用剪刀一點一點修出形狀，讓狗狗有柔和的圓臉、圓耳朵，以及均勻蓬鬆的身形，很多主人稱它為「泰迪熊造型」。這就是很多人在韓國、日本寵物美容店看到的樣子。"),
  'cta_book': ("Book an appointment", "立即預約"),
  'cta_call': ("Text or call (626) 621-4646", "簡訊或來電 (626) 621-4646"),
  'route_h': ("How we create the look", "我們怎麼做出這個造型"),
