@@ -7,4 +7,4 @@ Static site, hosted on Vercel (project: kokoni-website).
   After changing an English page or its I18N translations, run `python3 build.py`
   (needs `pip install beautifulsoup4`), then commit and push.
 - Push to main = live site updates automatically.
-- Connected to GitHub (kokonipets/kokoni-website) on Oct 24, 2026.
+- Connected to GitHub (kokonipets/kokoni-website, public) on Oct 24, 2026.
