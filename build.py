@@ -6,11 +6,12 @@ translations, then run:  python3 build.py
 It rewrites zh-tw/*.html, zh-cn/*.html, the hreflang tags on every page,
 and sitemap.xml. Needs: pip install beautifulsoup4
 """
-import re, json, os
+import re, json, os, glob
 from bs4 import BeautifulSoup
 
 SITE = 'https://www.kokonipets.com'
-PAGES = ['index', 'meet-us', 'services', 'faq', 'contact', 'compare-styles']
+PAGES = ['index', 'meet-us', 'services', 'faq', 'contact', 'compare-styles'] + \
+        sorted(f[:-5] for f in glob.glob('dog-grooming-*.html'))
 LANGS = {'zh-TW': 'zh-tw', 'zh-CN': 'zh-cn'}
 HREFLANG = {'en': 'en', 'zh-TW': 'zh-Hant', 'zh-CN': 'zh-Hans'}
 
