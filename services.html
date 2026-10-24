@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO -->
+  <meta name="description" content="View grooming services and pricing at Kokoni Pet Salon in San Gabriel, CA. Full groom, bath & trim, puppy intro & more. Book online today." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.kokonipets.com/services" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.kokonipets.com/services" />
+  <meta property="og:title" content="Dog Grooming Services & Pricing | Kokoni Pet Salon | San Gabriel, CA" />
+  <meta property="og:description" content="View grooming services and pricing at Kokoni Pet Salon in San Gabriel, CA. Full groom, bath & trim, puppy intro & more. Book online today." />
+  <meta property="og:image" content="https://static.wixstatic.com/media/c32927_c493a48236284f33886b8fc8ee259782~mv2.jpg" />
+  <meta property="og:site_name" content="Kokoni Pet Grooming Salon" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dog Grooming Services & Pricing | Kokoni Pet Salon | San Gabriel, CA" />
+  <meta name="twitter:description" content="View grooming services and pricing at Kokoni Pet Salon in San Gabriel, CA. Full groom, bath & trim, puppy intro & more. Book online today." />
+  <meta name="twitter:image" content="https://static.wixstatic.com/media/c32927_c493a48236284f33886b8fc8ee259782~mv2.jpg" />
+  <title>Dog Grooming Services & Pricing | Kokoni Pet Salon | San Gabriel, CA</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Wix+Madefor+Display:wght@400;500;600;700;800&family=Wix+Madefor+Text:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Corben:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      overflow-x: hidden; font-family: 'Wix Madefor Text', sans-serif; background: #fff; color: #2c2c2c; }
+
+    /* ══════════════════════════════
+       HEADER / NAV
+    ══════════════════════════════ */
+    header {
+      background: #fff;
+      text-align: center;
+      padding: 20px 40px 0;
+      position: sticky;
+      position: -webkit-sticky;
+      top: 0;
+      z-index: 200;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+    }
+    .logo-wrap { margin-bottom: 2px; }
+    .logo-img { height: 80px; width: auto; display: block; margin: 0 auto; }
+    nav { display: flex; align-items: center; justify-content: space-between; padding: 8px 0 10px; }
+    .nav-spacer { flex: 1; }
+    .nav-links { flex: 0 0 auto; display: flex; gap: 48px; list-style: none; }
+    .nav-links a {
+      text-decoration: none; color: #333; font-size: 0.92rem; font-weight: 600;
+      letter-spacing: 0.02em; padding-bottom: 2px;
+      border-bottom: 2px solid transparent; transition: color 0.2s, border-color 0.2s;
+    }
+    .nav-links a:hover { color: #46BFBF; }
+    .nav-links a.active { border-bottom-color: #46BFBF; color: #333; }
+    .nav-right { flex: 1; display: flex; flex-direction: row; align-items: center; justify-content: flex-end; gap: 16px; }
+    .btn-book { background: #F07840; color: #fff; padding: 10px 26px; border-radius: 30px; font-size: 0.9rem; font-weight: 800; text-decoration: none; display: inline-block; transition: opacity 0.2s; }
+    .btn-book:hover { opacity: 0.85; }
+    .nav-phone { font-size: 0.88rem; color: #777; line-height: 1.4; text-align: left; }
+    .nav-phone a { color: #46BFBF; text-decoration: none; font-weight: 700; font-size: 0.95rem; }
+
+    /* ══════════════════════════════
+       SERVICES HERO
+    ══════════════════════════════ */
+    .services-hero {
+      background: #CBDCE9;
+      text-align: center;
+      padding: 64px 40px 56px;
+    }
+    .services-hero h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 3rem;
+      font-weight: 800;
+      color: #1C4F95;
+      margin-bottom: 16px;
+    }
+    .services-hero p {
+      font-size: 1.05rem;
+      color: #1C4F95;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.75;
+    }
+
+    /* ══════════════════════════════
+       SERVICE CARDS GRID
+    ══════════════════════════════ */
+    .service-cards-section {
+      padding: 40px 48px;
+      background: #fff;
+    }
+    .service-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      background: #fff;
+    }
+    .service-card {
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+    }
+    .card-photo {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      display: block;
+      border-radius: 0;
+    }
+    /* Photo placeholders — user can swap with <img> */
+    .card-photo-placeholder {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      border-radius: 0;
+    }
+    /* Text content below each photo */
+    .card-body {
+      padding: 20px 4px 32px;
+      flex: 1;
+    }
+    .service-card h3 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.18rem;
+      font-weight: 800;
+      color: #2c2c2c;
+      margin-bottom: 4px;
+    }
+    .card-subtitle {
+      color: #46BFBF;
+      font-size: 0.97rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .service-card ul {
+      list-style: disc;
+      padding-left: 20px;
+      font-size: 0.9rem;
+      color: #444;
+      line-height: 1.85;
+      margin-bottom: 14px;
+    }
+    .card-note {
+      font-size: 0.84rem;
+      color: #777;
+      font-style: italic;
+      margin-bottom: 14px;
+      line-height: 1.65;
+    }
+    .card-desc {
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.75;
+      margin-bottom: 10px;
+    }
+    .card-compare {
+      font-size: 0.88rem;
+      color: #1C4F95;
+      text-decoration: underline;
+      margin-bottom: 12px;
+      display: block;
+      cursor: pointer;
+    }
+    .btn-see-price {
+      background: #FFE58B;
+      color: #5a4a00;
+      padding: 11px 32px;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-block;
+      transition: opacity 0.2s;
+      margin-top: auto;
+      align-self: flex-start;
+    }
+    .btn-see-price:hover { opacity: 0.85; }
+
+    /* ══════════════════════════════
+       REQUIREMENTS
+    ══════════════════════════════ */
+    .requirements-section {
+      background: #D8EBFD;
+      text-align: center;
+      padding: 60px 80px;
+    }
+    .req-label {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: #46BFBF;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+    .requirements-section h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: #2c2c2c;
+      max-width: 680px;
+      margin: 0 auto 28px;
+      line-height: 1.45;
+    }
+    .req-why-title {
+      color: #EF9A6F;
+      font-weight: 800;
+      font-size: 1.05rem;
+      margin-bottom: 10px;
+    }
+    .req-why-text {
+      font-size: 0.95rem;
+      color: #3a3a3a;
+      max-width: 640px;
+      margin: 0 auto 32px;
+      line-height: 1.8;
+    }
+    .req-buttons { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+    .btn-req-book {
+      background: #EF9A6F;
+      color: #fff;
+      padding: 12px 40px;
+      border-radius: 30px;
+      font-size: 0.95rem;
+      font-weight: 800;
+      text-decoration: none;
+      display: inline-block;
+      transition: opacity 0.2s;
+    }
+    .btn-req-book:hover { opacity: 0.85; }
+    .btn-req-faq {
+      background: #FFE58B;
+      color: #5a4a00;
+      padding: 12px 40px;
+      border-radius: 30px;
+      font-size: 0.95rem;
+      font-weight: 800;
+      text-decoration: none;
+      display: inline-block;
+      transition: opacity 0.2s;
+    }
+    .btn-req-faq:hover { opacity: 0.85; }
+
+    /* ══════════════════════════════
+       ABOUT SECTION (salmon)
+    ══════════════════════════════ */
+    .about-section {
+      background: #F0B49A;
+      padding: 60px 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+    }
+    .about-img-wrap {
+      margin-bottom: 36px;
+    }
+    .about-img-circle {
+      width: 220px;
+      height: 280px;
+      border-radius: 0;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+      background: #E89070;
+    }
+    .about-content {
+      max-width: 760px;
+      width: 100%;
+    }
+    .about-content h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 12px;
+      margin-top: 0;
+    }
+    .about-content h2 + h2 { margin-top: 32px; }
+    .about-content p {
+      font-size: 0.92rem;
+      color: #fff;
+      line-height: 1.85;
+      margin-bottom: 14px;
+    }
+
+    /* ══════════════════════════════
+       PRICING TABLES
+    ══════════════════════════════ */
+    .pricing-section {
+      background: #fff;
+      padding: 60px 80px 48px;
+      text-align: center;
+    }
+    .pricing-section h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #2c2c2c;
+      margin-bottom: 18px;
+    }
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0 auto 14px;
+      max-width: 760px;
+    }
+    .pricing-table th {
+      background: #FFE58B;
+      color: #5a4a00;
+      font-weight: 700;
+      font-size: 0.88rem;
+      padding: 12px 16px;
+      text-align: center;
+      border: 1px solid #E6CE70;
+    }
+    .pricing-table th:first-child { text-align: left; }
+    .pricing-table td {
+      padding: 11px 16px;
+      text-align: center;
+      font-size: 0.92rem;
+      border: 1px solid #E8D88A;
+    }
+    .pricing-table tr:nth-child(odd) td { background: #fff; }
+    .pricing-table tr:nth-child(even) td { background: #FFF9E4; }
+    .pricing-table td:first-child { font-weight: 600; text-align: left; }
+    .pricing-note {
+      font-size: 0.82rem;
+      color: #777;
+      line-height: 1.75;
+      margin: 0 auto 44px;
+      max-width: 760px;
+      text-align: left;
+    }
+
+    /* ══════════════════════════════
+       ADD-ONS + A LA CARTE + TOP DOG
+    ══════════════════════════════ */
+    .addons-section {
+      background: #fff;
+      padding: 0 80px 64px;
+    }
+    .addons-divider {
+      border: none;
+      border-top: 1px solid #eee;
+      margin-bottom: 44px;
+    }
+    .addons-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 52px;
+    }
+    .addon-col h3,
+    .topdog-col h3 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.08rem;
+      font-weight: 800;
+      color: #46BFBF;
+      margin-bottom: 4px;
+    }
+    .addon-sub {
+      font-size: 0.82rem;
+      color: #999;
+      font-style: italic;
+      margin-bottom: 14px;
+    }
+    .addon-col ul {
+      list-style: disc;
+      padding-left: 20px;
+      font-size: 0.89rem;
+      color: #444;
+      line-height: 1.95;
+    }
+    .topdog-note {
+      font-size: 0.82rem;
+      color: #999;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+    .topdog-desc {
+      font-size: 0.9rem;
+      color: #444;
+      line-height: 1.75;
+      margin-bottom: 10px;
+    }
+    .topdog-price {
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: #444;
+      margin-bottom: 14px;
+    }
+    .topdog-col ul {
+      list-style: disc;
+      padding-left: 20px;
+      font-size: 0.89rem;
+      color: #444;
+      line-height: 1.95;
+    }
+
+    /* ══════════════════════════════
+       CTA SECTION
+    ══════════════════════════════ */
+    .cta-section {
+      background: #D8EBFD;
+      text-align: center;
+      padding: 60px 80px;
+    }
+    .cta-section p {
+      font-size: 0.98rem;
+      color: #2c2c2c;
+      max-width: 700px;
+      margin: 0 auto 28px;
+      line-height: 1.8;
+    }
+    .btn-ask {
+      background: #1A6AFF;
+      color: #fff;
+      padding: 13px 44px;
+      border-radius: 30px;
+      font-size: 0.95rem;
+      font-weight: 800;
+      text-decoration: none;
+      display: inline-block;
+      transition: opacity 0.2s;
+    }
+    .btn-ask:hover { opacity: 0.85; }
+
+    /* ══════════════════════════════
+       FOOTER
+    ══════════════════════════════ */
+    footer {
+      background: #9C8416;
+      padding: 52px 80px 36px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      position: relative;
+    }
+    .footer-brand h2 {
+      font-family: 'DM Serif Display', serif;
+      font-weight: 800;
+      font-size: 3.2rem;
+      color: #fff;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .footer-brand p {
+      font-family: 'DM Serif Display', serif;
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.8);
+      letter-spacing: 0.08em;
+    }
+    .footer-contact { text-align: right; }
+    .footer-contact p { font-size: 0.88rem; color: rgba(255,255,255,0.85); margin-bottom: 4px; line-height: 1.6; }
+    .footer-contact a { color: rgba(255,255,255,0.85); text-decoration: none; }
+    .footer-contact a:hover { text-decoration: underline; }
+    .footer-nav { display: flex; gap: 24px; list-style: none; flex-wrap: wrap; margin-top: 0; align-items: center; }
+    .footer-nav a { color: rgba(255,255,255,0.7); font-size: 0.82rem; text-decoration: none; }
+    .footer-nav a:hover { color: #fff; }
+    .footer-copyright { font-size: 0.78rem; color: rgba(255,255,255,0.5); margin-left: auto; }
+
+    /* ══════════════════════════════
+       RESPONSIVE
+    ══════════════════════════════ */
+    @media (max-width: 960px) {
+      header { padding: 14px 20px 0; }
+      .logo-img { height: 56px; }
+      .nav-links { gap: 20px; }
+      nav { flex-wrap: wrap; gap: 8px; }
+      .nav-right { position: static; flex-direction: row; justify-content: center; margin-top: 6px; }
+      .services-hero { padding: 44px 24px; }
+      .services-hero h1 { font-size: 2.2rem; }
+      .service-cards-grid { grid-template-columns: 1fr; }
+      .card-body { padding: 20px 20px 28px; }
+      .requirements-section { padding: 44px 24px; }
+      .about-section { flex-direction: column; padding: 40px 24px; gap: 28px; }
+      .about-img-wrap { flex: none; }
+      .pricing-section { padding: 44px 24px 36px; }
+      .addons-section { padding: 0 24px 48px; }
+      .addons-grid { grid-template-columns: 1fr; gap: 36px; }
+      .cta-section { padding: 44px 24px; }
+      footer { flex-direction: column; gap: 28px; padding: 40px 24px 52px; }
+      .footer-contact { text-align: left; }
+    }
+    @media (max-width: 600px) {
+      .services-hero h1 { font-size: 1.8rem; }
+      .nav-links { gap: 14px; font-size: 0.82rem; }
+    }
+
+    /* ── Language Switcher ── */
+    .lang-switcher {
+      position: absolute;
+      top: 22px;
+      right: 40px;
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      z-index: 210;
+    }
+    .lang-btn {
+      background:none; border:none; cursor:pointer; color:#999;
+      font-size:1rem; font-weight:700; padding:2px 6px;
+      border-radius:3px; transition:color 0.2s; font-family:inherit;
+      letter-spacing:0.02em;
+    }
+    .lang-btn:hover { color:#46BFBF; }
+    .lang-btn.lang-active { color:#1C4F95; }
+    .lang-sep { color:#ddd; font-size:0.72rem; user-select:none; }
+
+    .table-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin-bottom: 20px;
+    }
+
+    /* ── Mobile Menu Button (hidden on desktop) ── */
+    .mobile-menu-btn { display: none; }
+    .mobile-menu-panel { display: none; }
+
+    @media (max-width: 768px) {
+      /* ── Header ── */
+      header { padding: 8px 12px 6px; position: relative; }
+      .logo-img { height: 75px; margin: 0 auto; }
+      .logo-wrap { padding-top: 22px; }
+      .lang-switcher { display: flex; position: absolute; top: 8px; right: 12px; justify-content: flex-end; margin: 0; }
+      .lang-btn { font-size: 0.72rem; padding: 2px 4px; }
+      .lang-sep { font-size: 0.65rem; }
+      .nav-spacer { display: none; }
+      nav { display: flex; flex-direction: row; align-items: center; justify-content: space-between; gap: 6px; padding: 8px 0 4px; flex-wrap: nowrap; width: 100%; }
+      .nav-links { display: none; }
+      .nav-right { position: static; flex-direction: row; align-items: center; gap: 8px; margin-top: 0; width: auto; }
+      .btn-book { width: auto; text-align: center; padding: 14px 22px; font-size: 1.05rem; font-weight: 800; border-radius: 6px; white-space: nowrap; flex-shrink: 0; }
+      .nav-phone { font-size: 0.88rem; text-align: left; white-space: nowrap; line-height: 1.4; }
+
+      /* ── Mobile Menu Button ── */
+      .mobile-menu-btn {
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        border: 2px solid #1C4F95; color: #1C4F95; font-size: 0.85rem; font-weight: 800;
+        letter-spacing: 0.08em; width: 62px; height: 62px; cursor: pointer;
+        background: white; flex-shrink: 0; line-height: 1.2; user-select: none;
+      }
+
+      /* ── Mobile Menu Panel ── */
+      .mobile-menu-panel {
+        display: none; flex-direction: column; background: #EDF6FB;
+        border-top: 2px solid #1C4F95; padding: 8px 0;
+        position: absolute; top: 100%; left: 0; width: 100%;
+        z-index: 300; box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+      }
+      .mobile-menu-panel.open { display: flex; }
+      .mobile-menu-panel a {
+        padding: 14px 28px; font-size: 1rem; font-weight: 700;
+        color: #1C4F95; text-decoration: none;
+        border-bottom: 1px solid #b3d9ee; letter-spacing: 0.02em;
+      }
+      .mobile-menu-panel a:last-child { border-bottom: none; }
+      .mobile-menu-panel a:hover { background: #D6EEF8; }
+
+      /* ── Pricing Tables — fit on screen ── */
+      .pricing-section { padding: 32px 16px 28px; }
+      .pricing-table { width: 100%; }
+      .pricing-table th {
+        font-size: 0.72rem;
+        padding: 8px 6px;
+        line-height: 1.3;
+      }
+      .pricing-table td {
+        font-size: 0.8rem;
+        padding: 8px 6px;
+      }
+      .pricing-note { font-size: 0.76rem; }
+
+      /* ── Footer ── */
+      footer { flex-direction: column; gap: 24px; padding: 32px 20px 48px; }
+      .footer-contact { text-align: center; }
+      .footer-brand { text-align: center; width: 100%; }
+      .footer-nav { justify-content: center; flex-wrap: nowrap; gap: 10px; }
+      .footer-nav a { font-size: 0.74rem; }
+      .footer-copyright { font-size: 0.72rem; text-align: center; }
+    }
+    </style>
+  <!--hreflang-->
+  <link rel="alternate" hreflang="en" href="https://www.kokonipets.com/services" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://www.kokonipets.com/zh-tw/services" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://www.kokonipets.com/zh-cn/services" />
+  <link rel="alternate" hreflang="x-default" href="https://www.kokonipets.com/services" />
+  <!--/hreflang-->
+</head>
+<body>
+
+<!-- ══════════════════════════════
+     HEADER
+══════════════════════════════ -->
+<header>
+  <div class="logo-wrap">
+    <a href="/"><img class="logo-img"
+      src="https://static.wixstatic.com/media/c32927_c493a48236284f33886b8fc8ee259782~mv2.jpg"
+      alt="Kokoni Pet Grooming Salon" /></a>
+  </div>
+  <nav>
+    <div class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">ME<br>NU</div>
+
+    <div class="nav-spacer"></div>
+    <ul class="nav-links">
+      <li><a href="/" data-i18n="nav_home">Home</a></li>
+      <li><a href="/meet-us" data-i18n="nav_meet">Meet Us</a></li>
+      <li><a href="/services" class="active" data-i18n="nav_services">Services</a></li>
+      <li><a href="/faq" data-i18n="nav_faq">FAQ</a></li>
+      <li><a href="/contact" data-i18n="nav_contact">Contact Us</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="https://book.kokonipets.com/book" class="btn-book" target="_blank" rel="noopener" data-i18n="nav_book">Book Now</a>
+      <div class="nav-phone">
+        <span data-i18n="nav_phone_label">Text or Call</span><br/><a href="tel:6266214646">(626)621-4646</a>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-menu-panel" id="mobileMenuPanel">
+    <a href="/" data-i18n="nav_home">Home</a>
+    <a href="/meet-us" data-i18n="nav_meet">Meet Us</a>
+    <a href="/services" data-i18n="nav_services">Services</a>
+    <a href="/faq" data-i18n="nav_faq">FAQ</a>
+    <a href="/contact" data-i18n="nav_contact">Contact Us</a>
+  </div>
+
+  <div class="lang-switcher">
+    <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+    <span class="lang-sep">|</span>
+    <button class="lang-btn" data-lang="zh-TW" onclick="setLang('zh-TW')">繁中</button>
+    <span class="lang-sep">|</span>
+    <button class="lang-btn" data-lang="zh-CN" onclick="setLang('zh-CN')">简中</button>
+  </div>
+</header>
+
+<!-- ══════════════════════════════
+     SERVICES HERO
+══════════════════════════════ -->
+<section class="services-hero">
+  <h1 data-i18n="services_h1">Dog Grooming Services in San Gabriel</h1>
+  <p data-i18n="services_hero_p">Full-service grooming for every coat and personality — bath, brushing, haircuts, and more, all tailored to your pet's comfort.</p>
+</section>
+
+<!-- ══════════════════════════════
+     SERVICE CARDS
+══════════════════════════════ -->
+<section class="service-cards-section">
+  <div class="service-cards-grid">
+
+    <!-- Bath & Brushing -->
+    <div class="service-card">
+      <img class="card-photo" src="bath-brushing.avif" alt="Westie dog wrapped in a towel after bath — Bath & Brushing service at Kokoni" />
+      <div class="card-body">
+        <h3 data-i18n="svc_brush_h3">Bath &amp; Brushing</h3>
+        <ul>
+          <li data-i18n="li_nail_trim">Nail trim</li>
+          <li data-i18n="li_ear_clean">Ear cleaning (no plucking)</li>
+          <li data-i18n="li_teeth">Teeth brushing</li>
+          <li data-i18n="li_gland">Gland expression (only by request)</li>
+          <li data-i18n="li_shampoo">Shampoo &amp; conditioner</li>
+          <li data-i18n="li_blowdry">Hand dry &amp; blow out</li>
+          <li data-i18n="li_sani">Sani &amp; pads</li>
+        </ul>
+        <p class="card-note" data-i18n="card_note_bb">Certain breeds with undercoat is recommended to add de-shedding with the service for best bath results (husky, samoyed, malamutes, american eskimo, australian shep, pomeranian, etc).</p>
+        <a href="#pricing" class="btn-see-price">See Price</a>
+      </div>
+    </div>
+
+    <!-- Bath & Haircut — Simply Cute -->
+    <div class="service-card">
+      <img class="card-photo" src="bath-haircut.avif" alt="Dog getting a haircut with scissors at Kokoni Pet Grooming Salon" />
+      <div class="card-body">
+        <h3 data-i18n="svc_haircut_sc_h3">Bath &amp; Haircut</h3>
+        <p class="card-subtitle" data-i18n="svc_sc_sub">Simply Cute Everyday Style</p>
+        <ul>
+          <li>Nail trim</li>
+          <li>Ear cleaning (no plucking)</li>
+          <li>Teeth brushing</li>
+          <li>Gland expression (only by request)</li>
+          <li>Shampoo &amp; conditioner</li>
+          <li>Hand dry &amp; blow out</li>
+          <li data-i18n="li_short_body">Short Body Hair Length (#5 Blade, #7 Blade)</li>
+        </ul>
+        <p class="card-desc" data-i18n="card_desc_sc">A shorter, easy-maintenance cut keeps your dog fresh and tidy without daily brushing. Regular visits prevent mats and keep grooming stress-free — all while staying budget-friendly. With Simply Cute, your dog stays safe, healthy, clean, and simply cute.</p>
+        <a href="/compare-styles" class="card-compare" data-i18n="svc_compare_af">How is this different from Asian Fusion?</a>
+        <p class="card-note" data-i18n="card_note_doodle">* See separate Doodle pricing — their coat requires extra time and care.</p>
+        <a href="#pricing" class="btn-see-price">See Price</a>
+      </div>
+    </div>
+
+    <!-- Bath & Haircut — Asian Fusion -->
+    <div class="service-card">
+      <img class="card-photo" src="bath-haircut-asian-fusion.avif" alt="Dog with Asian Fusion style grooming at Kokoni Pet Grooming Salon" />
+      <div class="card-body">
+        <h3 data-i18n="svc_haircut_af_h3">Bath &amp; Haircut</h3>
+        <p class="card-subtitle" data-i18n="svc_af_sub">Asian Fusion Style</p>
+        <ul>
+          <li>Nail trim</li>
+          <li>Ear cleaning (no plucking)</li>
+          <li>Teeth brushing</li>
+          <li data-i18n="li_hydra">Hydra Luxury Shampoo &amp; Conditioner</li>
+          <li>Gland expression (only by request)</li>
+          <li>Hand dry &amp; blow out</li>
+          <li data-i18n="li_af_style">Asian-fusion style grooming — uses longer body hair and skilled hand scissoring to create a rounded, stylized look</li>
+        </ul>
+        <p class="card-desc" data-i18n="card_desc_af">Asian Fusion grooming creates a cute, rounded, stylish look — but it takes longer and requires more upkeep to maintain the shape. Not all dogs are suitable for this style. For first-time appointments, please check with us.</p>
+        <a href="/compare-styles" class="card-compare" data-i18n="svc_compare_sc">How is this different from Simply Cute Style?</a>
+        <p class="card-note">* See separate Doodle pricing — their coat requires extra time and care.</p>
+        <a href="#pricing" class="btn-see-price">See Price</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     REQUIREMENTS
+══════════════════════════════ -->
+<section class="requirements-section">
+  <p class="req-label" data-i18n="req_label">Requirements</p>
+  <h2 data-i18n="req_h2">Rabies, Bordetella &amp; Distemper Vaccines are required to make an appointment with us.</h2>
+  <p class="req-why-title" data-i18n="req_why">Why?</p>
+  <p class="req-why-text" data-i18n="req_why_p">Think of it like a school or daycare — you wouldn't want your child playing around others who might be sick. Since grooming is a social, communal space, these vaccines act as a "health shield." They ensure that every pet staying with us is protected, preventing your furry friend from catching or spreading contagious illnesses while they get pampered.</p>
+  <div class="req-buttons">
+    <a href="tel:6266214646" class="btn-req-book" data-i18n="nav_book">Book Now</a>
+    <a href="/faq" class="btn-req-faq" data-i18n="nav_faq">FAQ</a>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     ABOUT (salmon section)
+══════════════════════════════ -->
+<section class="about-section">
+  <div class="about-img-wrap">
+    <img class="about-img-circle" src="pomeranian-about.avif" alt="Smiling Pomeranian getting a haircut at Kokoni Pet Grooming Salon" />
+  </div>
+  <div class="about-content">
+    <h2 data-i18n="bath_title">About bath &amp; blow out</h2>
+    <p data-i18n="bath_p">A great haircut must come from a good bath and blow out. We do hand-dry and straight out the coat, make all the hair become clean and fluff. That way, we can create a perfect round muzzle, round face.</p>
+
+    <h2 data-i18n="demat_title">About De-matting &amp; De-shedding</h2>
+    <p data-i18n="demat_p1">Tangled hair is very common in dogs, especially dogs with long and thick hair. The way to treat it without shaving all the hair is De-matting. Price depends on time and hair conditions. De-shedding is common on double coat dogs like German shepherd, Husky, Chow chow, Samoyed, etc. We will notify you if your pet needs De-shedding added.</p>
+    <p data-i18n="demat_p2">We may have to add de-shedding to certain breeds with undercoats for us to provide the best and even haircuts. Breeds like American eskimo, Australian shep, Pomeranian, Golden retrievers, etc. We will notify you if your pet needs de-shedding.</p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     PRICING
+══════════════════════════════ -->
+<section class="pricing-section" id="pricing">
+
+  <h2 data-i18n="price_bb_h2">Bath and Brush</h2>
+  <div class="table-wrap"><table class="pricing-table">
+    <thead>
+      <tr>
+        <th data-i18n="th_size">Size</th>
+        <th data-i18n="th_smooth">Smooth Coat</th>
+        <th data-i18n="th_long">Long Coat</th>
+        <th data-i18n="th_doodle">Poodle / Doodle / Double Coat</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Up to 15 lbs</td><td>$50</td><td>$60</td><td>$70</td></tr>
+      <tr><td>16 – 30 lbs</td><td>$60</td><td>$75</td><td>$85</td></tr>
+      <tr><td>31 – 50 lbs</td><td>$70</td><td>$85</td><td>$100</td></tr>
+      <tr><td>51 – 70 lbs</td><td>$80</td><td>$95</td><td>$120</td></tr>
+    </tbody>
+  </table></div>
+  <p class="pricing-note" data-i18n="price_note_bb">
+    * Please keep in mind that these pricing are just a quote. Depending on the size, fur length, and styling requested, pricing can always change.<br/>
+    * Smooth coat (Chihuahua, pug, Frenchie bull dog, etc)<br/>
+    * Double coat (Pomeranian, Corgi, Golden retriever, Huskies, etc)
+  </p>
+
+  <h2 data-i18n="price_bh_h2">Bath and Haircut</h2>
+  <div class="table-wrap"><table class="pricing-table">
+    <thead>
+      <tr>
+        <th data-i18n="th_size">Size</th>
+        <th data-i18n="th_simply">Simply Cute</th>
+        <th data-i18n="th_af">Asian Fusion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Up to 15 lbs</td><td>$70</td><td>$110</td></tr>
+      <tr><td>16 – 30 lbs</td><td>$90</td><td>$130</td></tr>
+      <tr><td>31 – 50 lbs</td><td>$100</td><td>$190</td></tr>
+      <tr><td>51 – 70 lbs</td><td>$120</td><td>$240</td></tr>
+    </tbody>
+  </table></div>
+  <p class="pricing-note" data-i18n="price_note_bh">
+    * Please keep in mind that these pricing are just a quote. Depending on the size, fur length, and styling requested, pricing can always change.<br/>
+    * For dogs over 70 lbs, please inquire with us.
+  </p>
+
+  <h2 data-i18n="price_dbh_h2">Doodle Bath and Haircut</h2>
+  <div class="table-wrap"><table class="pricing-table">
+    <thead>
+      <tr>
+        <th data-i18n="th_size">Size</th>
+        <th data-i18n="th_sc">Simply Cute</th>
+        <th data-i18n="th_af2">Asian Fusion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Up to 15 lbs</td><td>$100</td><td>$130</td></tr>
+      <tr><td>16 – 30 lbs</td><td>$120</td><td>$170</td></tr>
+      <tr><td>31 – 50 lbs</td><td>$140</td><td>$240</td></tr>
+      <tr><td>51 – 70 lbs</td><td>$170</td><td>$290</td></tr>
+    </tbody>
+  </table></div>
+  <p class="pricing-note" data-i18n="price_note_dbh">
+    * Please keep in mind that these pricing are just a quote. Depending on the size, fur length, and styling requested, pricing can always change.<br/>
+    * For dogs over 70 lbs, please inquire with us.
+  </p>
+
+</section>
+
+<!-- ══════════════════════════════
+     ADD-ONS + A LA CARTE + TOP DOG
+══════════════════════════════ -->
+<section class="addons-section">
+  <hr class="addons-divider"/>
+  <div class="addons-grid">
+
+    <!-- Add on Services -->
+    <div class="addon-col">
+      <h3 data-i18n="svc_addon_h3">Add on Services</h3>
+      <p class="addon-sub" data-i18n="svc_addon_sub">(Must be added on packages above)</p>
+      <ul>
+        <li data-i18n="li_partial_trim">Partial Trim + $10 ~ $30</li>
+        <li data-i18n="li_flea">Flea &amp; Tick Shampoo + $15 / $25 (If we find flea on dog, this will automatically be added)</li>
+        <li data-i18n="li_demat">De-matting / Extra Brushing + $20 / $40 / $60</li>
+        <li data-i18n="li_deshed">De-shedding service + $15 / $20 / $30</li>
+        <li data-i18n="li_handstrip">Hand-stripping + $20 / $40</li>
+        <li data-i18n="li_handling">Extra Handling Fee + $20 (added when we need an assistant for biter, hard to groom, or for older dogs)</li>
+        <li data-i18n="li_rush">Rush Service / Straight-Thru Service (first appointment only and only upon availability)</li>
+        <li data-i18n="li_dye">Hair Dye starting $30 per area ($15–$25 per additional area / Entire body $150 &amp; up)</li>
+      </ul>
+    </div>
+
+    <!-- A la Carte -->
+    <div class="addon-col">
+      <h3 data-i18n="svc_alacarte_h3">A la Carte Service</h3>
+      <p class="addon-sub" data-i18n="svc_alacarte_sub">(no grooming service needed)</p>
+      <ul>
+        <li data-i18n="li_nail_price">Nail trimming $15</li>
+        <li data-i18n="li_gland_price">Gland Expression (external) $15</li>
+        <li data-i18n="li_pads_price">Pads Trim $10</li>
+        <li data-i18n="li_teeth_price">Teeth Brush $10</li>
+        <li data-i18n="li_ear_price">Ear Cleaning $10</li>
+      </ul>
+    </div>
+
+    <!-- Top Dog -->
+    <div class="topdog-col">
+      <h3 data-i18n="svc_topdog_h3">Top Dog</h3>
+      <p class="topdog-note" data-i18n="svc_topdog_note">(no bath, no hair cut)</p>
+      <p class="topdog-desc" data-i18n="svc_topdog_desc">For a pooch who doesn't need a bath or haircut. This appointment will only take about 10 minutes.</p>
+      <p class="topdog-price">$30</p>
+      <ul>
+        <li data-i18n="li_nail_td">Nail trimming</li>
+        <li data-i18n="li_gland_td">Gland Expression</li>
+        <li data-i18n="li_teeth_td">Teeth Brush</li>
+        <li data-i18n="li_ear_td">Ear Cleaning</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     CTA
+══════════════════════════════ -->
+<section class="cta-section">
+  <p data-i18n="area_p">KOKONI Pet Salon is proudly located in San Gabriel, serving pet families throughout San Gabriel, Alhambra, San Marino, Temple City, Rosemead, Arcadia, Monterey Park, Pasadena, and nearby communities. If you have any questions about your pet's grooming needs, we're here to help.</p>
+  <a href="mailto:kokonipets@gmail.com" class="btn-ask" data-i18n="btn_ask">Ask Us a Question</a>
+</section>
+
+<!-- ══════════════════════════════
+     FOOTER
+══════════════════════════════ -->
+<footer>
+  <div class="footer-brand">
+    <img src="kokoni_logo-White_clear.png" alt="Kokoni" style="height:65px;width:auto;display:block;margin-bottom:4px;mix-blend-mode:screen;" />
+    <p data-i18n="footer_tagline">Pets Grooming Salon</p>
+    <br/>
+    <ul class="footer-nav">
+      <li><a href="/" data-i18n="nav_home">Home</a></li>
+      <li><a href="/meet-us" data-i18n="nav_meet">Meet Us</a></li>
+      <li><a href="/services" data-i18n="nav_services">Services</a></li>
+      <li><a href="/faq" data-i18n="nav_faq">FAQ</a></li>
+      <li><a href="/contact" data-i18n="nav_contact">Contact Us</a></li>
+      <li class="footer-copyright">© 2026 by Kokoni pets</li>
+    </ul>
+  </div>
+  <div class="footer-contact">
+    <p>1381 E Las Tunas Dr #11 San Gabriel, CA 91776</p>
+    <p><a href="tel:6266214646">626-621-4646</a></p>
+    <p><a href="mailto:kokonipets@gmail.com">kokonipets@gmail.com</a></p>
+    <p style="margin-top:10px; display:flex; gap:12px; align-items:center; justify-content:flex-end; flex-wrap:wrap;">
+      <a href="https://www.yelp.com/biz/kokoni-pets-san-gabriel" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.75); text-decoration:none; font-size:0.82rem; display:flex; align-items:center; gap:5px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="#d32323" xmlns="http://www.w3.org/2000/svg"><path d="M20.16 12.73l-4.38 1.44c-.89.29-1.69-.6-1.34-1.47l1.67-4.28a1.08 1.08 0 011.97.12l2.71 3.07a1.08 1.08 0 01-.63 1.12zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.5 15.5c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5zm-1.5-8c-.83 0-1.5-.67-1.5-1.5S11.17 6.5 12 6.5s1.5.67 1.5 1.5S12.83 9.5 12 9.5z"/></svg>Yelp Reviews</a>
+      <a href="https://share.google/GbULr64OOtTAAlwua" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.75); text-decoration:none; font-size:0.82rem; display:flex; align-items:center; gap:5px;"><svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>Google Reviews</a>
+    </p>
+  </div>
+</footer>
+
+
+<script>
+// ── i18n engine ──────────────────────────────────────
+const I18N = {
+  "services_h1": {
+    "en": "Dog Grooming Services in San Gabriel",
+    "zh-TW": "San Gabriel 狗狗美容服務",
+    "zh-CN": "San Gabriel 狗狗美容服务"
+  },
+  "services_hero_p": {
+    "en": "Full-service grooming for every coat and personality — bath, brushing, haircuts, and more, all tailored to your pet's comfort.",
+    "zh-TW": "全方位美容服務，適合各種毛髮與個性——洗澡、梳毛、剪毛等，一切以毛孩的舒適為優先。",
+    "zh-CN": "全方位美容服务，适合各种毛发与个性——洗澡、梳毛、剪毛等，一切以毛孩的舒适为优先。"
+  },
+  "nav_home": {
+    "en": "Home",
+    "zh-TW": "首頁",
+    "zh-CN": "首页"
+  },
+  "nav_meet": {
+    "en": "Meet Us",
+    "zh-TW": "認識我們",
+    "zh-CN": "认识我们"
+  },
+  "nav_services": {
+    "en": "Services",
+    "zh-TW": "服務",
+    "zh-CN": "服务"
+  },
+  "nav_faq": {
+    "en": "FAQ",
+    "zh-TW": "常見問題",
+    "zh-CN": "常见问题"
+  },
+  "nav_contact": {
+    "en": "Contact Us",
+    "zh-TW": "聯絡我們",
+    "zh-CN": "联络我们"
+  },
+  "nav_book": {
+    "en": "Book Now",
+    "zh-TW": "線上預約",
+    "zh-CN": "线上预约"
+  },
+  "nav_phone_label": {
+    "en": "Text or Call",
+    "zh-TW": "短訊預約或致電預約",
+    "zh-CN": "短信预约或致电预约"
+  },
+  "footer_tagline": {
+    "en": "Pets Grooming Salon",
+    "zh-TW": "寵物美容沙龍",
+    "zh-CN": "宠物美容沙龙"
+  },
+  "footer_copyright": {
+    "en": "© 2026 by Kokoni pets",
+    "zh-TW": "© 2026 Kokoni pets 版權所有",
+    "zh-CN": "© 2026 Kokoni pets 版权所有"
+  },
+  "btn_ask": {
+    "en": "Ask Us a Question",
+    "zh-TW": "詢問我們",
+    "zh-CN": "询问我们"
+  },
+  "req_label": {
+    "en": "Requirements",
+    "zh-TW": "預約要求",
+    "zh-CN": "预约要求"
+  },
+  "req_h2": {
+    "en": "Rabies, Bordetella &amp; Distemper Vaccines are required to make an appointment with us.",
+    "zh-TW": "預約前需提供狂犬病、博德氏桿菌及犬瘟熱疫苗接種證明。",
+    "zh-CN": "预约前需提供狂犬病、博德氏杆菌及犬瘟热疫苗接种证明。"
+  },
+  "req_why": {
+    "en": "Why?",
+    "zh-TW": "為什麼？",
+    "zh-CN": "为什么？"
+  },
+  "req_why_p": {
+    "en": "Think of it like a school or daycare — you wouldn't want your child playing around others who might be sick. Since grooming is a social, communal space, these vaccines act as a \"health shield.\" They ensure that every pet staying with us is protected, preventing your furry friend from catching or spreading contagious illnesses while they get pampered.",
+    "zh-TW": "就像學校或托兒所一樣——您不希望您的孩子與可能生病的人在一起。由於美容是一個社交共享的空間，這些疫苗就像一道「健康護盾」，確保每隻寵物都受到保護，防止毛孩在美容期間感染或傳播疾病。",
+    "zh-CN": "就像学校或托儿所一样——您不希望您的孩子与可能生病的人在一起。由于美容是一个社交共享的空间，这些疫苗就像一道「健康护盾」，确保每只宠物都受到保护，防止毛孩在美容期间感染或传播疾病。"
+  },
+  "bath_title": {
+    "en": "About bath &amp; blow out",
+    "zh-TW": "關於洗澡與吹整",
+    "zh-CN": "关于洗澡与吹整"
+  },
+  "bath_p": {
+    "en": "A great haircut must come from a good bath and blow out. We do hand-dry and straight out the coat, make all the hair become clean and fluff. That way, we can create a perfect round muzzle, round face.",
+    "zh-TW": "完美的造型始於一次紮實的洗澡與吹整。我們以手工吹乾並拉直毛髮，讓每根毛都乾淨蓬鬆，才能打造出完美圓潤的口吻部與臉型。",
+    "zh-CN": "完美的造型始于一次扎实的洗澡与吹整。我们以手工吹干并拉直毛发，让每根毛都干净蓬松，才能打造出完美圆润的口吻部与脸型。"
+  },
+  "demat_title": {
+    "en": "About De-matting &amp; De-shedding",
+    "zh-TW": "關於去結毛與除毛",
+    "zh-CN": "关于去结毛与除毛"
+  },
+  "area_p": {
+    "en": "KOKONI Pet Salon is proudly located in San Gabriel, serving pet families throughout San Gabriel, Alhambra, San Marino, Temple City, Rosemead, Arcadia, Monterey Park, Pasadena, and nearby communities. If you have any questions about your pet's grooming needs, we're here to help.",
+    "zh-TW": "KOKONI 寵物沙龍位於聖蓋博市，服務範圍涵蓋聖蓋博、阿罕布拉、聖馬力諾、田普市、玫瑰密、阿凱迪亞、蒙特利公園、帕薩迪納及周邊社區的寵物家庭。如有任何美容相關問題，歡迎隨時聯絡我們。",
+    "zh-CN": "KOKONI 宠物沙龙位于圣盖博市，服务范围涵盖圣盖博、阿罕布拉、圣马力诺、田普市、玫瑰密、阿凯迪亚、蒙特利公园、帕萨迪纳及周边社区的宠物家庭。如有任何美容相关问题，欢迎随时联络我们。"
+  },
+  "svc_brush_h3": {
+    "en": "Bath &amp; Brushing",
+    "zh-TW": "洗澡 &amp; 梳毛",
+    "zh-CN": "洗澡 &amp; 梳毛"
+  },
+  "svc_haircut_sc_h3": {
+    "en": "Bath &amp; Haircut",
+    "zh-TW": "洗澡 &amp; 美容",
+    "zh-CN": "洗澡 &amp; 美容"
+  },
+  "svc_haircut_af_h3": {
+    "en": "Bath &amp; Haircut",
+    "zh-TW": "洗澡 &amp; 美容",
+    "zh-CN": "洗澡 &amp; 美容"
+  },
+  "svc_sc_sub": {
+    "en": "Simply Cute Everyday Style",
+    "zh-TW": "日常造型",
+    "zh-CN": "日常造型"
+  },
+  "svc_af_sub": {
+    "en": "Asian Fusion Style",
+    "zh-TW": "精緻造型",
+    "zh-CN": "精致造型"
+  },
+  "svc_compare_af": {
+    "en": "How is this different from Asian Fusion?",
+    "zh-TW": "這與精緻造型有何不同？",
+    "zh-CN": "这与精致造型有何不同？"
+  },
+  "svc_compare_sc": {
+    "en": "How is this different from Simply Cute Style?",
+    "zh-TW": "這與日常造型有何不同？",
+    "zh-CN": "这与日常造型有何不同？"
+  },
+  "svc_addon_h3": {
+    "en": "Add on Services",
+    "zh-TW": "加購服務",
+    "zh-CN": "加购服务"
+  },
+  "svc_alacarte_h3": {
+    "en": "A la Carte Service",
+    "zh-TW": "單項服務",
+    "zh-CN": "单项服务"
+  },
+  "svc_topdog_h3": {
+    "en": "Top Dog",
+    "zh-TW": "Top Dog 快速服務",
+    "zh-CN": "Top Dog 快速服务"
+  },
+  "svc_addon_sub": {
+    "en": "(Must be added on packages above)",
+    "zh-TW": "（須搭配上方套餐加購）",
+    "zh-CN": "（须搭配上方套餐加购）"
+  },
+  "svc_alacarte_sub": {
+    "en": "(no grooming service needed)",
+    "zh-TW": "（無須搭配美容服務）",
+    "zh-CN": "（无需搭配美容服务）"
+  },
+  "svc_topdog_note": {
+    "en": "(no bath, no hair cut)",
+    "zh-TW": "（不含洗澡及剪毛）",
+    "zh-CN": "（不含洗澡及剪毛）"
+  },
+  "svc_topdog_desc": {
+    "en": "For a pooch who doesn't need a bath or haircut. This appointment will only take about 10 minutes.",
+    "zh-TW": "適合不需要洗澡或剪毛的寵物，時間約 10 分鐘。",
+    "zh-CN": "适合不需要洗澡或剪毛的宠物，时间约 10 分钟。"
+  },
+  "price_bb_h2": {
+    "en": "Bath and Brush",
+    "zh-TW": "洗澡 & 梳毛 定價",
+    "zh-CN": "洗澡 & 梳毛 定价"
+  },
+  "price_bh_h2": {
+    "en": "Bath and Haircut",
+    "zh-TW": "洗澡 & 美容 定價",
+    "zh-CN": "洗澡 & 美容 定价"
+  },
+  "price_dbh_h2": {
+    "en": "Doodle Bath and Haircut",
+    "zh-TW": "Doodle 洗澡 & 美容 定價",
+    "zh-CN": "Doodle 洗澡 & 美容 定价"
+  },
+  "li_nail_trim": {
+    "en": "Nail trim",
+    "zh-TW": "剪指甲",
+    "zh-CN": "剪指甲"
+  },
+  "li_ear_clean": {
+    "en": "Ear cleaning (no plucking)",
+    "zh-TW": "耳道清潔（不拔耳毛）",
+    "zh-CN": "耳道清洁（不拔耳毛）"
+  },
+  "li_teeth": {
+    "en": "Teeth brushing",
+    "zh-TW": "刷牙",
+    "zh-CN": "刷牙"
+  },
+  "li_gland": {
+    "en": "Gland expression (only by request)",
+    "zh-TW": "肛門腺清潔（需特別要求）",
+    "zh-CN": "肛门腺清洁（需特别要求）"
+  },
+  "li_shampoo": {
+    "en": "Shampoo & conditioner",
+    "zh-TW": "洗毛精與護毛素",
+    "zh-CN": "洗毛精与护毛素"
+  },
+  "li_blowdry": {
+    "en": "Hand dry & blow out",
+    "zh-TW": "手工吹乾吹直",
+    "zh-CN": "手工吹干吹直"
+  },
+  "li_sani": {
+    "en": "Sani & pads",
+    "zh-TW": "衛生修剪與腳掌修毛",
+    "zh-CN": "卫生修剪与脚掌修毛"
+  },
+  "card_note_bb": {
+    "en": "Certain breeds with undercoat is recommended to add de-shedding with the service for best bath results (husky, samoyed, malamutes, american eskimo, australian shep, pomeranian, etc).",
+    "zh-TW": "部分擁有底層絨毛的犬種，建議搭配去除廢毛服務，以達到最佳洗澡效果（哈士奇、薩摩耶、阿拉斯加、美國愛斯基摩犬、澳洲牧羊犬、博美等）。",
+    "zh-CN": "部分拥有底层绒毛的犬种，建议搭配去除废毛服务，以达到最佳洗澡效果（哈士奇、萨摩耶、阿拉斯加、美国爱斯基摩犬、澳洲牧羊犬、博美等）。"
+  },
+  "li_short_body": {
+    "en": "Short Body Hair Length (#5 Blade, #7 Blade)",
+    "zh-TW": "短毛身長（#5 刀頭、#7 刀頭）",
+    "zh-CN": "短毛身长（#5 刀头、#7 刀头）"
+  },
+  "card_desc_sc": {
+    "en": "A shorter, easy-maintenance cut keeps your dog fresh and tidy without daily brushing. Regular visits prevent mats and keep grooming stress-free — all while staying budget-friendly. With Simply Cute, your dog stays safe, healthy, clean, and simply cute.",
+    "zh-TW": "較短的造型方便日常打理，無需每日梳毛也能保持整潔清爽。定期到店可防止毛結，減少美容壓力，同時也更加經濟實惠。選擇 日常造型，讓您的毛孩保持安全、健康、清潔，簡單可愛。",
+    "zh-CN": "较短的造型方便日常打理，无需每日梳毛也能保持整洁清爽。定期到店可防止毛结，减少美容压力，同时也更加经济实惠。选择 日常造型，让您的毛孩保持安全、健康、清洁，简单可爱。"
+  },
+  "card_note_doodle": {
+    "en": "* See separate Doodle pricing — their coat requires extra time and care.",
+    "zh-TW": "* Doodle 犬種請參考另列價格——其毛質需要額外時間與護理。",
+    "zh-CN": "* Doodle 犬种请参考另列价格——其毛质需要额外时间与护理。"
+  },
+  "li_hydra": {
+    "en": "Hydra Luxury Shampoo & Conditioner",
+    "zh-TW": "Hydra 頂級洗毛精與護毛素",
+    "zh-CN": "Hydra 顶级洗毛精与护毛素"
+  },
+  "li_af_style": {
+    "en": "Asian-fusion style grooming — uses longer body hair and skilled hand scissoring to create a rounded, stylized look",
+    "zh-TW": "日系亞洲風格美容——保留較長毛身，以精湛剪刀手法打造圓潤立體的造型",
+    "zh-CN": "日系亚洲风格美容——保留较长毛身，以精湛剪刀手法打造圆润立体的造型"
+  },
+  "card_desc_af": {
+    "en": "Asian Fusion grooming creates a cute, rounded, stylish look — but it takes longer and requires more upkeep to maintain the shape. Not all dogs are suitable for this style. For first-time appointments, please check with us.",
+    "zh-TW": "精緻造型美容打造可愛圓潤的時髦造型——但耗時較長，且需要更頻繁的護理以維持造型。並非所有犬種都適合此風格。初次預約請先向我們確認。",
+    "zh-CN": "精致造型美容打造可爱圆润的时髦造型——但耗时较长，且需要更频繁的护理以维持造型。并非所有犬种都适合此风格。初次预约请先向我们确认。"
+  },
+  "demat_p1": {
+    "en": "Tangled hair is very common in dogs, especially dogs with long and thick hair. The way to treat it without shaving all the hair is De-matting. Price depends on time and hair conditions. De-shedding is common on double coat dogs like German shepherd, Husky, Chow chow, Samoyed, etc. We will notify you if your pet needs De-shedding added.",
+    "zh-TW": "毛結在犬隻中非常常見，尤其是毛量豐厚的犬種。在不剃光毛髮的情況下，可透過「去毛結」服務來處理。費用視時間與毛況而定。去除廢毛服務常見於雙層毛犬種，如德國牧羊犬、哈士奇、鬆獅犬、薩摩耶等。若您的寵物需要加收此服務，我們會提前告知。",
+    "zh-CN": "毛结在犬只中非常常见，尤其是毛量丰厚的犬种。在不剃光毛发的情况下，可通过「去毛结」服务来处理。费用视时间与毛况而定。去除废毛服务常见于双层毛犬种，如德国牧羊犬、哈士奇、松狮犬、萨摩耶等。若您的宠物需要加收此服务，我们会提前告知。"
+  },
+  "demat_p2": {
+    "en": "We may have to add de-shedding to certain breeds with undercoats for us to provide the best and even haircuts. Breeds like American eskimo, Australian shep, Pomeranian, Golden retrievers, etc. We will notify you if your pet needs de-shedding.",
+    "zh-TW": "針對部分擁有底層絨毛的犬種，我們可能需要加入去除廢毛服務，以提供最佳且均勻的修剪效果。例如：美國愛斯基摩犬、澳洲牧羊犬、博美犬、黃金獵犬等。若需加收此服務，我們會事先通知您。",
+    "zh-CN": "针对部分拥有底层绒毛的犬种，我们可能需要加入去除废毛服务，以提供最佳且均匀的修剪效果。例如：美国爱斯基摩犬、澳洲牧羊犬、博美犬、黄金猎犬等。若需加收此服务，我们会事先通知您。"
+  },
+  "price_note_bb": {
+    "en": "* Please keep in mind that these pricing are just a quote. Depending on the size, fur length, and styling requested, pricing can always change.\n    * Smooth coat (Chihuahua, pug, Frenchie bull dog, etc)\n    * Double coat (Pomeranian, Corgi, Golden retriever, Huskies, etc)",
+    "zh-TW": "* 請注意，以上價格僅供參考，實際費用可能依犬隻體型、毛長及造型需求調整。\n    * 短毛犬種（吉娃娃、巴哥、法鬥等）\n    * 雙層毛犬種（博美、柯基、黃金獵犬、哈士奇等）",
+    "zh-CN": "* 请注意，以上价格仅供参考，实际费用可能依犬只体型、毛长及造型需求调整。\n    * 短毛犬种（吉娃娃、巴哥、法斗等）\n    * 双层毛犬种（博美、柯基、黄金猎犬、哈士奇等）"
+  },
+  "price_note_bh": {
+    "en": "* Please keep in mind that these pricing are just a quote. Depending on the size, fur length, and styling requested, pricing can always change.\n    * For dogs over 70 lbs, please inquire with us.",
+    "zh-TW": "* 請注意，以上價格僅供參考，實際費用可能依犬隻體型、毛長及造型需求調整。\n    * 70 磅以上犬隻，請另行詢問。",
+    "zh-CN": "* 请注意，以上价格仅供参考，实际费用可能依犬只体型、毛长及造型需求调整。\n    * 70 磅以上犬只，请另行询问。"
+  },
+  "price_note_dbh": {
+    "en": "* Please keep in mind that these pricing are just a quote. Depending on the size, fur length, and styling requested, pricing can always change.\n    * For dogs over 70 lbs, please inquire with us.",
+    "zh-TW": "* 請注意，以上價格僅供參考，實際費用可能依犬隻體型、毛長及造型需求調整。\n    * 70 磅以上犬隻，請另行詢問。",
+    "zh-CN": "* 请注意，以上价格仅供参考，实际费用可能依犬只体型、毛长及造型需求调整。\n    * 70 磅以上犬只，请另行询问。"
+  },
+  "th_size": {
+    "en": "Size",
+    "zh-TW": "體型",
+    "zh-CN": "体型"
+  },
+  "th_smooth": {
+    "en": "Smooth Coat",
+    "zh-TW": "短毛犬",
+    "zh-CN": "短毛犬"
+  },
+  "th_long": {
+    "en": "Long Coat",
+    "zh-TW": "長毛犬",
+    "zh-CN": "长毛犬"
+  },
+  "th_doodle": {
+    "en": "Poodle / Doodle / Double Coat",
+    "zh-TW": "貴賓 / Doodle / 雙層毛",
+    "zh-CN": "贵宾 / Doodle / 双层毛"
+  },
+  "th_simply": {
+    "en": "Simply Cute",
+    "zh-TW": "日常造型",
+    "zh-CN": "日常造型"
+  },
+  "th_af": {
+    "en": "Asian Fusion",
+    "zh-TW": "精緻造型",
+    "zh-CN": "精致造型"
+  },
+  "th_sc": {
+    "en": "Simply Cute",
+    "zh-TW": "日常造型",
+    "zh-CN": "日常造型"
+  },
+  "th_af2": {
+    "en": "Asian Fusion",
+    "zh-TW": "精緻造型",
+    "zh-CN": "精致造型"
+  },
+  "li_partial_trim": {
+    "en": "Partial Trim + $10 ~ $30",
+    "zh-TW": "局部修剪 + $10 ~ $30",
+    "zh-CN": "局部修剪 + $10 ~ $30"
+  },
+  "li_flea": {
+    "en": "Flea & Tick Shampoo + $15 / $25 (If we find flea on dog, this will automatically be added)",
+    "zh-TW": "跳蚤壁蝨洗毛精 + $15 / $25（若發現跳蚤將自動加收）",
+    "zh-CN": "跳蚤壁虱洗毛精 + $15 / $25（若发现跳蚤将自动加收）"
+  },
+  "li_demat": {
+    "en": "De-matting / Extra Brushing + $20 / $40 / $60",
+    "zh-TW": "去毛結 / 額外梳毛 + $20 / $40 / $60",
+    "zh-CN": "去毛结 / 额外梳毛 + $20 / $40 / $60"
+  },
+  "li_deshed": {
+    "en": "De-shedding service + $15 / $20 / $30",
+    "zh-TW": "去除廢毛服務 + $15 / $20 / $30",
+    "zh-CN": "去除废毛服务 + $15 / $20 / $30"
+  },
+  "li_handstrip": {
+    "en": "Hand-stripping + $20 / $40",
+    "zh-TW": "手拔毛 + $20 / $40",
+    "zh-CN": "手拔毛 + $20 / $40"
+  },
+  "li_handling": {
+    "en": "Extra Handling Fee + $20 (added when we need an assistant for biter, hard to groom, or for older dogs)",
+    "zh-TW": "額外處理費 + $20（需要助手協助咬人、難以美容或年長犬隻時加收）",
+    "zh-CN": "额外处理费 + $20（需要助手协助咬人、难以美容或年长犬只时加收）"
+  },
+  "li_rush": {
+    "en": "Rush Service / Straight-Thru Service (first appointment only and only upon availability)",
+    "zh-TW": "急件服務 / 全程陪同服務（僅限首次預約，視檔期而定）",
+    "zh-CN": "急件服务 / 全程陪同服务（仅限首次预约，视档期而定）"
+  },
+  "li_dye": {
+    "en": "Hair Dye starting $30 per area ($15–$25 per additional area / Entire body $150 & up)",
+    "zh-TW": "染毛服務每區起價 $30（每加一區 $15–$25 / 全身 $150 起）",
+    "zh-CN": "染毛服务每区起价 $30（每加一区 $15–$25 / 全身 $150 起）"
+  },
+  "li_nail_price": {
+    "en": "Nail trimming $15",
+    "zh-TW": "剪指甲 $15",
+    "zh-CN": "剪指甲 $15"
+  },
+  "li_gland_price": {
+    "en": "Gland Expression (external) $15",
+    "zh-TW": "肛門腺清潔（外部）$15",
+    "zh-CN": "肛门腺清洁（外部）$15"
+  },
+  "li_pads_price": {
+    "en": "Pads Trim $10",
+    "zh-TW": "腳掌修毛 $10",
+    "zh-CN": "脚掌修毛 $10"
+  },
+  "li_teeth_price": {
+    "en": "Teeth Brush $10",
+    "zh-TW": "刷牙 $10",
+    "zh-CN": "刷牙 $10"
+  },
+  "li_ear_price": {
+    "en": "Ear Cleaning $10",
+    "zh-TW": "耳道清潔 $10",
+    "zh-CN": "耳道清洁 $10"
+  },
+  "li_nail_td": {
+    "en": "Nail trimming",
+    "zh-TW": "剪指甲",
+    "zh-CN": "剪指甲"
+  },
+  "li_gland_td": {
+    "en": "Gland Expression",
+    "zh-TW": "肛門腺清潔",
+    "zh-CN": "肛门腺清洁"
+  },
+  "li_teeth_td": {
+    "en": "Teeth Brush",
+    "zh-TW": "刷牙",
+    "zh-CN": "刷牙"
+  },
+  "li_ear_td": {
+    "en": "Ear Cleaning",
+    "zh-TW": "耳道清潔",
+    "zh-CN": "耳道清洁"
+  }
+};
+
+function applyLang(lang) {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (I18N[key] && I18N[key][lang] !== undefined) {
+      el.innerHTML = I18N[key][lang];
+    }
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    if (I18N[key] && I18N[key][lang] !== undefined) {
+      el.placeholder = I18N[key][lang];
+    }
+  });
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.toggle('lang-active', btn.dataset.lang === lang);
+  });
+  localStorage.setItem('kokoni-lang', lang);
+  document.documentElement.lang = lang === 'zh-TW' ? 'zh-TW' : lang === 'zh-CN' ? 'zh-CN' : 'en';
+  // Update booking button URL to match active language
+  const bookUrl = lang === 'zh-TW' ? 'https://book.kokonipets.com/book-zh-tw'
+                : lang === 'zh-CN' ? 'https://book.kokonipets.com/book-zh-cn'
+                : 'https://book.kokonipets.com/book';
+  document.querySelectorAll('.btn-book').forEach(el => { el.href = bookUrl; });
+}
+
+var PAGE_LANG = 'en';
+function setLang(lang) {
+  try { localStorage.setItem('kokoni-lang', lang); } catch (e) {}
+  var p = location.pathname.replace(/^\/(zh-tw|zh-cn)(?=\/|$)/, '').replace(/\.html$/, '') || '/';
+  if (p === '/index') p = '/';
+  var pre = lang === 'zh-TW' ? '/zh-tw' : lang === 'zh-CN' ? '/zh-cn' : '';
+  var target = pre + (p === '/' ? '' : p) || '/';
+  if (target !== location.pathname) location.href = target; else applyLang(lang);
+}
+
+// Init on load — restore saved language preference
+(function() {
+  var saved = PAGE_LANG;
+  applyLang(saved);
+})();
+// ─────────────────────────────────────────────────────
+
+  function toggleMobileMenu() {
+    var panel = document.getElementById('mobileMenuPanel');
+    panel.classList.toggle('open');
+  }
+  document.addEventListener('click', function(e) {
+    var panel = document.getElementById('mobileMenuPanel');
+    var btn = document.getElementById('mobileMenuBtn');
+    if (panel && btn && !panel.contains(e.target) && !btn.contains(e.target)) {
+      panel.classList.remove('open');
+    }
+  });
+</script>
+
+<!-- ── Floating Social Bar ── -->
+<!-- Social bar scroll follow -->
+  <script>
+    (function() {
+      var bar = document.querySelector('      if (!bar) return;
+      var target = 50; // % of viewport
+      var current = 50;
+      function lerp(a, b, t) { return a + (b - a) * t; }
+      window.addEventListener('scroll', function() {
+        var scrollY = window.scrollY || window.pageYOffset;
+        var docH = document.documentElement.scrollHeight - window.innerHeight;
+        if (docH <= 0) return;
+        var progress = scrollY / docH; // 0 to 1
+        // Map scroll progress: center (50%) at top, moves to 60% at bottom
+        target = 42 + progress * 16; // 42% to 58%
+        bar.style.top = target + '%';
+      });
+    })();
+  </script>
+</body>
+</html>

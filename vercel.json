@@ -1,0 +1,9 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/kokoni-website", "destination": "/", "permanent": true },
+    { "source": "/zh-tw/index", "destination": "/zh-tw", "permanent": true },
+    { "source": "/zh-cn/index", "destination": "/zh-cn", "permanent": true }
+  ]
+}

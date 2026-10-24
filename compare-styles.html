@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Simply Cute everyday dog haircut at Kokoni Pet Grooming in San Gabriel, CA — how it compares with Asian Fusion styling, and which suits your dog's coat and lifestyle." />
+  <link rel="canonical" href="https://www.kokonipets.com/compare-styles" />
+  <title data-i18n-title="page_title">Simply Cute — Everyday Style | Kokoni Pet Grooming</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Wix+Madefor+Display:wght@400;500;600;700;800&family=Wix+Madefor+Text:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { overflow-x: hidden; font-family: 'Wix Madefor Text', 'Helvetica Neue', Helvetica, Arial, sans-serif; background: #fff; color: #2c2c2c; }
+
+    /* ── HEADER / NAV ── */
+    header { background: #fff; text-align: center; padding: 20px 40px 0; position: sticky; top: 0; z-index: 200; box-shadow: 0 1px 6px rgba(0,0,0,0.08); overflow: visible; }
+    .logo-wrap { margin-bottom: 2px; }
+    .logo-img { height: 80px; width: auto; display: block; margin: 0 auto; }
+    nav { display: flex; align-items: center; justify-content: space-between; padding: 8px 0 10px; }
+    .nav-spacer { flex: 1; }
+    .nav-links { flex: 0 0 auto; display: flex; gap: 48px; list-style: none; }
+    .nav-links a { text-decoration: none; color: #333; font-size: 0.92rem; font-weight: 600; letter-spacing: 0.02em; padding-bottom: 2px; border-bottom: 2px solid transparent; transition: color 0.2s, border-color 0.2s; }
+    .nav-links a:hover { color: #46BFBF; }
+    .nav-links a.active { border-bottom-color: #46BFBF; }
+    .nav-right { flex: 1; display: flex; align-items: center; justify-content: flex-end; gap: 16px; }
+    .btn-book { background: #F07840; color: #fff; padding: 10px 26px; border-radius: 30px; font-size: 0.9rem; font-weight: 800; text-decoration: none; display: inline-block; transition: opacity 0.2s; }
+    .btn-book:hover { opacity: 0.85; }
+    .nav-phone { font-size: 0.88rem; color: #777; line-height: 1.4; text-align: left; }
+    .nav-phone a { color: #46BFBF; text-decoration: none; font-weight: 700; font-size: 0.95rem; }
+
+    /* ── LANG SWITCHER ── */
+    .lang-switcher { position: absolute; top: 22px; right: 40px; display: flex; align-items: center; gap: 2px; z-index: 210; }
+    .lang-btn { background: none; border: none; cursor: pointer; color: #999; font-size: 1rem; font-weight: 700; padding: 2px 6px; border-radius: 3px; transition: color 0.2s; font-family: inherit; letter-spacing: 0.02em; }
+    .lang-btn:hover { color: #46BFBF; }
+    .lang-btn.lang-active { color: #1C4F95; }
+    .lang-sep { color: #ddd; font-size: 0.72rem; user-select: none; }
+
+    /* ── MOBILE MENU ── */
+    .mobile-menu-btn { display: none; }
+    .mobile-menu-panel { display: none; }
+
+    /* ── MAIN CONTENT ── */
+    .page-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 60px 40px 80px;
+    }
+
+    /* Back link */
+    .back-link {
+      display: inline-block;
+      margin-bottom: 32px;
+      color: #46BFBF;
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .back-link:hover { text-decoration: underline; }
+
+    /* Page title */
+    h1 {
+      font-family: 'Wix Madefor Display', 'Helvetica Neue', Helvetica, sans-serif;
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: #2c2c2c;
+      line-height: 1.15;
+      margin-bottom: 36px;
+    }
+
+    /* Photo collage */
+    .photo-collage {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 10px;
+      margin-bottom: 48px;
+    }
+    .photo-collage .photo-main {
+      grid-row: 1 / 3;
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      display: block;
+      background: #e8f0f5;
+    }
+    .photo-collage .photo-sm {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      display: block;
+      background: #e8f0f5;
+    }
+
+    /* Body text */
+    .body-text {
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: #3a3a3a;
+      margin-bottom: 20px;
+    }
+
+    /* Section divider */
+    .section-divider {
+      border: none;
+      border-top: 1px solid #e8e8e8;
+      margin: 48px 0;
+    }
+
+    /* Section heading */
+    h2 {
+      font-family: 'Wix Madefor Display', 'Helvetica Neue', Helvetica, sans-serif;
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #2c2c2c;
+      margin-bottom: 32px;
+    }
+
+    /* Perfect for list */
+    .perfect-for-list { list-style: none; padding: 0; margin: 0; }
+    .perfect-for-list li { margin-bottom: 28px; }
+    .perfect-for-list li strong {
+      display: block;
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #2c2c2c;
+      margin-bottom: 6px;
+    }
+    .perfect-for-list li p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    /* Style comparison blocks */
+    .comparison-intro {
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: #3a3a3a;
+      margin-bottom: 36px;
+    }
+    .style-block { margin-bottom: 32px; }
+    .style-block h3 {
+      font-family: 'Wix Madefor Display', 'Helvetica Neue', Helvetica, sans-serif;
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: #1C4F95;
+      margin-bottom: 10px;
+    }
+    .style-block p {
+      font-size: 1rem;
+      line-height: 1.85;
+      color: #555;
+    }
+
+    /* Compare table */
+    .compare-table { width: 100%; border-collapse: collapse; font-size: 0.93rem; margin-bottom: 40px; }
+    .compare-table thead th { background: #1C4F95; color: #fff; padding: 14px 18px; font-weight: 700; text-align: center; font-size: 0.95rem; }
+    .compare-table thead th:first-child { background: #1C4F95; text-align: left; }
+    .compare-table tbody tr:nth-child(even) { background: #f6f8fb; }
+    .compare-table tbody td { padding: 13px 18px; color: #444; border-bottom: 1px solid #eee; vertical-align: top; text-align: center; line-height: 1.6; }
+    .compare-table tbody td:first-child { font-weight: 700; color: #2c2c2c; text-align: left; white-space: nowrap; }
+
+    /* Not sure CTA */
+    .not-sure {
+      background: #f4fafa;
+      border-left: 4px solid #46BFBF;
+      padding: 20px 24px;
+      border-radius: 0 8px 8px 0;
+      margin-top: 36px;
+    }
+    .not-sure p {
+      font-size: 1rem;
+      line-height: 1.75;
+      color: #3a3a3a;
+    }
+    .not-sure a { color: #46BFBF; font-weight: 700; text-decoration: none; }
+    .not-sure a:hover { text-decoration: underline; }
+
+    /* ── FOOTER ── */
+    footer { background: #9C8416; color: #fff; padding: 48px 60px; display: flex; justify-content: space-between; align-items: flex-start; gap: 32px; flex-wrap: wrap; }
+    .footer-brand p { font-size: 0.88rem; color: rgba(255,255,255,0.75); margin-bottom: 16px; }
+    .footer-contact { text-align: right; }
+    .footer-contact p { font-size: 0.88rem; color: rgba(255,255,255,0.85); margin-bottom: 4px; line-height: 1.6; }
+    .footer-contact a { color: rgba(255,255,255,0.85); text-decoration: none; }
+    .footer-contact a:hover { text-decoration: underline; }
+    .footer-nav { display: flex; gap: 24px; list-style: none; flex-wrap: wrap; margin-top: 0; align-items: center; }
+    .footer-nav a { color: rgba(255,255,255,0.7); font-size: 0.82rem; text-decoration: none; }
+    .footer-nav a:hover { color: #fff; }
+    .footer-copyright { font-size: 0.78rem; color: rgba(255,255,255,0.5); margin-left: auto; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 640px) {
+      .page-wrap { padding: 40px 24px 60px; }
+      h1 { font-size: 2rem; }
+      .photo-collage { grid-template-columns: 1fr; grid-template-rows: auto; }
+      .photo-collage .photo-main { grid-row: auto; aspect-ratio: 4 / 3; }
+      footer { flex-direction: column; padding: 40px 24px; }
+      .footer-contact { text-align: left; }
+      .compare-table tbody td:first-child { white-space: normal; }
+    }
+
+    /* ── MOBILE HEADER ── */
+    @media (max-width: 768px) {
+      .lang-switcher { top: 16px; right: 12px; }
+      .lang-btn { font-size: 0.8rem; padding: 1px 4px; }
+      .nav-spacer { display: none; }
+      .logo-img { margin-right: 80px; }
+    }
+    @media (max-width: 480px) {
+      .lang-btn { font-size: 0.75rem; padding: 1px 3px; }
+      .logo-img { height: 46px; margin-right: 70px; }
+    }
+    @media (max-width: 768px) {
+      header { padding: 8px 12px 6px; position: relative; }
+      .logo-img { height: 75px; margin: 0 auto; }
+      .logo-wrap { padding-top: 22px; }
+      .lang-switcher { display: flex; position: absolute; top: 8px; right: 12px; justify-content: flex-end; margin: 0; }
+      .lang-btn { font-size: 0.72rem; padding: 2px 4px; }
+      .lang-sep { font-size: 0.65rem; }
+      .nav-spacer { display: none; }
+      nav { display: flex; flex-direction: row; align-items: center; justify-content: space-between; gap: 6px; padding: 8px 0 4px; flex-wrap: nowrap; width: 100%; }
+      .nav-links { display: none; }
+      .nav-right { position: static; flex-direction: row; align-items: center; gap: 8px; margin-top: 0; width: auto; }
+      .btn-book { width: auto; text-align: center; padding: 14px 22px; font-size: 1.05rem; font-weight: 800; border-radius: 6px; white-space: nowrap; flex-shrink: 0; }
+      .nav-phone { font-size: 0.88rem; text-align: left; white-space: nowrap; line-height: 1.4; }
+      .mobile-menu-btn {
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        border: 2px solid #1C4F95; color: #1C4F95; font-size: 0.85rem; font-weight: 800;
+        letter-spacing: 0.08em; width: 62px; height: 62px; cursor: pointer;
+        background: white; flex-shrink: 0; line-height: 1.2; user-select: none;
+      }
+      .mobile-menu-panel {
+        display: none; flex-direction: column; background: #EDF6FB;
+        border-top: 2px solid #1C4F95; padding: 8px 0;
+        position: absolute; top: 100%; left: 0; width: 100%;
+        z-index: 300; box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+      }
+      .mobile-menu-panel.open { display: flex; }
+      .mobile-menu-panel a {
+        padding: 14px 28px; font-size: 1rem; font-weight: 700;
+        color: #1C4F95; text-decoration: none;
+        border-bottom: 1px solid #b3d9ee; letter-spacing: 0.02em;
+      }
+      .mobile-menu-panel a:last-child { border-bottom: none; }
+      .mobile-menu-panel a:hover { background: #D6EEF8; }
+      footer { flex-direction: column; gap: 24px; padding: 32px 20px 48px; }
+      .footer-contact { text-align: center; }
+      .footer-brand { text-align: center; width: 100%; }
+      .footer-nav { justify-content: center; flex-wrap: nowrap; gap: 10px; }
+      .footer-nav a { font-size: 0.74rem; }
+    }
+  </style>
+  <!--hreflang-->
+  <link rel="alternate" hreflang="en" href="https://www.kokonipets.com/compare-styles" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://www.kokonipets.com/zh-tw/compare-styles" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://www.kokonipets.com/zh-cn/compare-styles" />
+  <link rel="alternate" hreflang="x-default" href="https://www.kokonipets.com/compare-styles" />
+  <!--/hreflang-->
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header>
+  <div class="logo-wrap">
+    <a href="/"><img class="logo-img" src="https://static.wixstatic.com/media/c32927_c493a48236284f33886b8fc8ee259782~mv2.jpg" alt="Kokoni Pet Grooming Salon" /></a>
+  </div>
+  <nav>
+    <div class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">ME<br>NU</div>
+    <div class="nav-spacer"></div>
+    <ul class="nav-links">
+      <li><a href="/" data-i18n="nav_home">Home</a></li>
+      <li><a href="/meet-us" data-i18n="nav_meet">Meet Us</a></li>
+      <li><a href="/services" class="active" data-i18n="nav_services">Services</a></li>
+      <li><a href="/faq" data-i18n="nav_faq">FAQ</a></li>
+      <li><a href="/contact" data-i18n="nav_contact">Contact Us</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="https://book.kokonipets.com/book" class="btn-book" target="_blank" rel="noopener" data-i18n="nav_book">Book Now</a>
+      <div class="nav-phone">
+        <span data-i18n="nav_phone_label">Text or Call</span><br/><a href="tel:6266214646">(626)621-4646</a>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-menu-panel" id="mobileMenuPanel">
+    <a href="/" data-i18n="nav_home">Home</a>
+    <a href="/meet-us" data-i18n="nav_meet">Meet Us</a>
+    <a href="/services" data-i18n="nav_services">Services</a>
+    <a href="/faq" data-i18n="nav_faq">FAQ</a>
+    <a href="/contact" data-i18n="nav_contact">Contact Us</a>
+  </div>
+  <div class="lang-switcher">
+    <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+    <span class="lang-sep">|</span>
+    <button class="lang-btn" data-lang="zh-TW" onclick="setLang('zh-TW')">繁中</button>
+    <span class="lang-sep">|</span>
+    <button class="lang-btn" data-lang="zh-CN" onclick="setLang('zh-CN')">简中</button>
+  </div>
+</header>
+
+<!-- ── PAGE CONTENT ── -->
+<div class="page-wrap">
+
+  <a href="/services" class="back-link" data-i18n="back_link">← Back to Services</a>
+
+  <h1 data-i18n="page_h1">Simply Cute — Everyday Style</h1>
+
+  <!-- Photo collage -->
+  <div class="photo-collage">
+    <img class="photo-main" src="groomer-photo-clean.jpg" alt="Kokoni groomer caring for a dog" />
+    <img class="photo-sm" src="dog-bichon-web.jpg" alt="Dog groomed at Kokoni Pet Grooming Salon" />
+    <img class="photo-sm" src="maltipoo-haircut-grooming-salon-high-quality-photo.jpg" alt="Maltipoo haircut at Kokoni Pet Grooming Salon" />
+  </div>
+
+  <p class="body-text" data-i18n="body_p1">As a groomer with years of experience, I've learned that not every pet enjoys being groomed — and that's okay! Keeping your dog clean isn't just about looks — it's about health and comfort. Safety and cleanliness are always our top priorities, not fancy styles or long grooming sessions.</p>
+
+  <p class="body-text" data-i18n="body_p2">That's why we're proud to offer Simply Cute — a service style that's been close to our hearts since we opened Kokoni Pet Grooming Salon. With Simply Cute, your dog might not look like a superstar, but they'll be safe, healthy, clean, and — of course — simply cute. 🐾</p>
+
+  <p class="body-text" data-i18n="body_p3">"Simply Cute" is all about love, comfort, consistency — and affordability. Regular visits help your dog stay clean, prevent mats, and support their overall health and happiness — all while keeping the experience positive, stress-free, and budget-friendly. Because every dog — young or old, shy or bold — deserves to feel simply cute.</p>
+
+  <hr class="section-divider" />
+
+  <h2 data-i18n="perfect_h2">Who Simply Cute Is Perfect For</h2>
+  <ul class="perfect-for-list">
+    <li>
+      <strong data-i18n="pf1_title">Young Puppies</strong>
+      <p data-i18n="pf1_desc">The perfect way to introduce your puppy to grooming! Short, gentle sessions help them build confidence and positive memories. It's never too early to start making grooming a happy experience.</p>
+    </li>
+    <li>
+      <strong data-i18n="pf2_title">Wiggly or Impatient Dogs</strong>
+      <p data-i18n="pf2_desc">For pups who can't sit still for long — this simple style keeps them comfortable while making grooming stress-free.</p>
+    </li>
+    <li>
+      <strong data-i18n="pf3_title">Sensitive or Anxious Dogs</strong>
+      <p data-i18n="pf3_desc">Calm handling, quiet tools, and a soft approach help dogs who are scared of dryers or noises feel safe and at ease.</p>
+    </li>
+    <li>
+      <strong data-i18n="pf4_title">Senior Dogs</strong>
+      <p data-i18n="pf4_desc">Older pups may tire easily or have joint pain. A shorter grooming time keeps them comfortable and well cared for.</p>
+    </li>
+    <li>
+      <strong data-i18n="pf5_title">Dogs with Skin Sensitivities</strong>
+      <p data-i18n="pf5_desc">For dogs with delicate skin, long brushing and dematting can cause irritation. Simply Cute keeps the coat short and healthy using gentle, natural products to keep your dog comfortable and fresh.</p>
+    </li>
+    <li>
+      <strong data-i18n="pf6_title">Busy Pet Parents</strong>
+      <p data-i18n="pf6_desc">An affordable and easy-to-maintain style for families who want their pets to stay healthy and clean without the extra fuss.</p>
+    </li>
+  </ul>
+
+  <hr class="section-divider" />
+
+  <h2 data-i18n="compare_h2">How does Simply Cute differ from Asian Fusion Grooming?</h2>
+
+  <p class="comparison-intro" data-i18n="compare_intro">At Kokoni Pet Grooming Salon, we believe every dog deserves grooming that fits their personality, lifestyle, and comfort level. That's why we offer two special styles — each with its own kind of beauty and care. 💖</p>
+
+  <div class="style-block">
+    <h3 data-i18n="sc_block_h3">Simply Cute — Everyday Style</h3>
+    <p data-i18n="sc_block_p">Simply Cute focuses on comfort, health, and practicality. It's a shorter, easier-to-maintain style — ideal for dogs who get anxious during long sessions, have sensitive skin, or for busy families who prefer a quick, affordable way to keep their pets clean and happy. This gentle approach keeps dogs fresh, healthy, and simply cute without extra stress.</p>
+  </div>
+
+  <div class="style-block">
+    <h3 data-i18n="af_block_h3">Asian Fusion Grooming</h3>
+    <p data-i18n="af_block_p">Asian Fusion grooming is creative, detailed, and artistic — designed to highlight your dog's cutest features with precise shaping, round faces, and a stylish finish. It's perfect for pet parents who love that "wow" factor and are comfortable with more frequent brushing and maintenance at home to keep the look fresh. Please note — not all breeds are suitable for this style.</p>
+  </div>
+
+  <hr class="section-divider" />
+
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th data-i18n="tbl_col_style">Style</th>
+        <th data-i18n="tbl_col_sc">Simply Cute — Everyday Style</th>
+        <th data-i18n="tbl_col_af">Asian Fusion Grooming</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-i18n="tbl_row_focus">Focus</td>
+        <td data-i18n="tbl_sc_focus">Comfort, health, and practicality</td>
+        <td data-i18n="tbl_af_focus">Creative, artistic, detailed look</td>
+      </tr>
+      <tr>
+        <td data-i18n="tbl_row_time">Grooming Time</td>
+        <td data-i18n="tbl_sc_time">Shorter sessions, stress-free</td>
+        <td data-i18n="tbl_af_time">Longer sessions, more detailed</td>
+      </tr>
+      <tr>
+        <td data-i18n="tbl_row_bestfor">Best For</td>
+        <td data-i18n="tbl_sc_bestfor">Puppies, anxious dogs, senior dogs, dogs with sensitive skin</td>
+        <td data-i18n="tbl_af_bestfor">Dogs who enjoy grooming and pet parents who want a stylish "wow" look</td>
+      </tr>
+      <tr>
+        <td data-i18n="tbl_row_maint">Maintenance</td>
+        <td data-i18n="tbl_sc_maint">Easy to maintain, affordable</td>
+        <td data-i18n="tbl_af_maint">Requires more frequent brushing and upkeep at home</td>
+      </tr>
+      <tr>
+        <td data-i18n="tbl_row_cost">Cost</td>
+        <td data-i18n="tbl_sc_cost">More affordable</td>
+        <td data-i18n="tbl_af_cost">Premium pricing</td>
+      </tr>
+      <tr>
+        <td data-i18n="tbl_row_goal">Goal / Outcome</td>
+        <td data-i18n="tbl_sc_goal">Clean, healthy, safe, and simply cute</td>
+        <td data-i18n="tbl_af_goal">Stylish, artistic, and show-ready appearance</td>
+      </tr>
+      <tr>
+        <td data-i18n="tbl_row_comfort">Dog Comfort</td>
+        <td data-i18n="tbl_sc_comfort">High priority — minimal stress</td>
+        <td data-i18n="tbl_af_comfort">Moderate — longer grooming may be tiring for sensitive dogs</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="not-sure">
+    <p data-i18n="not_sure_p">Not sure which style is best for your dog? <a href="/contact">Reach out by text or call before booking</a> — we're happy to help! We can recommend the perfect look based on their coat, lifestyle, and personality.</p>
+  </div>
+
+</div>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-brand">
+    <img src="kokoni_logo-White_clear.png" alt="Kokoni" style="height:65px;width:auto;display:block;margin-bottom:4px;mix-blend-mode:screen;" />
+    <p data-i18n="footer_tagline">Pets Grooming Salon</p>
+    <ul class="footer-nav">
+      <li><a href="/" data-i18n="nav_home">Home</a></li>
+      <li><a href="/meet-us" data-i18n="nav_meet">Meet Us</a></li>
+      <li><a href="/services" data-i18n="nav_services">Services</a></li>
+      <li><a href="/faq" data-i18n="nav_faq">FAQ</a></li>
+      <li><a href="/contact" data-i18n="nav_contact">Contact Us</a></li>
+      <li class="footer-copyright">© 2026 by Kokoni pets</li>
+    </ul>
+  </div>
+  <div class="footer-contact">
+    <p>1381 E Las Tunas Dr #11 San Gabriel, CA 91776</p>
+    <p><a href="tel:6266214646">626-621-4646</a></p>
+    <p><a href="mailto:kokonipets@gmail.com">kokonipets@gmail.com</a></p>
+    <p style="margin-top:10px; display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+      <a href="https://www.yelp.com/biz/kokoni-pets-san-gabriel" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.75); text-decoration:none; font-size:0.82rem; display:flex; align-items:center; gap:5px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="#d32323" xmlns="http://www.w3.org/2000/svg"><path d="M20.16 12.73l-4.38 1.44c-.89.29-1.69-.6-1.34-1.47l1.67-4.28a1.08 1.08 0 011.97.12l2.71 3.07a1.08 1.08 0 01-.63 1.12zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.5 15.5c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5zm-1.5-8c-.83 0-1.5-.67-1.5-1.5S11.17 6.5 12 6.5s1.5.67 1.5 1.5S12.83 9.5 12 9.5z"/></svg>Yelp Reviews</a>
+      <a href="https://share.google/GbULr64OOtTAAlwua" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.75); text-decoration:none; font-size:0.82rem; display:flex; align-items:center; gap:5px;"><svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>Google Reviews</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+// ── i18n engine ──────────────────────────────────────
+const I18N = {
+  "nav_home":         { "en": "Home",        "zh-TW": "首頁",     "zh-CN": "首页" },
+  "nav_meet":         { "en": "Meet Us",     "zh-TW": "認識我們", "zh-CN": "认识我们" },
+  "nav_services":     { "en": "Services",    "zh-TW": "服務",     "zh-CN": "服务" },
+  "nav_faq":          { "en": "FAQ",         "zh-TW": "常見問題", "zh-CN": "常见问题" },
+  "nav_contact":      { "en": "Contact Us",  "zh-TW": "聯絡我們", "zh-CN": "联络我们" },
+  "nav_book":         { "en": "Book Now",    "zh-TW": "線上預約", "zh-CN": "线上预约" },
+  "nav_phone_label":  { "en": "Text or Call","zh-TW": "短訊或電話預約", "zh-CN": "短信或电话预约" },
+  "footer_tagline":   { "en": "Pets Grooming Salon", "zh-TW": "寵物美容沙龍", "zh-CN": "宠物美容沙龙" },
+  "back_link":        { "en": "← Back to Services", "zh-TW": "← 返回服務頁面", "zh-CN": "← 返回服务页面" },
+  "page_h1":          { "en": "Simply Cute — Everyday Style", "zh-TW": "日常造型 — 簡單可愛", "zh-CN": "日常造型 — 简单可爱" },
+
+  "body_p1": {
+    "en": "As a groomer with years of experience, I've learned that not every pet enjoys being groomed — and that's okay! Keeping your dog clean isn't just about looks — it's about health and comfort. Safety and cleanliness are always our top priorities, not fancy styles or long grooming sessions.",
+    "zh-TW": "身為擁有多年經驗的寵物美容師，我深知不是每隻毛孩都喜歡被美容——這完全沒關係！保持愛犬清潔不只是為了好看，更關乎健康與舒適。安全與清潔永遠是我們的首要任務，而不是花俏的造型或漫長的美容時間。",
+    "zh-CN": "身为拥有多年经验的宠物美容师，我深知不是每只毛孩都喜欢被美容——这完全没关系！保持爱犬清洁不只是为了好看，更关乎健康与舒适。安全与清洁永远是我们的首要任务，而不是花哨的造型或漫长的美容时间。"
+  },
+  "body_p2": {
+    "en": "That's why we're proud to offer Simply Cute — a service style that's been close to our hearts since we opened Kokoni Pet Grooming Salon. With Simply Cute, your dog might not look like a superstar, but they'll be safe, healthy, clean, and — of course — simply cute. 🐾",
+    "zh-TW": "這就是為什麼我們自豪地推出「日常造型」——這是自 Kokoni 寵物美容沙龍開業以來，我們最珍視的服務風格。選擇日常造型，您的愛犬也許不會像明星一樣閃亮，但牠們會安全、健康、乾淨，當然——簡單可愛。🐾",
+    "zh-CN": "这就是为什么我们自豪地推出「日常造型」——这是自 Kokoni 宠物美容沙龙开业以来，我们最珍视的服务风格。选择日常造型，您的爱犬也许不会像明星一样闪亮，但它们会安全、健康、干净，当然——简单可爱。🐾"
+  },
+  "body_p3": {
+    "en": "\"Simply Cute\" is all about love, comfort, consistency — and affordability. Regular visits help your dog stay clean, prevent mats, and support their overall health and happiness — all while keeping the experience positive, stress-free, and budget-friendly. Because every dog — young or old, shy or bold — deserves to feel simply cute.",
+    "zh-TW": "「日常造型」代表的是愛、舒適、規律與實惠。定期到店能幫助您的愛犬保持清潔、預防毛結，並維持整體健康與快樂——同時讓每次美容都是正面、輕鬆且經濟實惠的體驗。因為每一隻狗狗——無論老幼、內斂或活潑——都值得感受簡單可愛的美好。",
+    "zh-CN": "「日常造型」代表的是爱、舒适、规律与实惠。定期到店能帮助您的爱犬保持清洁、预防毛结，并维持整体健康与快乐——同时让每次美容都是正面、轻松且经济实惠的体验。因为每一只狗狗——无论老幼、内敛或活泼——都值得感受简单可爱的美好。"
+  },
+  "perfect_h2": {
+    "en": "Who Simply Cute Is Perfect For",
+    "zh-TW": "哪些毛孩最適合日常造型？",
+    "zh-CN": "哪些毛孩最适合日常造型？"
+  },
+  "pf1_title": { "en": "Young Puppies", "zh-TW": "幼犬", "zh-CN": "幼犬" },
+  "pf1_desc": {
+    "en": "The perfect way to introduce your puppy to grooming! Short, gentle sessions help them build confidence and positive memories. It's never too early to start making grooming a happy experience.",
+    "zh-TW": "帶幼犬初次接觸美容的最佳方式！短暫溫和的美容時間有助於建立信心與正面記憶。讓美容成為快樂體驗，越早開始越好。",
+    "zh-CN": "带幼犬初次接触美容的最佳方式！短暂温和的美容时间有助于建立信心与正面记忆。让美容成为快乐体验，越早开始越好。"
+  },
+  "pf2_title": { "en": "Wiggly or Impatient Dogs", "zh-TW": "好動或缺乏耐心的狗狗", "zh-CN": "好动或缺乏耐心的狗狗" },
+  "pf2_desc": {
+    "en": "For pups who can't sit still for long — this simple style keeps them comfortable while making grooming stress-free.",
+    "zh-TW": "對於無法長時間靜止不動的毛孩——日常造型讓牠們保持舒適，讓美容過程輕鬆無壓力。",
+    "zh-CN": "对于无法长时间静止不动的毛孩——日常造型让它们保持舒适，让美容过程轻松无压力。"
+  },
+  "pf3_title": { "en": "Sensitive or Anxious Dogs", "zh-TW": "敏感或容易緊張的狗狗", "zh-CN": "敏感或容易紧张的狗狗" },
+  "pf3_desc": {
+    "en": "Calm handling, quiet tools, and a soft approach help dogs who are scared of dryers or noises feel safe and at ease.",
+    "zh-TW": "溫柔的對待方式、安靜的工具與輕柔的手法，幫助害怕吹風機或噪音的狗狗感到安全與放鬆。",
+    "zh-CN": "温柔的对待方式、安静的工具与轻柔的手法，帮助害怕吹风机或噪音的狗狗感到安全与放松。"
+  },
+  "pf4_title": { "en": "Senior Dogs", "zh-TW": "老年犬", "zh-CN": "老年犬" },
+  "pf4_desc": {
+    "en": "Older pups may tire easily or have joint pain. A shorter grooming time keeps them comfortable and well cared for.",
+    "zh-TW": "年長的毛孩容易疲勞或有關節疼痛問題。較短的美容時間能讓牠們保持舒適與妥善照顧。",
+    "zh-CN": "年长的毛孩容易疲劳或有关节疼痛问题。较短的美容时间能让它们保持舒适与妥善照顾。"
+  },
+  "pf5_title": { "en": "Dogs with Skin Sensitivities", "zh-TW": "皮膚敏感的狗狗", "zh-CN": "皮肤敏感的狗狗" },
+  "pf5_desc": {
+    "en": "For dogs with delicate skin, long brushing and dematting can cause irritation. Simply Cute keeps the coat short and healthy using gentle, natural products to keep your dog comfortable and fresh.",
+    "zh-TW": "對於皮膚嬌嫩的毛孩，長時間梳毛與去毛結可能造成刺激。日常造型以天然溫和的產品保持短毛健康，讓您的愛犬舒適清爽。",
+    "zh-CN": "对于皮肤娇嫩的毛孩，长时间梳毛与去毛结可能造成刺激。日常造型以天然温和的产品保持短毛健康，让您的爱犬舒适清爽。"
+  },
+  "pf6_title": { "en": "Busy Pet Parents", "zh-TW": "忙碌的寵物主人", "zh-CN": "忙碌的宠物主人" },
+  "pf6_desc": {
+    "en": "An affordable and easy-to-maintain style for families who want their pets to stay healthy and clean without the extra fuss.",
+    "zh-TW": "適合希望毛孩保持健康清潔、無需額外麻煩的家庭——價格實惠，易於打理。",
+    "zh-CN": "适合希望毛孩保持健康清洁、无需额外麻烦的家庭——价格实惠，易于打理。"
+  },
+  "compare_h2": {
+    "en": "How does Simply Cute differ from Asian Fusion Grooming?",
+    "zh-TW": "日常造型與精緻造型有何不同？",
+    "zh-CN": "日常造型与精致造型有何不同？"
+  },
+  "compare_intro": {
+    "en": "At Kokoni Pet Grooming Salon, we believe every dog deserves grooming that fits their personality, lifestyle, and comfort level. That's why we offer two special styles — each with its own kind of beauty and care. 💖",
+    "zh-TW": "在 Kokoni 寵物美容沙龍，我們相信每隻狗狗都值得擁有符合其個性、生活方式與舒適度的美容方式。因此我們提供兩種特色風格——各自擁有獨特的美感與呵護。💖",
+    "zh-CN": "在 Kokoni 宠物美容沙龙，我们相信每只狗狗都值得拥有符合其个性、生活方式与舒适度的美容方式。因此我们提供两种特色风格——各自拥有独特的美感与呵护。💖"
+  },
+  "sc_block_h3": { "en": "Simply Cute — Everyday Style", "zh-TW": "日常造型 — 簡單可愛", "zh-CN": "日常造型 — 简单可爱" },
+  "sc_block_p": {
+    "en": "Simply Cute focuses on comfort, health, and practicality. It's a shorter, easier-to-maintain style — ideal for dogs who get anxious during long sessions, have sensitive skin, or for busy families who prefer a quick, affordable way to keep their pets clean and happy. This gentle approach keeps dogs fresh, healthy, and simply cute without extra stress.",
+    "zh-TW": "日常造型注重舒適、健康與實用性。這是一種較短、易於打理的風格——非常適合在長時間美容中容易焦慮、皮膚敏感的狗狗，或希望以快速、經濟實惠的方式保持寵物清潔快樂的忙碌家庭。這種溫和方式讓狗狗保持清爽、健康，簡單可愛，毫無壓力。",
+    "zh-CN": "日常造型注重舒适、健康与实用性。这是一种较短、易于打理的风格——非常适合在长时间美容中容易焦虑、皮肤敏感的狗狗，或希望以快速、经济实惠的方式保持宠物清洁快乐的忙碌家庭。这种温和方式让狗狗保持清爽、健康，简单可爱，毫无压力。"
+  },
+  "af_block_h3": { "en": "Asian Fusion Grooming", "zh-TW": "精緻造型", "zh-CN": "精致造型" },
+  "af_block_p": {
+    "en": "Asian Fusion grooming is creative, detailed, and artistic — designed to highlight your dog's cutest features with precise shaping, round faces, and a stylish finish. It's perfect for pet parents who love that \"wow\" factor and are comfortable with more frequent brushing and maintenance at home to keep the look fresh. Please note — not all breeds are suitable for this style.",
+    "zh-TW": "精緻造型充滿創意、細膩且具有藝術感——以精準的修剪、圓潤的臉型和時髦的造型來突顯愛犬最可愛的特點。非常適合喜愛「驚艷效果」並願意在家進行更頻繁梳毛與護理以維持造型的寵物主人。請注意——並非所有品種都適合此風格。",
+    "zh-CN": "精致造型充满创意、细腻且具有艺术感——以精准的修剪、圆润的脸型和时髦的造型来突显爱犬最可爱的特点。非常适合喜爱「惊艳效果」并愿意在家进行更频繁梳毛与护理以维持造型的宠物主人。请注意——并非所有品种都适合此风格。"
+  },
+  "tbl_col_style": { "en": "Style", "zh-TW": "風格", "zh-CN": "风格" },
+  "tbl_col_sc":    { "en": "Simply Cute — Everyday Style", "zh-TW": "日常造型 — 簡單可愛", "zh-CN": "日常造型 — 简单可爱" },
+  "tbl_col_af":    { "en": "Asian Fusion Grooming", "zh-TW": "精緻造型", "zh-CN": "精致造型" },
+  "tbl_row_focus": { "en": "Focus", "zh-TW": "重點", "zh-CN": "重点" },
+  "tbl_sc_focus":  { "en": "Comfort, health, and practicality", "zh-TW": "舒適、健康與實用性", "zh-CN": "舒适、健康与实用性" },
+  "tbl_af_focus":  { "en": "Creative, artistic, detailed look", "zh-TW": "富有創意、藝術感與細膩造型", "zh-CN": "富有创意、艺术感与细腻造型" },
+  "tbl_row_time":  { "en": "Grooming Time", "zh-TW": "美容時間", "zh-CN": "美容时间" },
+  "tbl_sc_time":   { "en": "Shorter sessions, stress-free", "zh-TW": "時間較短，輕鬆無壓", "zh-CN": "时间较短，轻松无压" },
+  "tbl_af_time":   { "en": "Longer sessions, more detailed", "zh-TW": "時間較長，細節更多", "zh-CN": "时间较长，细节更多" },
+  "tbl_row_bestfor": { "en": "Best For", "zh-TW": "最適合", "zh-CN": "最适合" },
+  "tbl_sc_bestfor":  { "en": "Puppies, anxious dogs, senior dogs, dogs with sensitive skin", "zh-TW": "幼犬、容易焦慮的狗狗、老年犬、皮膚敏感的狗狗", "zh-CN": "幼犬、容易焦虑的狗狗、老年犬、皮肤敏感的狗狗" },
+  "tbl_af_bestfor":  { "en": "Dogs who enjoy grooming and pet parents who want a stylish \"wow\" look", "zh-TW": "喜歡美容的狗狗，以及追求時髦「驚艷」造型的寵物主人", "zh-CN": "喜欢美容的狗狗，以及追求时髦「惊艳」造型的宠物主人" },
+  "tbl_row_maint": { "en": "Maintenance", "zh-TW": "日常護理", "zh-CN": "日常护理" },
+  "tbl_sc_maint":  { "en": "Easy to maintain, affordable", "zh-TW": "易於打理，價格實惠", "zh-CN": "易于打理，价格实惠" },
+  "tbl_af_maint":  { "en": "Requires more frequent brushing and upkeep at home", "zh-TW": "需要在家進行更頻繁的梳毛與日常護理", "zh-CN": "需要在家进行更频繁的梳毛与日常护理" },
+  "tbl_row_cost":  { "en": "Cost", "zh-TW": "費用", "zh-CN": "费用" },
+  "tbl_sc_cost":   { "en": "More affordable", "zh-TW": "更為經濟實惠", "zh-CN": "更为经济实惠" },
+  "tbl_af_cost":   { "en": "Premium pricing", "zh-TW": "高階定價", "zh-CN": "高阶定价" },
+  "tbl_row_goal":  { "en": "Goal / Outcome", "zh-TW": "目標 / 成果", "zh-CN": "目标 / 成果" },
+  "tbl_sc_goal":   { "en": "Clean, healthy, safe, and simply cute", "zh-TW": "乾淨、健康、安全，簡單可愛", "zh-CN": "干净、健康、安全，简单可爱" },
+  "tbl_af_goal":   { "en": "Stylish, artistic, and show-ready appearance", "zh-TW": "時尚、藝術感十足，宛如展示級外觀", "zh-CN": "时尚、艺术感十足，宛如展示级外观" },
+  "tbl_row_comfort": { "en": "Dog Comfort", "zh-TW": "狗狗舒適度", "zh-CN": "狗狗舒适度" },
+  "tbl_sc_comfort":  { "en": "High priority — minimal stress", "zh-TW": "首要考量——盡量減少壓力", "zh-CN": "首要考量——尽量减少压力" },
+  "tbl_af_comfort":  { "en": "Moderate — longer grooming may be tiring for sensitive dogs", "zh-TW": "中等——較長的美容時間對敏感狗狗可能較為疲憊", "zh-CN": "中等——较长的美容时间对敏感狗狗可能较为疲惫" },
+  "not_sure_p": {
+    "en": "Not sure which style is best for your dog? <a href=\"/contact\">Reach out by text or call before booking</a> — we're happy to help! We can recommend the perfect look based on their coat, lifestyle, and personality.",
+    "zh-TW": "不確定哪種風格最適合您的愛犬？<a href=\"/contact\">預約前歡迎傳訊或來電諮詢</a>——我們很樂意協助！我們可以根據牠的毛質、生活習慣與個性，為您推薦最適合的造型。",
+    "zh-CN": "不确定哪种风格最适合您的爱犬？<a href=\"/contact\">预约前欢迎发短信或来电咨询</a>——我们很乐意协助！我们可以根据它的毛质、生活习惯与个性，为您推荐最适合的造型。"
+  }
+};
+
+function applyLang(lang) {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (I18N[key] && I18N[key][lang] !== undefined) {
+      el.innerHTML = I18N[key][lang];
+    }
+  });
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.toggle('lang-active', btn.dataset.lang === lang);
+  });
+  document.documentElement.lang = lang === 'zh-TW' ? 'zh-TW' : lang === 'zh-CN' ? 'zh-CN' : 'en';
+  const titles = { "en": "Simply Cute — Everyday Style | Kokoni Pet Grooming", "zh-TW": "日常造型 — 簡單可愛 | Kokoni 寵物美容", "zh-CN": "日常造型 — 简单可爱 | Kokoni 宠物美容" };
+  document.title = titles[lang] || titles["en"];
+  const bookUrl = lang === 'zh-TW' ? 'https://book.kokonipets.com/book-zh-tw'
+                : lang === 'zh-CN' ? 'https://book.kokonipets.com/book-zh-cn'
+                : 'https://book.kokonipets.com/book';
+  document.querySelectorAll('.btn-book').forEach(el => { el.href = bookUrl; });
+  localStorage.setItem('kokoni-lang', lang);
+}
+
+var PAGE_LANG = 'en';
+function setLang(lang) {
+  try { localStorage.setItem('kokoni-lang', lang); } catch (e) {}
+  var p = location.pathname.replace(/^\/(zh-tw|zh-cn)(?=\/|$)/, '').replace(/\.html$/, '') || '/';
+  if (p === '/index') p = '/';
+  var pre = lang === 'zh-TW' ? '/zh-tw' : lang === 'zh-CN' ? '/zh-cn' : '';
+  var target = pre + (p === '/' ? '' : p) || '/';
+  if (target !== location.pathname) location.href = target; else applyLang(lang);
+}
+
+(function() {
+  var saved = PAGE_LANG;
+  applyLang(saved);
+})();
+// ─────────────────────────────────────────────────────
+
+function toggleMobileMenu() {
+  document.getElementById('mobileMenuPanel').classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  var panel = document.getElementById('mobileMenuPanel');
+  var btn = document.getElementById('mobileMenuBtn');
+  if (panel && btn && !panel.contains(e.target) && !btn.contains(e.target)) {
+    panel.classList.remove('open');
+  }
+});
+</script>
+
+</body>
+</html>
