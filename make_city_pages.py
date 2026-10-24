@@ -120,6 +120,9 @@ CSS = """
     .svc-card { background: #fff; border-radius: 16px; padding: 24px; box-shadow: 0 2px 10px rgba(28,79,149,0.08); }
     .svc-card h3 { color: #1C4F95; font-size: 1.05rem; margin-bottom: 8px; }
     .af-photo { display: block; width: 100%; max-width: 420px; border-radius: 16px; margin: 20px 0 4px; }
+    .team-wrap { display: grid; grid-template-columns: 1fr 280px; gap: 32px; align-items: start; }
+    .team-photo { width: 100%; border-radius: 16px; display: block; }
+    @media (max-width: 900px) { .team-wrap { grid-template-columns: 1fr; } .team-photo { max-width: 320px; } }
     .svc-link { display: inline-block; margin-top: 18px; color: #1C4F95; font-weight: 700; text-decoration: none; }
     .why-list { list-style: none; display: grid; gap: 12px; }
     .why-list li { padding-left: 28px; position: relative; }
@@ -302,6 +305,9 @@ def asian_body():
     html = body_template(others)
     html = html.replace('<a class="route-btn" href="%s"' % DIRECTIONS, '<img class="af-photo" src="bath-haircut-asian-fusion.avif" alt="Dog with a round Asian Fusion teddy bear face after grooming at Kokoni Pet Salon" />\n  <a class="route-btn" href="/compare-styles"', 1)
     html = html.replace('<a class="route-btn" href="/compare-styles" target="_blank" rel="noopener"', '<a class="route-btn" href="/compare-styles"', 1)
+    ul = '<ul class="why-list">\n    <li data-i18n="why1"></li><li data-i18n="why2"></li><li data-i18n="why3"></li><li data-i18n="why4"></li>\n  </ul>'
+    assert ul in html
+    html = html.replace(ul, '<div class="team-wrap">\n  ' + ul + '\n  <img class="team-photo" src="wylie-shen-japanese-style-groomer.jpg" alt="Wylie Shen, Japanese-style dog groomer and founder of Kokoni Pet Salon, holding a poodle with an Asian Fusion teddy bear cut" loading="lazy" />\n  </div>', 1)
     return html
 
 def fill_english(html, i18n):
