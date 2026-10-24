@@ -119,6 +119,7 @@ CSS = """
     .svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
     .svc-card { background: #fff; border-radius: 16px; padding: 24px; box-shadow: 0 2px 10px rgba(28,79,149,0.08); }
     .svc-card h3 { color: #1C4F95; font-size: 1.05rem; margin-bottom: 8px; }
+    .af-photo { display: block; width: 100%; max-width: 420px; border-radius: 16px; margin: 20px 0 4px; }
     .svc-link { display: inline-block; margin-top: 18px; color: #1C4F95; font-weight: 700; text-decoration: none; }
     .why-list { list-style: none; display: grid; gap: 12px; }
     .why-list li { padding-left: 28px; position: relative; }
@@ -248,6 +249,61 @@ def nail_body():
                         'href="%s" class="cta-book" target="_blank" rel="noopener" data-i18n="cta_book"' % DIRECTIONS)
     return html
 
+
+# ── Service page: Asian Fusion grooming ─────────────────────────────
+ASIAN = {
+ 'meta_title': ("Asian Fusion Dog Grooming (Korean & Japanese-Style) | Kokoni, San Gabriel",
+                "韓系、日系精緻造型狗狗美容 | KOKONI 寵物沙龍（聖蓋博）"),
+ 'meta_description': ("Asian Fusion dog grooming in San Gabriel: Korean and Japanese-style round faces and teddy bear cuts, hand-scissored by Wylie Shen's team at Kokoni Pet Salon. Prices from $110.",
+                "聖蓋博 KOKONI 寵物沙龍的精緻造型（Asian Fusion）：韓系、日系圓臉與泰迪熊造型，由 Wylie Shen 團隊手工剪裁。價格 $110 起。"),
+ 'city_h1': ("Asian Fusion Dog Grooming in San Gabriel", "聖蓋博 韓系、日系精緻造型狗狗美容"),
+ 'city_sub': ("Korean and Japanese-style round faces, fluffy coats and teddy bear cuts, shaped by hand at Kokoni Pet Salon.",
+              "韓系、日系的圓臉、蓬鬆毛量和泰迪熊造型，在 KOKONI 寵物沙龍以手工剪裁完成。"),
+ 'city_intro': ("Asian Fusion is our most detailed style. Instead of clipping the body short, we leave the coat longer and shape it with scissors, so your dog ends up with a soft, round face, rounded ears and an even, fluffy body. It's the look many people know from Korean and Japanese grooming salons.",
+                "精緻造型是我們最講究細節的造型。我們不把身體的毛剃短，而是保留較長的毛，用剪刀一點一點修出形狀，讓狗狗有柔和的圓臉、圓耳朵，以及均勻蓬鬆的身形。這就是很多人在韓國、日本寵物美容店看到的樣子。"),
+ 'cta_book': ("Book an appointment", "立即預約"),
+ 'cta_call': ("Text or call (626) 621-4646", "簡訊或來電 (626) 621-4646"),
+ 'route_h': ("How we create the look", "我們怎麼做出這個造型"),
+ 'route_p': ("It starts in the bath. After a Hydra luxury shampoo and conditioner, we hand-dry and straighten the coat, much like a blow-out at a hair salon, to give it volume. Only a fluffed, even coat can be scissored into a truly round muzzle, face and ears. Because it's all done by hand, Asian Fusion takes longer than a standard haircut.",
+             "一切從洗澡開始。用 Hydra 頂級洗毛精和護毛素洗完後，我們用手工吹乾、把毛吹直，就像在髮廊吹整頭髮一樣，讓毛有蓬度。只有蓬鬆均勻的毛，才能剪出真正圓潤的嘴邊、臉型和耳朵。因為全程手工，精緻造型需要的時間比一般剪毛長。"),
+ 'route_btn': ("Compare with our Simply Cute style →", "跟日常造型比較 →"),
+ 'svc_h': ("Asian Fusion prices", "精緻造型價格"),
+ 'svc1_t': ("Up to 15 lbs — $110", "15 磅以下 $110"),
+ 'svc1_p': ("16–30 lbs $130 · 31–50 lbs $190 · 51–70 lbs $240. Includes bath, hand blow-out, nail trim, ear cleaning and teeth brushing.",
+            "16–30 磅 $130 · 31–50 磅 $190 · 51–70 磅 $240。包含洗澡、手工吹整、剪指甲、清耳朵和刷牙。"),
+ 'svc2_t': ("Doodles — from $130", "Doodle $130 起"),
+ 'svc2_p': ("16–30 lbs $170 · 31–50 lbs $240 · 51–70 lbs $290. Doodle coats need extra time and care.",
+            "16–30 磅 $170 · 31–50 磅 $240 · 51–70 磅 $290。Doodle 的毛需要更多時間和照顧。"),
+ 'svc3_t': ("Over 70 lbs or matted?", "超過 70 磅或毛打結？"),
+ 'svc3_p': ("Please ask us first. Prices are a quote and can change with size, coat length and the style you choose.",
+            "請先跟我們聯絡。價格僅供參考，會依體型、毛長和選擇的造型調整。"),
+ 'svc_link': ("See all services &amp; pricing →", "查看所有服務與價格 →"),
+ 'why_h': ("Who grooms your dog", "誰幫你的狗狗美容"),
+ 'why1': ("<strong>Wylie Shen</strong>, founder of Kokoni and Unicorn Pet Grooming, specializes in Japanese-style grooming, with a focus on precision, softness and balance.",
+          "<strong>Wylie Shen</strong> 是 KOKONI 和 Unicorn Pet Grooming 的創辦人，專精日系美容，重視精準、柔和與比例。"),
+ 'why2': ("<strong>Trained at</strong> the Animal Behavior College and 4 Dog Grooming Academy, with animal rescue work since 2011.",
+          "<strong>畢業於</strong> Animal Behavior College 和 4 Dog Grooming Academy，2011 年起投入動物救援。"),
+ 'why3': ("<strong>3rd place</strong> at the 2023 Groom Expo West Rescue Round-Up.",
+          "<strong>2023 年 Groom Expo West Rescue Round-Up 第三名。</strong>"),
+ 'why4': ("<strong>One dog at a time.</strong> Long, detailed sessions are calmer when a groomer can focus on one dog.",
+          "<strong>一次專心照顧一隻狗狗。</strong>時間較長的精緻造型，更需要美容師專心陪伴。"),
+ 'faq_h': ("Is Asian Fusion right for my dog?", "精緻造型適合我的狗狗嗎？"),
+ 'faq1_q': ("Can every dog have an Asian Fusion cut?", "每隻狗都可以做精緻造型嗎？"),
+ 'faq1_a': ("Not every coat or personality suits it. The style needs a longer coat and a dog that's comfortable with a longer session. For a first appointment, text us a photo and we'll tell you honestly whether Asian Fusion or our easy-care Simply Cute style is the better fit.",
+            "不是每種毛質或個性都適合。這個造型需要較長的毛，狗狗也要能接受較長的美容時間。第一次預約前，歡迎傳照片給我們，我們會老實告訴你精緻造型還是好整理的日常造型比較適合。"),
+ 'faq2_q': ("How much upkeep does it need at home?", "在家需要多少照顧？"),
+ 'faq2_a': ("More than a short cut. A longer, fluffy coat needs regular brushing at home to stay tangle-free and keep its round shape between visits.",
+            "比短毛造型多。較長、蓬鬆的毛需要在家定期梳理，才不會打結，也能在兩次美容之間保持圓潤的造型。"),
+ 'also_h': ("We welcome dogs from", "我們歡迎來自這些城市的狗狗"),
+}
+
+def asian_body():
+    others = ''.join('<a href="/dog-grooming-%s" data-i18n="city_%s">%s</a>' % (s, s.replace('-', '_'), o['en']) for s, o in CITIES.items())
+    html = body_template(others)
+    html = html.replace('<a class="route-btn" href="%s"' % DIRECTIONS, '<img class="af-photo" src="bath-haircut-asian-fusion.avif" alt="Dog with a round Asian Fusion teddy bear face after grooming at Kokoni Pet Salon" />\n  <a class="route-btn" href="/compare-styles"', 1)
+    html = html.replace('<a class="route-btn" href="/compare-styles" target="_blank" rel="noopener"', '<a class="route-btn" href="/compare-styles"', 1)
+    return html
+
 def fill_english(html, i18n):
     # put the English text into each data-i18n element so the page works without JS
     def rep(m):
@@ -261,7 +317,7 @@ start = base.index('<!-- ══════════════════�
 end = base.index('<!-- ══════════════════════════════\n     INFO STRIP')
 
 PAGES_OUT = [('dog-grooming-' + s, common(c), lambda s=s, c=c: body(s, c)) for s, c in CITIES.items()] + \
-            [('dog-nail-trimming', NAIL, nail_body)]
+            [('dog-nail-trimming', NAIL, nail_body), ('asian-fusion-dog-grooming', ASIAN, asian_body)]
 
 for name, texts, make_body in PAGES_OUT:
     url = 'https://www.kokonipets.com/' + name

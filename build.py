@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 
 SITE = 'https://www.kokonipets.com'
 PAGES = ['index', 'meet-us', 'services', 'faq', 'contact', 'compare-styles'] + \
-        sorted(f[:-5] for f in glob.glob('dog-*.html'))
+        sorted(f[:-5] for f in glob.glob('dog-*.html') + ['asian-fusion-dog-grooming.html'])
 LANGS = {'zh-TW': 'zh-tw', 'zh-CN': 'zh-cn'}
 HREFLANG = {'en': 'en', 'zh-TW': 'zh-Hant', 'zh-CN': 'zh-Hans'}
 
