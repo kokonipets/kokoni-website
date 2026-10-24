@@ -416,6 +416,7 @@
 <li><a data-i18n="nav_contact" href="/zh-cn/contact">联络我们</a></li>
 <li class="footer-copyright">© 2026 by Kokoni pets</li>
 </ul>
+<p class="footer-areas" data-i18n="footer_areas" style="margin-top:12px;font-size:0.8rem;line-height:1.7;color:rgba(255,255,255,0.75);">服务地区： <a href="/zh-cn/dog-grooming-arcadia" style="color:rgba(255,255,255,0.75);text-decoration:none;">阿凯迪亚</a> · <a href="/zh-cn/dog-grooming-temple-city" style="color:rgba(255,255,255,0.75);text-decoration:none;">天普市</a> · <a href="/zh-cn/dog-grooming-alhambra" style="color:rgba(255,255,255,0.75);text-decoration:none;">阿罕布拉</a> · <a href="/zh-cn/dog-grooming-san-marino" style="color:rgba(255,255,255,0.75);text-decoration:none;">圣马力诺</a> · <a href="/zh-cn/dog-grooming-pasadena" style="color:rgba(255,255,255,0.75);text-decoration:none;">帕萨迪纳</a></p>
 </div>
 <div class="footer-contact">
 <p>1381 E Las Tunas Dr #11 San Gabriel, CA 91776</p>
@@ -430,17 +431,56 @@
 <script>
 // ── i18n engine ──────────────────────────────────────
 const I18N = {
-  "nav_home":         { "en": "Home",        "zh-TW": "首頁",     "zh-CN": "首页" },
-  "nav_meet":         { "en": "Meet Us",     "zh-TW": "認識我們", "zh-CN": "认识我们" },
-  "nav_services":     { "en": "Services",    "zh-TW": "服務",     "zh-CN": "服务" },
-  "nav_faq":          { "en": "FAQ",         "zh-TW": "常見問題", "zh-CN": "常见问题" },
-  "nav_contact":      { "en": "Contact Us",  "zh-TW": "聯絡我們", "zh-CN": "联络我们" },
-  "nav_book":         { "en": "Book Now",    "zh-TW": "線上預約", "zh-CN": "线上预约" },
-  "nav_phone_label":  { "en": "Text or Call","zh-TW": "短訊或電話預約", "zh-CN": "短信或电话预约" },
-  "footer_tagline":   { "en": "Pets Grooming Salon", "zh-TW": "寵物美容沙龍", "zh-CN": "宠物美容沙龙" },
-  "back_link":        { "en": "← Back to Services", "zh-TW": "← 返回服務頁面", "zh-CN": "← 返回服务页面" },
-  "page_h1":          { "en": "Simply Cute — Everyday Style", "zh-TW": "日常造型 — 簡單可愛", "zh-CN": "日常造型 — 简单可爱" },
-
+  "nav_home": {
+    "en": "Home",
+    "zh-TW": "首頁",
+    "zh-CN": "首页"
+  },
+  "nav_meet": {
+    "en": "Meet Us",
+    "zh-TW": "認識我們",
+    "zh-CN": "认识我们"
+  },
+  "nav_services": {
+    "en": "Services",
+    "zh-TW": "服務",
+    "zh-CN": "服务"
+  },
+  "nav_faq": {
+    "en": "FAQ",
+    "zh-TW": "常見問題",
+    "zh-CN": "常见问题"
+  },
+  "nav_contact": {
+    "en": "Contact Us",
+    "zh-TW": "聯絡我們",
+    "zh-CN": "联络我们"
+  },
+  "nav_book": {
+    "en": "Book Now",
+    "zh-TW": "線上預約",
+    "zh-CN": "线上预约"
+  },
+  "nav_phone_label": {
+    "en": "Text or Call",
+    "zh-TW": "短訊或電話預約",
+    "zh-CN": "短信或电话预约"
+  },
+  "footer_tagline": {
+    "en": "Pets Grooming Salon",
+    "zh-TW": "寵物美容沙龍",
+    "zh-CN": "宠物美容沙龙"
+  },
+  "back_link": {
+    "en": "← Back to Services",
+    "zh-TW": "← 返回服務頁面",
+    "zh-CN": "← 返回服务页面"
+  },
+  "page_h1": {
+    "en": "Simply Cute — Everyday Style",
+    "zh-TW": "日常造型 — 簡單可愛",
+    "zh-CN": "日常造型 — 简单可爱"
+  },
   "body_p1": {
     "en": "As a groomer with years of experience, I've learned that not every pet enjoys being groomed — and that's okay! Keeping your dog clean isn't just about looks — it's about health and comfort. Safety and cleanliness are always our top priorities, not fancy styles or long grooming sessions.",
     "zh-TW": "身為擁有多年經驗的寵物美容師，我深知不是每隻毛孩都喜歡被美容——這完全沒關係！保持愛犬清潔不只是為了好看，更關乎健康與舒適。安全與清潔永遠是我們的首要任務，而不是花俏的造型或漫長的美容時間。",
@@ -461,37 +501,61 @@ const I18N = {
     "zh-TW": "哪些毛孩最適合日常造型？",
     "zh-CN": "哪些毛孩最适合日常造型？"
   },
-  "pf1_title": { "en": "Young Puppies", "zh-TW": "幼犬", "zh-CN": "幼犬" },
+  "pf1_title": {
+    "en": "Young Puppies",
+    "zh-TW": "幼犬",
+    "zh-CN": "幼犬"
+  },
   "pf1_desc": {
     "en": "The perfect way to introduce your puppy to grooming! Short, gentle sessions help them build confidence and positive memories. It's never too early to start making grooming a happy experience.",
     "zh-TW": "帶幼犬初次接觸美容的最佳方式！短暫溫和的美容時間有助於建立信心與正面記憶。讓美容成為快樂體驗，越早開始越好。",
     "zh-CN": "带幼犬初次接触美容的最佳方式！短暂温和的美容时间有助于建立信心与正面记忆。让美容成为快乐体验，越早开始越好。"
   },
-  "pf2_title": { "en": "Wiggly or Impatient Dogs", "zh-TW": "好動或缺乏耐心的狗狗", "zh-CN": "好动或缺乏耐心的狗狗" },
+  "pf2_title": {
+    "en": "Wiggly or Impatient Dogs",
+    "zh-TW": "好動或缺乏耐心的狗狗",
+    "zh-CN": "好动或缺乏耐心的狗狗"
+  },
   "pf2_desc": {
     "en": "For pups who can't sit still for long — this simple style keeps them comfortable while making grooming stress-free.",
     "zh-TW": "對於無法長時間靜止不動的毛孩——日常造型讓牠們保持舒適，讓美容過程輕鬆無壓力。",
     "zh-CN": "对于无法长时间静止不动的毛孩——日常造型让它们保持舒适，让美容过程轻松无压力。"
   },
-  "pf3_title": { "en": "Sensitive or Anxious Dogs", "zh-TW": "敏感或容易緊張的狗狗", "zh-CN": "敏感或容易紧张的狗狗" },
+  "pf3_title": {
+    "en": "Sensitive or Anxious Dogs",
+    "zh-TW": "敏感或容易緊張的狗狗",
+    "zh-CN": "敏感或容易紧张的狗狗"
+  },
   "pf3_desc": {
     "en": "Calm handling, quiet tools, and a soft approach help dogs who are scared of dryers or noises feel safe and at ease.",
     "zh-TW": "溫柔的對待方式、安靜的工具與輕柔的手法，幫助害怕吹風機或噪音的狗狗感到安全與放鬆。",
     "zh-CN": "温柔的对待方式、安静的工具与轻柔的手法，帮助害怕吹风机或噪音的狗狗感到安全与放松。"
   },
-  "pf4_title": { "en": "Senior Dogs", "zh-TW": "老年犬", "zh-CN": "老年犬" },
+  "pf4_title": {
+    "en": "Senior Dogs",
+    "zh-TW": "老年犬",
+    "zh-CN": "老年犬"
+  },
   "pf4_desc": {
     "en": "Older pups may tire easily or have joint pain. A shorter grooming time keeps them comfortable and well cared for.",
     "zh-TW": "年長的毛孩容易疲勞或有關節疼痛問題。較短的美容時間能讓牠們保持舒適與妥善照顧。",
     "zh-CN": "年长的毛孩容易疲劳或有关节疼痛问题。较短的美容时间能让它们保持舒适与妥善照顾。"
   },
-  "pf5_title": { "en": "Dogs with Skin Sensitivities", "zh-TW": "皮膚敏感的狗狗", "zh-CN": "皮肤敏感的狗狗" },
+  "pf5_title": {
+    "en": "Dogs with Skin Sensitivities",
+    "zh-TW": "皮膚敏感的狗狗",
+    "zh-CN": "皮肤敏感的狗狗"
+  },
   "pf5_desc": {
     "en": "For dogs with delicate skin, long brushing and dematting can cause irritation. Simply Cute keeps the coat short and healthy using gentle, natural products to keep your dog comfortable and fresh.",
     "zh-TW": "對於皮膚嬌嫩的毛孩，長時間梳毛與去毛結可能造成刺激。日常造型以天然溫和的產品保持短毛健康，讓您的愛犬舒適清爽。",
     "zh-CN": "对于皮肤娇嫩的毛孩，长时间梳毛与去毛结可能造成刺激。日常造型以天然温和的产品保持短毛健康，让您的爱犬舒适清爽。"
   },
-  "pf6_title": { "en": "Busy Pet Parents", "zh-TW": "忙碌的寵物主人", "zh-CN": "忙碌的宠物主人" },
+  "pf6_title": {
+    "en": "Busy Pet Parents",
+    "zh-TW": "忙碌的寵物主人",
+    "zh-CN": "忙碌的宠物主人"
+  },
   "pf6_desc": {
     "en": "An affordable and easy-to-maintain style for families who want their pets to stay healthy and clean without the extra fuss.",
     "zh-TW": "適合希望毛孩保持健康清潔、無需額外麻煩的家庭——價格實惠，易於打理。",
@@ -507,46 +571,155 @@ const I18N = {
     "zh-TW": "在 Kokoni 寵物美容沙龍，我們相信每隻狗狗都值得擁有符合其個性、生活方式與舒適度的美容方式。因此我們提供兩種特色風格——各自擁有獨特的美感與呵護。💖",
     "zh-CN": "在 Kokoni 宠物美容沙龙，我们相信每只狗狗都值得拥有符合其个性、生活方式与舒适度的美容方式。因此我们提供两种特色风格——各自拥有独特的美感与呵护。💖"
   },
-  "sc_block_h3": { "en": "Simply Cute — Everyday Style", "zh-TW": "日常造型 — 簡單可愛", "zh-CN": "日常造型 — 简单可爱" },
+  "sc_block_h3": {
+    "en": "Simply Cute — Everyday Style",
+    "zh-TW": "日常造型 — 簡單可愛",
+    "zh-CN": "日常造型 — 简单可爱"
+  },
   "sc_block_p": {
     "en": "Simply Cute focuses on comfort, health, and practicality. It's a shorter, easier-to-maintain style — ideal for dogs who get anxious during long sessions, have sensitive skin, or for busy families who prefer a quick, affordable way to keep their pets clean and happy. This gentle approach keeps dogs fresh, healthy, and simply cute without extra stress.",
     "zh-TW": "日常造型注重舒適、健康與實用性。這是一種較短、易於打理的風格——非常適合在長時間美容中容易焦慮、皮膚敏感的狗狗，或希望以快速、經濟實惠的方式保持寵物清潔快樂的忙碌家庭。這種溫和方式讓狗狗保持清爽、健康，簡單可愛，毫無壓力。",
     "zh-CN": "日常造型注重舒适、健康与实用性。这是一种较短、易于打理的风格——非常适合在长时间美容中容易焦虑、皮肤敏感的狗狗，或希望以快速、经济实惠的方式保持宠物清洁快乐的忙碌家庭。这种温和方式让狗狗保持清爽、健康，简单可爱，毫无压力。"
   },
-  "af_block_h3": { "en": "Asian Fusion Grooming", "zh-TW": "精緻造型", "zh-CN": "精致造型" },
+  "af_block_h3": {
+    "en": "Asian Fusion Grooming",
+    "zh-TW": "精緻造型",
+    "zh-CN": "精致造型"
+  },
   "af_block_p": {
     "en": "Asian Fusion grooming is creative, detailed, and artistic — designed to highlight your dog's cutest features with precise shaping, round faces, and a stylish finish. It's perfect for pet parents who love that \"wow\" factor and are comfortable with more frequent brushing and maintenance at home to keep the look fresh. Please note — not all breeds are suitable for this style.",
     "zh-TW": "精緻造型充滿創意、細膩且具有藝術感——以精準的修剪、圓潤的臉型和時髦的造型來突顯愛犬最可愛的特點。非常適合喜愛「驚艷效果」並願意在家進行更頻繁梳毛與護理以維持造型的寵物主人。請注意——並非所有品種都適合此風格。",
     "zh-CN": "精致造型充满创意、细腻且具有艺术感——以精准的修剪、圆润的脸型和时髦的造型来突显爱犬最可爱的特点。非常适合喜爱「惊艳效果」并愿意在家进行更频繁梳毛与护理以维持造型的宠物主人。请注意——并非所有品种都适合此风格。"
   },
-  "tbl_col_style": { "en": "Style", "zh-TW": "風格", "zh-CN": "风格" },
-  "tbl_col_sc":    { "en": "Simply Cute — Everyday Style", "zh-TW": "日常造型 — 簡單可愛", "zh-CN": "日常造型 — 简单可爱" },
-  "tbl_col_af":    { "en": "Asian Fusion Grooming", "zh-TW": "精緻造型", "zh-CN": "精致造型" },
-  "tbl_row_focus": { "en": "Focus", "zh-TW": "重點", "zh-CN": "重点" },
-  "tbl_sc_focus":  { "en": "Comfort, health, and practicality", "zh-TW": "舒適、健康與實用性", "zh-CN": "舒适、健康与实用性" },
-  "tbl_af_focus":  { "en": "Creative, artistic, detailed look", "zh-TW": "富有創意、藝術感與細膩造型", "zh-CN": "富有创意、艺术感与细腻造型" },
-  "tbl_row_time":  { "en": "Grooming Time", "zh-TW": "美容時間", "zh-CN": "美容时间" },
-  "tbl_sc_time":   { "en": "Shorter sessions, stress-free", "zh-TW": "時間較短，輕鬆無壓", "zh-CN": "时间较短，轻松无压" },
-  "tbl_af_time":   { "en": "Longer sessions, more detailed", "zh-TW": "時間較長，細節更多", "zh-CN": "时间较长，细节更多" },
-  "tbl_row_bestfor": { "en": "Best For", "zh-TW": "最適合", "zh-CN": "最适合" },
-  "tbl_sc_bestfor":  { "en": "Puppies, anxious dogs, senior dogs, dogs with sensitive skin", "zh-TW": "幼犬、容易焦慮的狗狗、老年犬、皮膚敏感的狗狗", "zh-CN": "幼犬、容易焦虑的狗狗、老年犬、皮肤敏感的狗狗" },
-  "tbl_af_bestfor":  { "en": "Dogs who enjoy grooming and pet parents who want a stylish \"wow\" look", "zh-TW": "喜歡美容的狗狗，以及追求時髦「驚艷」造型的寵物主人", "zh-CN": "喜欢美容的狗狗，以及追求时髦「惊艳」造型的宠物主人" },
-  "tbl_row_maint": { "en": "Maintenance", "zh-TW": "日常護理", "zh-CN": "日常护理" },
-  "tbl_sc_maint":  { "en": "Easy to maintain, affordable", "zh-TW": "易於打理，價格實惠", "zh-CN": "易于打理，价格实惠" },
-  "tbl_af_maint":  { "en": "Requires more frequent brushing and upkeep at home", "zh-TW": "需要在家進行更頻繁的梳毛與日常護理", "zh-CN": "需要在家进行更频繁的梳毛与日常护理" },
-  "tbl_row_cost":  { "en": "Cost", "zh-TW": "費用", "zh-CN": "费用" },
-  "tbl_sc_cost":   { "en": "More affordable", "zh-TW": "更為經濟實惠", "zh-CN": "更为经济实惠" },
-  "tbl_af_cost":   { "en": "Premium pricing", "zh-TW": "高階定價", "zh-CN": "高阶定价" },
-  "tbl_row_goal":  { "en": "Goal / Outcome", "zh-TW": "目標 / 成果", "zh-CN": "目标 / 成果" },
-  "tbl_sc_goal":   { "en": "Clean, healthy, safe, and simply cute", "zh-TW": "乾淨、健康、安全，簡單可愛", "zh-CN": "干净、健康、安全，简单可爱" },
-  "tbl_af_goal":   { "en": "Stylish, artistic, and show-ready appearance", "zh-TW": "時尚、藝術感十足，宛如展示級外觀", "zh-CN": "时尚、艺术感十足，宛如展示级外观" },
-  "tbl_row_comfort": { "en": "Dog Comfort", "zh-TW": "狗狗舒適度", "zh-CN": "狗狗舒适度" },
-  "tbl_sc_comfort":  { "en": "High priority — minimal stress", "zh-TW": "首要考量——盡量減少壓力", "zh-CN": "首要考量——尽量减少压力" },
-  "tbl_af_comfort":  { "en": "Moderate — longer grooming may be tiring for sensitive dogs", "zh-TW": "中等——較長的美容時間對敏感狗狗可能較為疲憊", "zh-CN": "中等——较长的美容时间对敏感狗狗可能较为疲惫" },
+  "tbl_col_style": {
+    "en": "Style",
+    "zh-TW": "風格",
+    "zh-CN": "风格"
+  },
+  "tbl_col_sc": {
+    "en": "Simply Cute — Everyday Style",
+    "zh-TW": "日常造型 — 簡單可愛",
+    "zh-CN": "日常造型 — 简单可爱"
+  },
+  "tbl_col_af": {
+    "en": "Asian Fusion Grooming",
+    "zh-TW": "精緻造型",
+    "zh-CN": "精致造型"
+  },
+  "tbl_row_focus": {
+    "en": "Focus",
+    "zh-TW": "重點",
+    "zh-CN": "重点"
+  },
+  "tbl_sc_focus": {
+    "en": "Comfort, health, and practicality",
+    "zh-TW": "舒適、健康與實用性",
+    "zh-CN": "舒适、健康与实用性"
+  },
+  "tbl_af_focus": {
+    "en": "Creative, artistic, detailed look",
+    "zh-TW": "富有創意、藝術感與細膩造型",
+    "zh-CN": "富有创意、艺术感与细腻造型"
+  },
+  "tbl_row_time": {
+    "en": "Grooming Time",
+    "zh-TW": "美容時間",
+    "zh-CN": "美容时间"
+  },
+  "tbl_sc_time": {
+    "en": "Shorter sessions, stress-free",
+    "zh-TW": "時間較短，輕鬆無壓",
+    "zh-CN": "时间较短，轻松无压"
+  },
+  "tbl_af_time": {
+    "en": "Longer sessions, more detailed",
+    "zh-TW": "時間較長，細節更多",
+    "zh-CN": "时间较长，细节更多"
+  },
+  "tbl_row_bestfor": {
+    "en": "Best For",
+    "zh-TW": "最適合",
+    "zh-CN": "最适合"
+  },
+  "tbl_sc_bestfor": {
+    "en": "Puppies, anxious dogs, senior dogs, dogs with sensitive skin",
+    "zh-TW": "幼犬、容易焦慮的狗狗、老年犬、皮膚敏感的狗狗",
+    "zh-CN": "幼犬、容易焦虑的狗狗、老年犬、皮肤敏感的狗狗"
+  },
+  "tbl_af_bestfor": {
+    "en": "Dogs who enjoy grooming and pet parents who want a stylish \"wow\" look",
+    "zh-TW": "喜歡美容的狗狗，以及追求時髦「驚艷」造型的寵物主人",
+    "zh-CN": "喜欢美容的狗狗，以及追求时髦「惊艳」造型的宠物主人"
+  },
+  "tbl_row_maint": {
+    "en": "Maintenance",
+    "zh-TW": "日常護理",
+    "zh-CN": "日常护理"
+  },
+  "tbl_sc_maint": {
+    "en": "Easy to maintain, affordable",
+    "zh-TW": "易於打理，價格實惠",
+    "zh-CN": "易于打理，价格实惠"
+  },
+  "tbl_af_maint": {
+    "en": "Requires more frequent brushing and upkeep at home",
+    "zh-TW": "需要在家進行更頻繁的梳毛與日常護理",
+    "zh-CN": "需要在家进行更频繁的梳毛与日常护理"
+  },
+  "tbl_row_cost": {
+    "en": "Cost",
+    "zh-TW": "費用",
+    "zh-CN": "费用"
+  },
+  "tbl_sc_cost": {
+    "en": "More affordable",
+    "zh-TW": "更為經濟實惠",
+    "zh-CN": "更为经济实惠"
+  },
+  "tbl_af_cost": {
+    "en": "Premium pricing",
+    "zh-TW": "高階定價",
+    "zh-CN": "高阶定价"
+  },
+  "tbl_row_goal": {
+    "en": "Goal / Outcome",
+    "zh-TW": "目標 / 成果",
+    "zh-CN": "目标 / 成果"
+  },
+  "tbl_sc_goal": {
+    "en": "Clean, healthy, safe, and simply cute",
+    "zh-TW": "乾淨、健康、安全，簡單可愛",
+    "zh-CN": "干净、健康、安全，简单可爱"
+  },
+  "tbl_af_goal": {
+    "en": "Stylish, artistic, and show-ready appearance",
+    "zh-TW": "時尚、藝術感十足，宛如展示級外觀",
+    "zh-CN": "时尚、艺术感十足，宛如展示级外观"
+  },
+  "tbl_row_comfort": {
+    "en": "Dog Comfort",
+    "zh-TW": "狗狗舒適度",
+    "zh-CN": "狗狗舒适度"
+  },
+  "tbl_sc_comfort": {
+    "en": "High priority — minimal stress",
+    "zh-TW": "首要考量——盡量減少壓力",
+    "zh-CN": "首要考量——尽量减少压力"
+  },
+  "tbl_af_comfort": {
+    "en": "Moderate — longer grooming may be tiring for sensitive dogs",
+    "zh-TW": "中等——較長的美容時間對敏感狗狗可能較為疲憊",
+    "zh-CN": "中等——较长的美容时间对敏感狗狗可能较为疲惫"
+  },
   "not_sure_p": {
     "en": "Not sure which style is best for your dog? <a href=\"/zh-cn/contact\">Reach out by text or call before booking</a> — we're happy to help! We can recommend the perfect look based on their coat, lifestyle, and personality.",
     "zh-TW": "不確定哪種風格最適合您的愛犬？<a href=\"/zh-cn/contact\">預約前歡迎傳訊或來電諮詢</a>——我們很樂意協助！我們可以根據牠的毛質、生活習慣與個性，為您推薦最適合的造型。",
     "zh-CN": "不确定哪种风格最适合您的爱犬？<a href=\"/zh-cn/contact\">预约前欢迎发短信或来电咨询</a>——我们很乐意协助！我们可以根据它的毛质、生活习惯与个性，为您推荐最适合的造型。"
+  },
+  "footer_areas": {
+    "en": "Areas we serve: <a href=\"/zh-cn/dog-grooming-arcadia\" style=\"color:rgba(255,255,255,0.75);text-decoration:none;\">Arcadia</a> · <a href=\"/zh-cn/dog-grooming-temple-city\" style=\"color:rgba(255,255,255,0.75);text-decoration:none;\">Temple City</a> · <a href=\"/zh-cn/dog-grooming-alhambra\" style=\"color:rgba(255,255,255,0.75);text-decoration:none;\">Alhambra</a> · <a href=\"/zh-cn/dog-grooming-san-marino\" style=\"color:rgba(255,255,255,0.75);text-decoration:none;\">San Marino</a> · <a href=\"/zh-cn/dog-grooming-pasadena\" style=\"color:rgba(255,255,255,0.75);text-decoration:none;\">Pasadena</a>",
+    "zh-TW": "服務地區： <a href=\"/zh-cn/dog-grooming-arcadia\" style=\"color:rgba(255,255,255,0.75);text-decoration:none;\">阿凱迪亞</a> · <a href=\"/zh-cn/dog-grooming-temple-city\" style=\"color:rgba(255,255,255,0.75);text-decoration:none;\">天普市</a> · <a href=\"/zh-cn/dog-grooming-alhambra\" style=\"color:rgba(255,255,255,0.75);text-decoration:none;\">阿罕布拉</a> · <a href=\"/zh-cn/dog-grooming-san-marino\" style=\"color:rgba(255,255,255,0.75);text-decoration:none;\">聖馬力諾</a> · <a href=\"/zh-cn/dog-grooming-pasadena\" style=\"color:rgba(255,255,255,0.75);text-decoration:none;\">帕薩迪納</a>",
+    "zh-CN": "服务地区： <a href=\"/zh-cn/dog-grooming-arcadia\" style=\"color:rgba(255,255,255,0.75);text-decoration:none;\">阿凯迪亚</a> · <a href=\"/zh-cn/dog-grooming-temple-city\" style=\"color:rgba(255,255,255,0.75);text-decoration:none;\">天普市</a> · <a href=\"/zh-cn/dog-grooming-alhambra\" style=\"color:rgba(255,255,255,0.75);text-decoration:none;\">阿罕布拉</a> · <a href=\"/zh-cn/dog-grooming-san-marino\" style=\"color:rgba(255,255,255,0.75);text-decoration:none;\">圣马力诺</a> · <a href=\"/zh-cn/dog-grooming-pasadena\" style=\"color:rgba(255,255,255,0.75);text-decoration:none;\">帕萨迪纳</a>"
   }
 };
 
