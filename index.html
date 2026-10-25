@@ -1065,11 +1065,15 @@
 <!-- ══════════════════════════════
      PROMO BANNER
 ══════════════════════════════ -->
-<div class="promo-banner">
+<div class="promo-banner" id="promoBanner">
   <span class="promo-emoji">🎃</span>
   <span data-i18n="promo_text">October Treat: Free Halloween goodie bag with every groom this month! 🍬</span>
   <a href="https://book.kokonipets.com/book" target="_blank" rel="noopener" class="promo-cta" data-i18n="promo_cta">Book Now</a>
 </div>
+<script>
+  // Halloween promo: hidden automatically from Oct 30, 2026 (Pacific time)
+  if (new Date() >= new Date('2026-10-30T00:00:00-07:00')) { var pb = document.getElementById('promoBanner'); if (pb) pb.style.display = 'none'; }
+</script>
 
 <!-- ══════════════════════════════
      HERO

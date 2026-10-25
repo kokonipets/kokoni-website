@@ -1061,11 +1061,15 @@
 <!-- ══════════════════════════════
      PROMO BANNER
 ══════════════════════════════ -->
-<div class="promo-banner">
+<div class="promo-banner" id="promoBanner">
 <span class="promo-emoji">🎃</span>
 <span data-i18n="promo_text">十月優惠：本月每次美容即贈免費萬聖節糖果袋！🍬</span>
 <a class="promo-cta" data-i18n="promo_cta" href="https://book.kokonipets.com/book" rel="noopener" target="_blank">立即預約</a>
 </div>
+<script>
+  // Halloween promo: hidden automatically from Oct 30, 2026 (Pacific time)
+  if (new Date() >= new Date('2026-10-30T00:00:00-07:00')) { var pb = document.getElementById('promoBanner'); if (pb) pb.style.display = 'none'; }
+</script>
 <!-- ══════════════════════════════
      HERO
 ══════════════════════════════ -->
