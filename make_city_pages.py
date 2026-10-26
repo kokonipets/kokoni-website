@@ -325,8 +325,8 @@ ASIAN = {
  'city_h1': ("Asian Fusion Dog Grooming in San Gabriel", "聖蓋博 韓系、日系精緻造型狗狗美容"),
  'city_sub': ("Korean and Japanese-style round faces, fluffy coats and teddy bear cuts, shaped by hand at Kokoni Pet Salon.",
               "韓系、日系的圓臉、蓬鬆毛量和泰迪熊造型，在 KOKONI 寵物沙龍以手工剪裁完成。"),
- 'city_intro': ("Asian Fusion, also known as Japanese dog grooming or Korean-style dog grooming, is our most detailed style. Instead of clipping the body short, we leave the coat longer and shape it with scissors, so your dog ends up with a soft, round face, rounded ears and an even, fluffy body. Many owners call it a teddy bear cut. It's the look many people know from Japanese grooming salons and Korean dog groomers.",
-                "精緻造型（Asian Fusion），也常被稱為日系狗狗美容或韓系美容，是我們最講究細節的造型。我們不把身體的毛剃短，而是保留較長的毛，用剪刀一點一點修出形狀，讓狗狗有柔和的圓臉、圓耳朵，以及均勻蓬鬆的身形，很多主人稱它為「泰迪熊造型」。這就是很多人在韓國、日本寵物美容店看到的樣子。"),
+ 'city_intro': ("Asian Fusion, also known as Japanese dog grooming or Korean-style dog grooming, is our most detailed style. Instead of clipping the body short, we leave the coat longer and shape it with scissors, so your dog ends up with a soft, round face, rounded ears and an even, fluffy body. Many owners call it a teddy bear head, often paired with round, flared \"bell-bottom\" legs. It's the look many people know from Japanese grooming salons and Korean dog groomers.",
+                "精緻造型（Asian Fusion），也常被稱為日系狗狗美容或韓系美容，是我們最講究細節的造型。我們不把身體的毛剃短，而是保留較長的毛，用剪刀一點一點修出形狀，讓狗狗有柔和的圓臉、圓耳朵，以及均勻蓬鬆的身形，很多主人稱它為「泰迪熊頭」，常搭配圓潤蓬鬆的「喇叭腿」。這就是很多人在韓國、日本寵物美容店看到的樣子。"),
  'cta_book': ("Book an appointment", "立即預約"),
  'cta_call': ("Text or call (626) 621-4646", "簡訊或來電 (626) 621-4646"),
  'route_h': ("How we create the look", "我們怎麼做出這個造型"),
@@ -355,11 +355,17 @@ ASIAN = {
           "<strong>一次專心照顧一隻狗狗。</strong>時間較長的精緻造型，更需要美容師專心陪伴。"),
  'faq_h': ("Is Asian Fusion right for my dog?", "精緻造型適合我的狗狗嗎？"),
  'faq1_q': ("Can every dog have an Asian Fusion cut?", "每隻狗都可以做精緻造型嗎？"),
- 'faq1_a': ("Not every coat or personality suits it. The style needs a longer coat and a dog that's comfortable with a longer session. For a first appointment, text us a photo and we'll tell you honestly whether Asian Fusion or our easy-care Simply Cute style is the better fit.",
-            "不是每種毛質或個性都適合。這個造型需要較長的毛，狗狗也要能接受較長的美容時間。第一次預約前，歡迎傳照片給我們，我們會老實告訴你精緻造型還是好整理的日常造型比較適合。"),
+ 'faq1_a': ("Any breed can have it, but it isn't the right fit for dogs that are timid, don't like being touched or brushed, are afraid of the dryer, are over 8 years old, have health conditions, or can't stand for long. For those dogs, our easy-care Simply Cute style is kinder. Not sure? Text us a photo and we'll tell you honestly.",
+            "任何品種都可以做，但不適合膽小、不喜歡被觸碰或梳毛、怕吹風機、超過 8 歲、有身體疾病或不能久站的狗狗。這些狗狗比較適合好整理的日常造型。不確定的話，歡迎傳照片給我們，我們會老實告訴你。"),
  'faq2_q': ("How much upkeep does it need at home?", "在家需要多少照顧？"),
- 'faq2_a': ("More than a short cut. A longer, fluffy coat needs regular brushing at home to stay tangle-free and keep its round shape between visits.",
-            "比短毛造型多。較長、蓬鬆的毛需要在家定期梳理，才不會打結，也能在兩次美容之間保持圓潤的造型。"),
+ 'faq2_a': ("Daily brushing. A longer, fluffy coat needs it to stay tangle-free and keep its round shape between visits.",
+            "需要每天梳毛。較長、蓬鬆的毛要每天梳理，才不會打結，也能在兩次美容之間保持圓潤的造型。"),
+ 'faq3_q': ("How often should I come in?", "多久來美容一次？"),
+ 'faq3_a': ("Every 4 weeks is ideal, and no longer than 6 weeks, to keep the shape and the coat in good condition. (Simply Cute: every 4–6 weeks, 8 at most.) <a href=\"/poodle-teddy-bichon-grooming-schedule\">More on grooming schedules</a>.",
+            "建議每 4 週一次，最多不超過 6 週，才能維持造型和毛況。（日常造型：每 4–6 週，最多 8 週。）<a href=\"/poodle-teddy-bichon-grooming-schedule\">更多關於美容週期</a>。"),
+ 'faq4_q': ("How long does it take?", "需要多久時間？"),
+ 'faq4_a': ("About 2–4 hours for Asian Fusion, compared with 1.5–3 hours for Simply Cute, for dogs from 5 to 60 lbs.",
+            "5 到 60 磅的狗狗，精緻造型大約 2–4 小時，日常造型大約 1.5–3 小時。"),
  'also_h': ("We welcome dogs from", "我們歡迎來自這些城市的狗狗"),
 }
 
@@ -371,6 +377,9 @@ def asian_body():
     ul = '<ul class="why-list">\n    <li data-i18n="why1"></li><li data-i18n="why2"></li><li data-i18n="why3"></li><li data-i18n="why4"></li>\n  </ul>'
     assert ul in html
     html = html.replace(ul, '<div class="team-wrap">\n  ' + ul + '\n  <img class="team-photo" src="wylie-shen-japanese-style-groomer.jpg" alt="Wylie Shen, Japanese-style dog groomer and founder of Kokoni Pet Salon, holding a poodle with an Asian Fusion teddy bear cut" loading="lazy" />\n  </div>', 1)
+    dd2 = '<dd data-i18n="faq2_a"></dd>'
+    assert html.count(dd2) == 1
+    html = html.replace(dd2, dd2 + '\n    <dt data-i18n="faq3_q"></dt><dd data-i18n="faq3_a"></dd>\n    <dt data-i18n="faq4_q"></dt><dd data-i18n="faq4_a"></dd>', 1)
     return html
 
 def fill_english(html, i18n):

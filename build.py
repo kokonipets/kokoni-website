@@ -10,8 +10,8 @@ import re, json, os, glob
 from bs4 import BeautifulSoup
 
 SITE = 'https://www.kokonipets.com'
-PAGES = ['index', 'meet-us', 'services', 'faq', 'contact', 'compare-styles'] + \
-        sorted(f[:-5] for f in glob.glob('dog-*.html') + ['asian-fusion-dog-grooming.html'])
+BASE_PAGES = ['index', 'meet-us', 'services', 'faq', 'contact', 'compare-styles']
+PAGES = BASE_PAGES + sorted(f[:-5] for f in glob.glob('*.html') if f[:-5] not in BASE_PAGES)
 LANGS = {'zh-TW': 'zh-tw', 'zh-CN': 'zh-cn'}
 HREFLANG = {'en': 'en', 'zh-TW': 'zh-Hant', 'zh-CN': 'zh-Hans'}
 
