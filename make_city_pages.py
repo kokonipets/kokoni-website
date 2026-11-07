@@ -120,6 +120,17 @@ CITIES = {
        "有的。染毛每個部位 $30 起，需搭配美容方案。")),
 }
 
+PHOTOS = [
+ ('white-fluffy-dog-grooming-san-gabriel.jpg', 1400, 788, 'Fluffy white dog after a gentle groom'),
+ ('maltipoo-haircut-grooming-salon-high-quality-photo.jpg', 1600, 1067, "Groomer hand-scissoring a Maltipoo's teddy bear cut"),
+ ('professional-dog-grooming-kokoni.jpg', 932, 1400, 'Bichon Frise getting a rounded haircut'),
+ ('dog-bichon-web.jpg', 1800, 1200, 'Small dog getting a face trim with grooming scissors'),
+ ('happy-client-emily-charlie.jpg', 1400, 1217, 'Owner holding her freshly groomed Maltipoo'),
+]
+
+def photo_for(slug):
+    return PHOTOS[list(CITIES).index(slug) % len(PHOTOS)]
+
 def common(c):
     en, zh = c['en'], c['zh']
     return {
@@ -167,6 +178,8 @@ def common(c):
 
 CSS = """
     /* ── City landing pages ── */
+    .city-photo { max-width: 900px; margin: 32px auto 0; padding: 0 24px; }
+    .city-photo img { width: 100%; height: auto; max-height: 460px; object-fit: cover; border-radius: 16px; display: block; }
     .city-hero { background: #D8EBFD; padding: 56px 80px 48px; text-align: center; }
     .city-hero h1 { font-family: 'DM Serif Display', serif; color: #1C4F95; font-size: 2.4rem; font-weight: 400; line-height: 1.2; margin-bottom: 14px; }
     .city-hero .city-sub { color: #1C4F95; font-weight: 600; font-size: 1.05rem; margin-bottom: 18px; }
@@ -206,9 +219,11 @@ CSS = """
 def body(slug, c):
     others = ''.join('<a href="/dog-grooming-%s" data-i18n="city_%s">%s</a>' % (s, s.replace('-', '_'), o['en'])
                      for s, o in CITIES.items() if s != slug)
-    return body_template(others)
+    f, w, h, alt = photo_for(slug)
+    fig = '<figure class="city-photo"><img src="/%s" alt="%s — dog grooming near %s" width="%d" height="%d" loading="eager" /></figure>' % (f, alt, c['en'], w, h)
+    return body_template(others, fig)
 
-def body_template(others):
+def body_template(others, fig=''):
     return """<!-- ══════════════════════════════
      CITY LANDING
 ══════════════════════════════ -->
@@ -221,7 +236,7 @@ def body_template(others):
     <a href="tel:6266214646" class="cta-call" data-i18n="cta_call"></a>
   </div>
 </section>
-
+%(fig)s
 <section class="city-section">
   <h2 data-i18n="route_h"></h2>
   <p data-i18n="route_p"></p>
@@ -262,7 +277,7 @@ def body_template(others):
   <div class="also-links">%(others)s</div>
 </section>
 
-""" % {'dir': DIRECTIONS, 'others': others}
+""" % {'dir': DIRECTIONS, 'others': others, 'fig': fig}
 
 # ── Service page: walk-in nail trimming ─────────────────────────────
 NAIL = {
@@ -414,6 +429,10 @@ for name, texts, make_body in PAGES_OUT:
         h = re.sub(r'<meta property="%s" content="[^"]*"' % p, '<meta property="%s" content="%s"' % (p, title if 'title' in p else desc), h)
     for p in ('twitter:title', 'twitter:description'):
         h = re.sub(r'<meta name="%s" content="[^"]*"' % p, '<meta name="%s" content="%s"' % (p, title if 'title' in p else desc), h)
+    if name.startswith('dog-grooming-'):
+        img = 'https://www.kokonipets.com/' + photo_for(name[len('dog-grooming-'):])[0]
+        h = re.sub(r'<meta property="og:image" content="[^"]*"', '<meta property="og:image" content="%s"' % img, h)
+        h = re.sub(r'<meta name="twitter:image" content="[^"]*"', '<meta name="twitter:image" content="%s"' % img, h)
     h = re.sub(r'<title>[^<]*</title>', '<title>%s</title>' % title, h)
     h = h.replace('    </style>', CSS + '    </style>', 1)
     h = re.sub(r'const I18N = \{.*?\n\};', lambda m: 'const I18N = ' + json.dumps(i18n, ensure_ascii=False, indent=2) + ';', h, count=1, flags=re.S)
