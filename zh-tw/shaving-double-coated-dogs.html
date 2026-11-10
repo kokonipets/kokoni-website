@@ -411,6 +411,11 @@
     .tips-cards p { color: #2c2c2c; font-weight: 400; margin: 0; }
     .also-links { display: flex; flex-wrap: wrap; gap: 10px; }
     .also-links a { background: #fff; border: 1.5px solid #1C4F95; color: #1C4F95; border-radius: 20px; padding: 6px 16px; text-decoration: none; font-weight: 600; font-size: 0.9rem; }
+    .ba { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 8px 0 14px; }
+    .ba.ba-one { grid-template-columns: minmax(0, 420px); justify-content: center; }
+    .ba figure { margin: 0; }
+    .ba img { width: 100%; height: auto; border-radius: 14px; display: block; }
+    .ba figcaption { text-align: center; font-weight: 700; color: #1C4F95; margin-top: 6px; font-size: 0.9rem; }
     @media (max-width: 900px) {
       .city-hero { padding: 40px 24px 36px; }
       .city-hero h1 { font-size: 1.8rem; }
@@ -482,7 +487,7 @@
 <h2 data-i18n="faq_h">快速問答</h2>
 <dl class="city-faq"><dt data-i18n="f0_q">剃毛會讓雙層毛的狗比較涼快嗎？</dt><dd data-i18n="f0_a">其實不會。健康、除過廢毛的雙層毛反而能幫忙隔熱、防曬。清掉鬆脫的底毛，比剃毛更能讓狗狗舒服。</dd></dl>
 <h2 data-i18n="more_h">更多美容小知識</h2>
-<div class="also-links"><a data-i18n="l_poodle_teddy_bichon_grooming_schedule" href="/zh-tw/poodle-teddy-bichon-grooming-schedule">貴賓、泰迪、比熊多久要剪一次毛？</a><a data-i18n="l_puppy_first_grooming" href="/zh-tw/puppy-first-grooming">幼犬第一次美容：你需要知道的事</a><a data-i18n="l_matted_dog_hair" href="/zh-tw/matted-dog-hair">狗狗毛打結怎麼辦？為什麼有時候剃短反而比較好</a><a data-i18n="l_dog_grooming_prices" href="/zh-tw/dog-grooming-prices">狗狗美容要多少錢？</a><a data-i18n="svc_more" href="/zh-tw/services">查看服務與價格</a></div>
+<div class="also-links"><a data-i18n="l_poodle_teddy_bichon_grooming_schedule" href="/zh-tw/poodle-teddy-bichon-grooming-schedule">貴賓、泰迪、比熊多久要剪一次毛？</a><a data-i18n="l_puppy_first_grooming" href="/zh-tw/puppy-first-grooming">幼犬第一次美容：你需要知道的事</a><a data-i18n="l_matted_dog_hair" href="/zh-tw/matted-dog-hair">狗狗毛打結怎麼辦？為什麼有時候剃短反而比較好</a><a data-i18n="l_dog_grooming_prices" href="/zh-tw/dog-grooming-prices">狗狗美容要多少錢？</a><a data-i18n="l_dog_grooming_before_after" href="/zh-tw/dog-grooming-before-after">美容前後對比：KOKONI 的真實作品</a><a data-i18n="svc_more" href="/zh-tw/services">查看服務與價格</a></div>
 </article>
 <!-- ══════════════════════════════
      INFO STRIP
@@ -735,6 +740,11 @@ const I18N = {
     "en": "How Much Does Dog Grooming Cost?",
     "zh-TW": "狗狗美容要多少錢？",
     "zh-CN": "狗狗美容要多少钱？"
+  },
+  "l_dog_grooming_before_after": {
+    "en": "Before &amp; After: Real Grooms at Kokoni",
+    "zh-TW": "美容前後對比：KOKONI 的真實作品",
+    "zh-CN": "美容前后对比：KOKONI 的真实作品"
   }
 };
 

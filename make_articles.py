@@ -163,12 +163,43 @@ ARTICLES = [
   faq=[(("Why might my final price be different from the price list?", "為什麼最後價格可能和價目表不一樣？"),
         ("Our prices are a quote. The final price can change with your dog's size, coat length and condition, and the style you choose. We'll let you know before adding anything like de-matting or de-shedding.",
          "價目表是估價。最後價格會依狗狗的體型、毛長、毛況，以及你選的造型而調整。需要加開結或除廢毛之類的項目時，我們會先告訴你。"))]),
+ dict(slug='dog-grooming-before-after',
+  title=("Dog Grooming Before &amp; After Photos: Maltese, Coton, Poodle | Kokoni San Gabriel",
+         "狗狗美容前後對比照：瑪爾濟斯、棉花面紗犬、貴賓 | KOKONI 寵物美容（聖蓋博）"),
+  desc=("Real before-and-after grooms from Kokoni Pet Salon in San Gabriel: a Maltese Asian Fusion cut, a Coton de Tulear puppy's first haircut and a round-faced toy poodle.",
+        "聖蓋博 KOKONI 寵物美容的真實美容前後對比：瑪爾濟斯精緻造型、棉花面紗犬幼犬第一次剪毛、圓臉玩具貴賓。"),
+  h1=("Before &amp; After: Real Grooms at Kokoni", "美容前後對比：KOKONI 的真實作品"),
+  sub=("Every photo here was taken on our grooming table in San Gabriel. Here's what each dog came in with, and what we did.",
+       "這裡每一張照片都是在我們聖蓋博店裡的美容桌上拍的。看看每隻狗狗來的時候是什麼樣子，我們又做了什麼。"),
+  sections=[
+   (("Maltese: from fluffy and messy to a round Asian Fusion face", "瑪爾濟斯：從蓬亂到圓圓的精緻造型"),
+    ('<div class="ba"><figure><img src="/maltese-before-grooming.jpg" alt="White Maltese before grooming, with a long, uneven coat" loading="lazy" width="900" height="1200"><figcaption>Before</figcaption></figure><figure><img src="/maltese-asian-fusion-after-san-gabriel.jpg" alt="White Maltese after an Asian Fusion groom with a round face, at Kokoni Pet Salon in San Gabriel" loading="lazy" width="900" height="1200"><figcaption>After</figcaption></figure></div>'
+     "<p>This Maltese came in with an overgrown coat covering the eyes and uneven, fluffy legs. We gave a clean little face and a rounded <a href=\"/asian-fusion-dog-grooming\">Asian Fusion</a> haircut, hand-scissored so the head, ears and body all match.</p>",
+     '<div class="ba"><figure><img src="/maltese-before-grooming.jpg" alt="美容前的白色瑪爾濟斯，毛長而不整齊" loading="lazy" width="900" height="1200"><figcaption>美容前</figcaption></figure><figure><img src="/maltese-asian-fusion-after-san-gabriel.jpg" alt="在聖蓋博 KOKONI 完成精緻造型的白色瑪爾濟斯，圓圓的臉" loading="lazy" width="900" height="1200"><figcaption>美容後</figcaption></figure></div>'
+     "<p>這隻瑪爾濟斯來的時候，毛長到蓋住眼睛，四肢也蓬亂不齊。我們幫牠把臉修得乾乾淨淨，再用剪刀手工剪出圓潤的<a href=\"/asian-fusion-dog-grooming\">精緻造型</a>，讓頭、耳朵和身體的線條一致。</p>")),
+   (("Coton de Tulear puppy: a first haircut that keeps the fluff", "棉花面紗犬幼犬：保留蓬鬆感的第一次剪毛"),
+    ('<div class="ba"><figure><img src="/coton-de-tulear-puppy-before-grooming.jpg" alt="Coton de Tulear puppy before its first haircut" loading="lazy" width="900" height="1200"><figcaption>Before</figcaption></figure><figure><img src="/coton-de-tulear-puppy-first-haircut-after.jpg" alt="Coton de Tulear puppy after its first haircut at Kokoni, still fluffy with a tidy face" loading="lazy" width="900" height="1200"><figcaption>After</figcaption></figure></div>'
+     "<p>His family loves his long, fluffy coat and brushes it regularly, but a long-haired puppy still has everyday struggles: a face that gets messy after meals, paws that pick up dirt on every walk, and hair in all the wrong places. For his <a href=\"/puppy-first-grooming\">first groom</a>, we kept the puppy fluff and shaped and tidied only the areas that needed it. Not every haircut needs to be shorter; sometimes it just needs to be smarter.</p>",
+     '<div class="ba"><figure><img src="/coton-de-tulear-puppy-before-grooming.jpg" alt="第一次剪毛前的棉花面紗犬幼犬" loading="lazy" width="900" height="1200"><figcaption>美容前</figcaption></figure><figure><img src="/coton-de-tulear-puppy-first-haircut-after.jpg" alt="在 KOKONI 第一次剪毛後的棉花面紗犬幼犬，依然蓬鬆、臉部乾淨" loading="lazy" width="900" height="1200"><figcaption>美容後</figcaption></figure></div>'
+     "<p>主人很喜歡牠長長蓬蓬的毛，也會固定幫牠梳毛。但長毛幼犬還是有日常的小困擾：吃完飯臉就髒、每次散步腳掌都沾土、毛長在不該長的地方。這次<a href=\"/puppy-first-grooming\">第一次美容</a>，我們保留了幼犬的蓬鬆感，只修整需要整理的地方。好的造型不一定要剪短，而是要剪得剛好。</p>")),
+   (("Toy poodle: a round face and soft, even coat", "玩具貴賓：圓臉與柔順均勻的毛"),
+    ('<div class="ba ba-one"><figure><img src="/toy-poodle-round-face-haircut-san-gabriel.jpg" alt="Brown toy poodle with a round, hand-scissored face and rounded legs at Kokoni Pet Salon in San Gabriel" loading="lazy" width="900" height="1200"><figcaption>After</figcaption></figure></div>'
+     "<p>Poodle coats are ideal for a round, scissored look: a full face, long ears and rounded legs. To keep a shape like this, we recommend a groom about every 4 weeks (<a href=\"/poodle-teddy-bichon-grooming-schedule\">grooming schedules by breed</a>).</p>",
+     '<div class="ba ba-one"><figure><img src="/toy-poodle-round-face-haircut-san-gabriel.jpg" alt="在聖蓋博 KOKONI 手工修剪出圓臉和圓潤四肢的咖啡色玩具貴賓" loading="lazy" width="900" height="1200"><figcaption>美容後</figcaption></figure></div>'
+     "<p>貴賓的毛質最適合剪成圓潤的造型：飽滿的臉、長耳朵和圓圓的四肢。要維持這樣的造型，建議大約每 4 週美容一次（<a href=\"/poodle-teddy-bichon-grooming-schedule\">各品種美容週期</a>）。</p>")),
+   (("Want a look like these?", "想要這樣的造型嗎？"),
+    ("<p>Text us a photo of your dog at (626) 621-4646 and tell us the look you like. We'll tell you honestly what will suit your dog's coat and personality, and what it will cost (<a href=\"/dog-grooming-prices\">see our price guide</a>). More of our work is on Instagram at <a href=\"https://www.instagram.com/kokonipets/\" target=\"_blank\" rel=\"noopener\">@kokonipets</a>.</p>",
+     "<p>傳一張狗狗的照片到 (626) 621-4646，告訴我們你喜歡的造型。我們會老實告訴你哪種造型適合狗狗的毛質和個性，以及大概的價格（<a href=\"/dog-grooming-prices\">查看價格說明</a>）。更多作品請看我們的 Instagram <a href=\"https://www.instagram.com/kokonipets/\" target=\"_blank\" rel=\"noopener\">@kokonipets</a>。</p>")),
+  ],
+  faq=[(("Can every dog get a round Asian Fusion look like the Maltese above?", "每隻狗都可以剪成像上面瑪爾濟斯那樣的圓臉精緻造型嗎？"),
+        ("Any breed can have it, but it isn't the right fit for dogs that are timid, don't like being touched or brushed, are afraid of the dryer, are over 8 years old, have health conditions, or can't stand for long. For those dogs, our easy-care Simply Cute style is kinder.",
+         "任何品種都可以剪，但不適合膽小、不喜歡被摸或梳毛、怕吹風機、超過 8 歲、有健康狀況或無法久站的狗狗。這些狗狗比較適合好整理的日常造型。"))]),
 ]
 
 HUB = dict(slug='grooming-tips',
   title=("Dog Grooming Tips from Our Groomers | Kokoni Pet Salon, San Gabriel", "狗狗美容小知識 | KOKONI 寵物沙龍（聖蓋博）"),
-  desc=("Practical dog grooming advice from the Kokoni grooming team in San Gabriel: grooming schedules, puppy's first groom, matted hair, double-coated dogs and grooming prices.",
-        "聖蓋博 KOKONI 美容團隊的實用狗狗美容知識：多久剪一次毛、幼犬第一次美容、毛打結、雙層毛剃毛、美容價格。"),
+  desc=("Practical dog grooming advice from the Kokoni grooming team in San Gabriel: grooming schedules, puppy's first groom, matted hair, double-coated dogs, grooming prices and before-and-after photos.",
+        "聖蓋博 KOKONI 美容團隊的實用狗狗美容知識：多久剪一次毛、幼犬第一次美容、毛打結、雙層毛剃毛、美容價格、美容前後對比。"),
   h1=("Grooming Tips from Our Groomers", "美容師的狗狗美容小知識"),
   sub=("Straight answers to the questions we hear most at the salon.", "我們在店裡最常被問到的問題，直接回答給你。"))
 
@@ -198,6 +229,11 @@ CSS = """
     .tips-cards p { color: #2c2c2c; font-weight: 400; margin: 0; }
     .also-links { display: flex; flex-wrap: wrap; gap: 10px; }
     .also-links a { background: #fff; border: 1.5px solid #1C4F95; color: #1C4F95; border-radius: 20px; padding: 6px 16px; text-decoration: none; font-weight: 600; font-size: 0.9rem; }
+    .ba { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 8px 0 14px; }
+    .ba.ba-one { grid-template-columns: minmax(0, 420px); justify-content: center; }
+    .ba figure { margin: 0; }
+    .ba img { width: 100%; height: auto; border-radius: 14px; display: block; }
+    .ba figcaption { text-align: center; font-weight: 700; color: #1C4F95; margin-top: 6px; font-size: 0.9rem; }
     @media (max-width: 900px) {
       .city-hero { padding: 40px 24px 36px; }
       .city-hero h1 { font-size: 1.8rem; }

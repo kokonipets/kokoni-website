@@ -410,6 +410,11 @@
     .tips-cards p { color: #2c2c2c; font-weight: 400; margin: 0; }
     .also-links { display: flex; flex-wrap: wrap; gap: 10px; }
     .also-links a { background: #fff; border: 1.5px solid #1C4F95; color: #1C4F95; border-radius: 20px; padding: 6px 16px; text-decoration: none; font-weight: 600; font-size: 0.9rem; }
+    .ba { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 8px 0 14px; }
+    .ba.ba-one { grid-template-columns: minmax(0, 420px); justify-content: center; }
+    .ba figure { margin: 0; }
+    .ba img { width: 100%; height: auto; border-radius: 14px; display: block; }
+    .ba figcaption { text-align: center; font-weight: 700; color: #1C4F95; margin-top: 6px; font-size: 0.9rem; }
     @media (max-width: 900px) {
       .city-hero { padding: 40px 24px 36px; }
       .city-hero h1 { font-size: 1.8rem; }
@@ -491,7 +496,7 @@
   <h2 data-i18n="faq_h">Quick answer</h2>
   <dl class="city-faq"><dt data-i18n="f0_q">Will the coat grow back after a shave?</dt><dd data-i18n="f0_a">For most single-coated breeds like Poodles, Bichons and Maltese, yes, and starting fresh with regular brushing is often the easiest path. Double-coated breeds are different; see our article on shaving double-coated dogs.</dd></dl>
   <h2 data-i18n="more_h">More grooming tips</h2>
-  <div class="also-links"><a href="/poodle-teddy-bichon-grooming-schedule" data-i18n="l_poodle_teddy_bichon_grooming_schedule">How Often Should You Groom a Poodle, Teddy or Bichon?</a><a href="/puppy-first-grooming" data-i18n="l_puppy_first_grooming">Your Puppy's First Grooming: What to Know</a><a href="/shaving-double-coated-dogs" data-i18n="l_shaving_double_coated_dogs">Should You Shave a Double-Coated Dog in Summer?</a><a href="/dog-grooming-prices" data-i18n="l_dog_grooming_prices">How Much Does Dog Grooming Cost?</a><a href="/services" data-i18n="svc_more">See our services &amp; prices</a></div>
+  <div class="also-links"><a href="/poodle-teddy-bichon-grooming-schedule" data-i18n="l_poodle_teddy_bichon_grooming_schedule">How Often Should You Groom a Poodle, Teddy or Bichon?</a><a href="/puppy-first-grooming" data-i18n="l_puppy_first_grooming">Your Puppy's First Grooming: What to Know</a><a href="/shaving-double-coated-dogs" data-i18n="l_shaving_double_coated_dogs">Should You Shave a Double-Coated Dog in Summer?</a><a href="/dog-grooming-prices" data-i18n="l_dog_grooming_prices">How Much Does Dog Grooming Cost?</a><a href="/dog-grooming-before-after" data-i18n="l_dog_grooming_before_after">Before &amp; After: Real Grooms at Kokoni</a><a href="/services" data-i18n="svc_more">See our services &amp; prices</a></div>
 </article>
 
 <!-- ══════════════════════════════
@@ -775,6 +780,11 @@ const I18N = {
     "en": "How Much Does Dog Grooming Cost?",
     "zh-TW": "狗狗美容要多少錢？",
     "zh-CN": "狗狗美容要多少钱？"
+  },
+  "l_dog_grooming_before_after": {
+    "en": "Before &amp; After: Real Grooms at Kokoni",
+    "zh-TW": "美容前後對比：KOKONI 的真實作品",
+    "zh-CN": "美容前后对比：KOKONI 的真实作品"
   }
 };
 
