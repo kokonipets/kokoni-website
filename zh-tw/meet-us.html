@@ -617,7 +617,19 @@
       /* ── Service Area ── */
       #service-area { padding: 32px 20px; }
     }
-    </style>
+    
+    /* ══ WYLIE'S INSTAGRAM ══ */
+    #wylie-ig { background: #fff; padding: 56px 80px; text-align: center; }
+    #wylie-ig h2 { font-family: 'DM Serif Display', serif; font-weight: 900; font-size: 2.4rem; color: #2c2c2c; margin-bottom: 8px; }
+    #wylie-ig .insta-logo-row { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 18px; }
+    #wylie-ig .ig-icon-btn { width: 32px; height: 32px; border-radius: 8px; flex-shrink: 0; background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); position: relative; display: inline-block; text-decoration: none; }
+    #wylie-ig .ig-icon-btn::before { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 13px; height: 13px; border: 2px solid #fff; border-radius: 50%; }
+    #wylie-ig .ig-icon-btn::after { content: ''; position: absolute; top: 5px; right: 5px; width: 4px; height: 4px; background: #fff; border-radius: 50%; }
+    #wylie-ig .insta-handle { font-size: 1.2rem; font-weight: 700; color: #2c2c2c; text-decoration: underline; text-underline-offset: 3px; }
+    #wylie-ig .insta-handle:hover { color: #bc1888; }
+    @media (max-width: 900px) { #wylie-ig { padding: 40px 24px; } }
+    @media (max-width: 600px) { #wylie-ig { padding: 32px 20px; } #wylie-ig h2 { font-size: 1.8rem; } }
+  </style>
   <!--hreflang-->
   <link rel="alternate" hreflang="en" href="https://www.kokonipets.com/meet-us" />
   <link rel="alternate" hreflang="zh-Hant" href="https://www.kokonipets.com/zh-tw/meet-us" />
@@ -713,6 +725,28 @@
 </div>
 </div>
 </section>
+<!-- ══════════════════════════════
+     WYLIE'S INSTAGRAM
+══════════════════════════════ -->
+<section id="wylie-ig">
+  <h2 data-i18n="wylie_ig_h2">追蹤 Wylie</h2>
+  <div class="insta-logo-row">
+    <a href="https://www.instagram.com/wylieshenpet_groomer/" target="_blank" rel="noopener" aria-label="Instagram" class="ig-icon-btn"></a>
+    <a href="https://www.instagram.com/wylieshenpet_groomer/" target="_blank" rel="noopener" class="insta-handle">@wylieshenpet_groomer</a>
+  </div>
+  <!-- Live Instagram feed via Behold.so (Wylie's personal account) -->
+  <div style="max-width: 960px; margin: 0 auto;">
+    <behold-widget feed-id="IMv06BeKxJbgw5y3iH1L"></behold-widget>
+    <script>
+      (() => {
+        if (window.__bhldScript) return; window.__bhldScript = true;
+        const d=document,s=d.createElement("script");s.type="module";
+        s.src="https://w.behold.so/widget.js";d.head.append(s);
+      })();
+    </script>
+  </div>
+</section>
+
 <!-- ══════════════════════════════
      OUR HAPPY GROOMING PHILOSOPHY
 ══════════════════════════════ -->
@@ -935,6 +969,11 @@ const I18N = {
     "en": "Visit Our Salon",
     "zh-TW": "歡迎參觀我們的店面",
     "zh-CN": "欢迎参观我们的店面"
+  },
+  "wylie_ig_h2": {
+    "en": "Follow Wylie",
+    "zh-TW": "追蹤 Wylie",
+    "zh-CN": "关注 Wylie"
   },
   "phil_h2": {
     "en": "Our Happy Grooming Philosophy",
