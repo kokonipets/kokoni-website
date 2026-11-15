@@ -44,10 +44,10 @@ ARTICLES = [
          "直毛品種最多 8 週。精緻造型建議不要超過 6 週，否則造型和毛況會很難維持。"))]),
 
  dict(slug='puppy-first-grooming',
-  title=("Your Puppy's First Grooming: Age, Vaccines & How to Prepare | Kokoni",
+  title=("Puppy's First Groom in San Gabriel: Age, Vaccines & What to Expect | Kokoni",
          "幼犬第一次美容：幾個月、疫苗、怎麼準備 | KOKONI 寵物美容（聖蓋博）"),
-  desc=("When can a puppy get groomed, which vaccines are needed, what happens at the first visit and how to prepare at home. Tips from Kokoni Pet Salon in San Gabriel.",
-        "幼犬幾個月可以美容？需要哪些疫苗？第一次美容做什麼、在家怎麼準備？聖蓋博 KOKONI 寵物美容師的建議。"),
+  desc=("Planning your puppy's first groom in San Gabriel? When puppies can be groomed, which vaccines are needed, what happens at the first visit, real before-and-after photos and how to prepare at home.",
+        "幼犬幾個月可以美容？需要哪些疫苗？第一次美容做什麼、真實美容前後對比、在家怎麼準備？聖蓋博 KOKONI 寵物美容師的建議。"),
   h1=("Your Puppy's First Grooming: What to Know", "幼犬第一次美容：你需要知道的事"),
   sub=("Most puppies can have their first full groom at around 4 months old, once their vaccines are complete.",
        "大部分幼犬在大約 4 個月大、打完疫苗後，就可以第一次完整美容。"),
@@ -64,6 +64,11 @@ ARTICLES = [
    (("What happens at the first groom", "第一次美容會做什麼"),
     ("<p>A full groom includes nail grinding, ear cleaning, teeth brushing, gland expression, paw pad trim, sanitary trim, a bath and a haircut. It usually takes about <strong>2 hours</strong>. Pricing is the same as our regular grooming.</p>",
      "<p>完整美容包括磨指甲、清耳朵、刷牙、擠肛門腺、修腳底毛、衛生修剪、洗澡和剪毛，大約需要 <strong>2 小時</strong>。價格與一般美容相同。</p>")),
+   (("A real first groom: Coton de Tulear puppy", "真實案例：棉花面紗犬幼犬的第一次美容"),
+    ('<div class="ba"><figure><img src="/coton-de-tulear-puppy-before-grooming.jpg" alt="Coton de Tulear puppy before its first groom" loading="lazy" width="900" height="1200"><figcaption>Before</figcaption></figure><figure><img src="/coton-de-tulear-puppy-first-haircut-after.jpg" alt="Coton de Tulear puppy after its first groom at Kokoni Pet Salon in San Gabriel" loading="lazy" width="900" height="1200"><figcaption>After</figcaption></figure></div>'
+     "<p>For this puppy's first groom, we kept the soft puppy fluff and only tidied the face, paws and sanitary area. A first haircut doesn't have to be short. The goal is a clean, comfortable puppy who has a good first experience. <a href=\"/dog-grooming-before-after\">See more before-and-after photos</a>.</p>",
+     '<div class="ba"><figure><img src="/coton-de-tulear-puppy-before-grooming.jpg" alt="第一次美容前的棉花面紗犬幼犬" loading="lazy" width="900" height="1200"><figcaption>美容前</figcaption></figure><figure><img src="/coton-de-tulear-puppy-first-haircut-after.jpg" alt="在聖蓋博 KOKONI 完成第一次美容的棉花面紗犬幼犬" loading="lazy" width="900" height="1200"><figcaption>美容後</figcaption></figure></div>'
+     "<p>這隻幼犬的第一次美容，我們保留了蓬鬆的幼犬毛，只修整臉、腳掌和衛生區域。第一次剪毛不一定要剪短，重點是讓狗狗乾淨、舒服，留下好的第一次經驗。<a href=\"/dog-grooming-before-after\">看更多美容前後對比</a>。</p>")),
    (("How to prepare at home", "在家可以怎麼準備"),
     (ul(["Turn on a hair dryer near your puppy so they get used to the air and the sound.", "Brush them gently, even if the coat is still short.", "Touch their face, chin, paws and legs.", "Give a treat with every step, so each one feels like a good thing."]),
      ul(["在狗狗旁邊開吹風機，讓牠習慣吹風的感覺和聲音。", "就算毛還短，也輕輕幫牠梳毛。", "常常摸摸牠的臉、下巴、腳掌和四肢。", "每一步都配合零食，讓狗狗覺得這些都是好事。"]))),
