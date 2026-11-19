@@ -165,6 +165,8 @@
     .puppy-card .card-subtitle { margin-bottom: 12px; }
     .puppy-card ul { list-style: disc; padding-left: 20px; font-size: 0.92rem; color: #444; line-height: 1.85; margin: 12px 0 14px; }
     .puppy-card .puppy-wylie { font-weight: 600; color: #2c2c2c; }
+    .puppy-card .puppy-sub { font-weight: 800; color: #2c2c2c; margin: 14px 0 0; font-size: 0.95rem; }
+    .puppy-card .puppy-time { font-size: 0.92rem; color: #2c2c2c; margin: 4px 0 12px; }
     .puppy-card .puppy-price { font-size: 0.92rem; font-weight: 700; color: #2c2c2c; margin-bottom: 16px; }
     .card-note {
       font-size: 0.84rem;
@@ -744,8 +746,9 @@
       <div class="puppy-body">
       <h3 data-i18n="puppy_h3">幼犬第一次美容</h3>
       <p class="card-subtitle" data-i18n="puppy_sub">第一次美容的幼犬</p>
-      <p class="card-desc" data-i18n="puppy_desc">幼犬的第一次美容，應該要安心、不趕時間。內容與精緻造型的洗澡 &amp; 美容完全相同，並額外預留時間進行溝通諮詢，讓毛孩慢慢熟悉我們、工具與美容室環境。</p>
+      <p class="card-desc" data-i18n="puppy_desc">幼犬的第一次美容，是牠一生中非常重要的時刻。我們看過許多成犬害怕美容、討厭美容，甚至因此咬人。因此我們相信，在早期留下美好的第一次體驗並建立信任，能幫助毛孩長大後開心、安心地享受一輩子的美容時光。</p>
       <p class="card-desc puppy-wylie" data-i18n="puppy_wylie">由我們的首席美容師 Wylie Shen 親自服務——她是 KOKONI 與 Unicorn Pet Grooming 的創辦人，擁有超過 12 年美容經驗。Wylie 自 2011 年投入動物救援，也因此形成「同理心優先」的理念，並畢業於 Animal Behavior College 與 4 Dog Grooming Academy。第一次美容會影響毛孩對往後每一次美容的印象，所以我們由最有經驗的 Wylie 負責。</p>
+      <p class="puppy-sub" data-i18n="puppy_incl_h">包含項目</p>
       <ul>
         <li data-i18n="li_nail_trim">Nail trim</li>
         <li data-i18n="li_ear_clean">Ear cleaning (no plucking)</li>
@@ -753,11 +756,18 @@
         <li data-i18n="li_hydra">Hydra Luxury Shampoo &amp; Conditioner</li>
         <li data-i18n="li_gland">Gland expression (only by request)</li>
         <li data-i18n="li_blowdry">Hand dry &amp; blow out</li>
-        <li data-i18n="puppy_li2">開始前先諮詢：毛質、造型與毛孩的個性</li>
-        <li data-i18n="puppy_li3">預留適應時間，熟悉美容師、美容桌、吹風機與各種聲音</li>
-        <li data-i18n="puppy_li4">溫和、循序漸進，毛孩需要時就休息</li>
       </ul>
-      <p class="puppy-price" data-i18n="puppy_price">價格：依毛孩體型，與精緻造型相同——請見下方幼犬第一次美容價格表。</p>
+      <p class="puppy-sub" data-i18n="puppy_expect_h">第一次美容的流程</p>
+      <ul>
+        <li data-i18n="puppy_li_consult"><strong>先諮詢：</strong>請分享你的擔心，也跟 Wylie 說說毛孩的個性、習慣與任何你在意的地方。</li>
+        <li data-i18n="puppy_li_play"><strong>玩耍、熟悉環境：</strong>開始之前，讓毛孩先玩一玩，慢慢熟悉美容室。</li>
+        <li data-i18n="puppy_li_meet"><strong>認識 Wylie：</strong>這是毛孩第一次見到 Wylie，我們用牠自己的步調，讓信任慢慢建立。</li>
+        <li data-i18n="puppy_li_tools"><strong>認識工具：</strong>一項一項溫和地介紹牠一生中從沒看過的美容工具。</li>
+        <li data-i18n="puppy_li_fun"><strong>開心、正向：</strong>整個過程保持輕鬆有趣，讓毛孩把美容當成一件喜歡的事。</li>
+        <li data-i18n="puppy_li_style"><strong>為第一次美容設計的造型：</strong>Wylie 會設計適合幼犬第一次美容的造型。</li>
+      </ul>
+      <p class="puppy-time" data-i18n="puppy_time"><strong>需要多久？</strong>我們的目標是約 1.5–2 小時。有些毛孩需要的時間較短，有些會久一點，一切依毛孩的需求而定。</p>
+      <p class="puppy-price" data-i18n="puppy_price">價格依毛孩體型而定——請見下方幼犬第一次美容價格表。</p>
       <a href="#pricing" class="btn-see-price">See Price</a>
       </div>
     </div>
@@ -858,15 +868,14 @@
 <thead>
 <tr>
 <th data-i18n="th_size">體型</th>
-<th data-i18n="th_pfg">幼犬第一次美容</th>
-<th data-i18n="th_pfg_doodle">Doodle 幼犬第一次美容</th>
+<th data-i18n="th_pfg">Wylie 幼犬第一次美容</th>
 </tr>
 </thead>
 <tbody>
-<tr><td>Up to 15 lbs</td><td>$110</td><td>$130</td></tr>
-<tr><td>16 – 30 lbs</td><td>$130</td><td>$170</td></tr>
-<tr><td>31 – 50 lbs</td><td>$190</td><td>$240</td></tr>
-<tr><td>51 – 70 lbs</td><td>$240</td><td>$290</td></tr>
+<tr><td>Up to 15 lbs</td><td>$110</td></tr>
+<tr><td>16 – 30 lbs</td><td>$130</td></tr>
+<tr><td>31 – 50 lbs</td><td>$190</td></tr>
+<tr><td>51 – 70 lbs</td><td>$240</td></tr>
 </tbody>
 </table></div>
 <p class="pricing-note" data-i18n="price_note_dbh">* 請注意，以上價格僅供參考，實際費用可能依犬隻體型、毛長及造型需求調整。
@@ -1084,6 +1093,51 @@ const I18N = {
     "zh-TW": "由我們的首席美容師 Wylie Shen 親自服務——她是 KOKONI 與 Unicorn Pet Grooming 的創辦人，擁有超過 12 年美容經驗。Wylie 自 2011 年投入動物救援，也因此形成「同理心優先」的理念，並畢業於 Animal Behavior College 與 4 Dog Grooming Academy。第一次美容會影響毛孩對往後每一次美容的印象，所以我們由最有經驗的 Wylie 負責。",
     "zh-CN": "由我们的首席美容师 Wylie Shen 亲自服务——她是 KOKONI 与 Unicorn Pet Grooming 的创办人，拥有超过 12 年美容经验。Wylie 自 2011 年投入动物救援，也因此形成“同理心优先”的理念，并毕业于 Animal Behavior College 与 4 Dog Grooming Academy。第一次美容会影响毛孩对往后每一次美容的印象，所以我们由最有经验的 Wylie 负责。"
   },
+  "puppy_li_consult": {
+    "en": "<strong>Consultation first:</strong> share your concerns and tell Wylie a little about your pup — their personality, habits and anything that worries you.",
+    "zh-TW": "<strong>先諮詢：</strong>請分享你的擔心，也跟 Wylie 說說毛孩的個性、習慣與任何你在意的地方。",
+    "zh-CN": "<strong>先咨询：</strong>请分享你的担心，也跟 Wylie 说说毛孩的个性、习惯与任何你在意的地方。"
+  },
+  "puppy_li_play": {
+    "en": "<strong>Play and settle in:</strong> your puppy gets time to play and get used to the salon before anything starts.",
+    "zh-TW": "<strong>玩耍、熟悉環境：</strong>開始之前，讓毛孩先玩一玩，慢慢熟悉美容室。",
+    "zh-CN": "<strong>玩耍、熟悉环境：</strong>开始之前，让毛孩先玩一玩，慢慢熟悉美容室。"
+  },
+  "puppy_li_meet": {
+    "en": "<strong>Meet Wylie:</strong> it’s their first time meeting her, so we go at their pace and let trust begin to build.",
+    "zh-TW": "<strong>認識 Wylie：</strong>這是毛孩第一次見到 Wylie，我們用牠自己的步調，讓信任慢慢建立。",
+    "zh-CN": "<strong>认识 Wylie：</strong>这是毛孩第一次见到 Wylie，我们用它自己的步调，让信任慢慢建立。"
+  },
+  "puppy_li_tools": {
+    "en": "<strong>Meet the tools:</strong> we gently introduce new tools they have never seen in their life, one at a time.",
+    "zh-TW": "<strong>認識工具：</strong>一項一項溫和地介紹牠一生中從沒看過的美容工具。",
+    "zh-CN": "<strong>认识工具：</strong>一项一项温和地介绍它一生中从没见过的美容工具。"
+  },
+  "puppy_li_fun": {
+    "en": "<strong>Fun and positive:</strong> the whole session is kept fun and relaxed, so grooming becomes something they enjoy.",
+    "zh-TW": "<strong>開心、正向：</strong>整個過程保持輕鬆有趣，讓毛孩把美容當成一件喜歡的事。",
+    "zh-CN": "<strong>开心、正向：</strong>整个过程保持轻松有趣，让毛孩把美容当成一件喜欢的事。"
+  },
+  "puppy_li_style": {
+    "en": "<strong>A style made for a first groom:</strong> Wylie designs a style that suits your puppy’s very first groom.",
+    "zh-TW": "<strong>為第一次美容設計的造型：</strong>Wylie 會設計適合幼犬第一次美容的造型。",
+    "zh-CN": "<strong>为第一次美容设计的造型：</strong>Wylie 会设计适合幼犬第一次美容的造型。"
+  },
+  "puppy_time": {
+    "en": "<strong>How long does it take?</strong> We aim for about 1.5–2 hours. Some puppies need less time and some need more — it all depends on what your pup needs.",
+    "zh-TW": "<strong>需要多久？</strong>我們的目標是約 1.5–2 小時。有些毛孩需要的時間較短，有些會久一點，一切依毛孩的需求而定。",
+    "zh-CN": "<strong>需要多久？</strong>我们的目标是约 1.5–2 小时。有些毛孩需要的时间较短，有些会久一点，一切依毛孩的需求而定。"
+  },
+  "puppy_incl_h": {
+    "en": "What’s included",
+    "zh-TW": "包含項目",
+    "zh-CN": "包含项目"
+  },
+  "puppy_expect_h": {
+    "en": "What to expect",
+    "zh-TW": "第一次美容的流程",
+    "zh-CN": "第一次美容的流程"
+  },
   "puppy_h3": {
     "en": "Puppy First Groom",
     "zh-TW": "幼犬第一次美容",
@@ -1095,29 +1149,14 @@ const I18N = {
     "zh-CN": "第一次美容的幼犬"
   },
   "puppy_desc": {
-    "en": "Your puppy's very first groom should feel safe and unhurried. It's the same full service as our Asian Fusion Bath &amp; Haircut, with extra time built in for a consultation and for your puppy to warm up to us, the tools and the salon.",
-    "zh-TW": "幼犬的第一次美容，應該要安心、不趕時間。內容與精緻造型的洗澡 &amp; 美容完全相同，並額外預留時間進行溝通諮詢，讓毛孩慢慢熟悉我們、工具與美容室環境。",
-    "zh-CN": "幼犬的第一次美容，应该要安心、不赶时间。内容与精致造型的洗澡 &amp; 美容完全相同，并额外预留时间进行沟通咨询，让毛孩慢慢熟悉我们、工具与美容室环境。"
-  },
-  "puppy_li2": {
-    "en": "Consultation before we start — coat, style and your puppy's temperament",
-    "zh-TW": "開始前先諮詢：毛質、造型與毛孩的個性",
-    "zh-CN": "开始前先咨询：毛质、造型与毛孩的个性"
-  },
-  "puppy_li3": {
-    "en": "Warm-up time to get used to the groomer, the table, the dryer and the sounds",
-    "zh-TW": "預留適應時間，熟悉美容師、美容桌、吹風機與各種聲音",
-    "zh-CN": "预留适应时间，熟悉美容师、美容桌、吹风机与各种声音"
-  },
-  "puppy_li4": {
-    "en": "A gentle, step-by-step pace, with breaks whenever your puppy needs them",
-    "zh-TW": "溫和、循序漸進，毛孩需要時就休息",
-    "zh-CN": "温和、循序渐进，毛孩需要时就休息"
+    "en": "Your puppy’s very first groom is one of the most important moments in their life. We’ve seen many adult dogs who are scared of grooming, dislike it, or even bite. That’s why we believe a good first experience, with trust built at an early age, helps your puppy grow up happy and enjoy grooming for a lifetime.",
+    "zh-TW": "幼犬的第一次美容，是牠一生中非常重要的時刻。我們看過許多成犬害怕美容、討厭美容，甚至因此咬人。因此我們相信，在早期留下美好的第一次體驗並建立信任，能幫助毛孩長大後開心、安心地享受一輩子的美容時光。",
+    "zh-CN": "幼犬的第一次美容，是它一生中非常重要的时刻。我们见过许多成犬害怕美容、讨厌美容，甚至因此咬人。因此我们相信，在早期留下美好的第一次体验并建立信任，能帮助毛孩长大后开心、安心地享受一辈子的美容时光。"
   },
   "puppy_price": {
-    "en": "Price: the same as Asian Fusion for your puppy's size — see the Puppy First Groom price chart below.",
-    "zh-TW": "價格：依毛孩體型，與精緻造型相同——請見下方幼犬第一次美容價格表。",
-    "zh-CN": "价格：依毛孩体型，与精致造型相同——请见下方幼犬第一次美容价格表。"
+    "en": "Price is based on your puppy’s size — see the Puppy First Groom price chart below.",
+    "zh-TW": "價格依毛孩體型而定——請見下方幼犬第一次美容價格表。",
+    "zh-CN": "价格依毛孩体型而定——请见下方幼犬第一次美容价格表。"
   },
   "svc_af_sub": {
     "en": "Asian Fusion Style",
@@ -1185,14 +1224,9 @@ const I18N = {
     "zh-CN": "幼犬第一次美容 定价"
   },
   "th_pfg": {
-    "en": "Puppy First Groom",
-    "zh-TW": "幼犬第一次美容",
-    "zh-CN": "幼犬第一次美容"
-  },
-  "th_pfg_doodle": {
-    "en": "Doodle Puppy First Groom",
-    "zh-TW": "Doodle 幼犬第一次美容",
-    "zh-CN": "Doodle 幼犬第一次美容"
+    "en": "Puppy First Groom by Wylie",
+    "zh-TW": "Wylie 幼犬第一次美容",
+    "zh-CN": "Wylie 幼犬第一次美容"
   },
   "price_dbh_h2": {
     "en": "Doodle Bath and Haircut",
